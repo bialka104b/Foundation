@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 * {
   font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+*::before, *::after {
+  content: none;
 }
 
 body {
@@ -8,12 +13,22 @@ body {
 }
 
 #header {
-  background: #fbb74d;
+  background-image: url("../image/halftone-yellow/halftone-yellow/halftone-yellow.png");
   height: 100vh;
+  font-size: 20px;
+}
+
+#header .navbar {
+  background: white;
+  padding: 10px 1rem;
+}
+
+#header .navbar .container-fluid::before, #header .navbar .container-fluid::after {
+  content: none;
 }
 
 #header .navbar .navbar-header {
-  max-width: 300px;
+  max-width: 250px;
 }
 
 #header .navbar .navbar-nav ul {
@@ -22,6 +37,31 @@ body {
 }
 
 #header .navbar .navbar-nav ul li {
-  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+#header .navbar .navbar-nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#header .navbar .navbar-nav ul li a:hover {
+  color: #f71803;
+}
+
+#header .div-header {
+  width: 100%;
+  height: 100%;
+}
+
+#header .div-header .div-header-content {
+  height: 100%;
+  padding: 150px 0 0 0;
+}
+
+#header .div-header .div-header-content h1 {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

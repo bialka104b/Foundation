@@ -41,8 +41,33 @@ body {
           a {
             text-decoration: none;
             color: black;
+            position: relative;
+
             &:hover {
               color: $red;
+              &::after {
+                transform: scale(1);
+              }
+            }
+            &::after {
+              background-color: $red;
+              content: "";
+              position: absolute;
+              height: 2px;
+              width: 100%;
+
+              bottom: -5px;
+              left: 0;
+              transform: scale(0);
+              transition: all 0.5s ease;
+            }
+          }
+          &.active {
+            a {
+              color: $red;
+              &::after {
+                transform: scale(1);
+              }
             }
           }
         }

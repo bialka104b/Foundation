@@ -45,10 +45,39 @@ body {
 #header .navbar .navbar-nav ul li a {
   text-decoration: none;
   color: black;
+  position: relative;
 }
 
 #header .navbar .navbar-nav ul li a:hover {
   color: #f71803;
+}
+
+#header .navbar .navbar-nav ul li a:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#header .navbar .navbar-nav ul li a::after {
+  background-color: #f71803;
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#header .navbar .navbar-nav ul li.active a {
+  color: #f71803;
+}
+
+#header .navbar .navbar-nav ul li.active a::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 #header .div-header {

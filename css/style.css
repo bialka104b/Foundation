@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap");
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-variant: unset;
   color: black;
 }
@@ -32,6 +33,8 @@ body section {
 #header .navbar {
   background: white;
   padding: 10px 1rem;
+  margin-bottom: 0;
+  border: none;
 }
 
 #header .navbar .container-fluid::before, #header .navbar .container-fluid::after {
@@ -99,7 +102,7 @@ body section {
 
 #header .div-header .div-header-content {
   height: 100%;
-  padding: 150px 0 0 0;
+  padding: 25vh 0;
 }
 
 #header .div-header .div-header-content h1 {
@@ -132,7 +135,27 @@ body section {
   padding: 0;
 }
 
+#management .row-management .col-management5 .img-management img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  max-height: 450px;
+}
+
 #management .row-management .col-management7 {
   background: rgba(255, 255, 255, 0.3);
+  max-height: 450px;
+}
+
+#management .row-management .col-management7 .cv {
+  white-space: wrap;
+  overflow: hidden;
+  max-height: 300px;
+}
+
+#management .row-management .col-management7 .cv p {
+  text-overflow: ellipsis;
 }
 /*# sourceMappingURL=style.css.map */

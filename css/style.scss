@@ -3,8 +3,9 @@ $orange-opacity: rgba(251, 183, 77, 0.8);
 $red: #f71803;
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap");
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-variant: unset;
   color: black;
 }
@@ -29,6 +30,8 @@ body {
   .navbar {
     background: white;
     padding: 10px 1rem;
+    margin-bottom: 0;
+    border: none;
     .container-fluid {
       &::before,
       &::after {
@@ -88,7 +91,7 @@ body {
     height: 100%;
     .div-header-content {
       height: 100%;
-      padding: 150px 0 0 0;
+      padding: 25vh 0;
       h1 {
         text-align: center;
         font-size: 60px;
@@ -115,9 +118,26 @@ body {
     }
     .col-management5 {
       padding: 0;
+      .img-management {
+        img {
+          width: 100%;
+          object-fit: cover;
+          object-position: top;
+          max-height: 450px;
+        }
+      }
     }
     .col-management7 {
       background: rgba(255, 255, 255, 0.3);
+      max-height: 450px;
+      .cv {
+        white-space: wrap;
+        overflow: hidden;
+        max-height: 300px;
+        p {
+          text-overflow: ellipsis;
+        }
+      }
     }
   }
 }

@@ -21,6 +21,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <!--STYLE CSS-->
   <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <!--LINK ICON-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v1.0.0/css/unicons.css">
 </head>
 
 <body>
@@ -42,12 +44,46 @@
         </div>
       </div>
     </nav>
-    <div class="container div-header">
+    <div class="container-fluid div-header">
       <div class="div-header-content">
-        <h1>Małopolska Fundacja Promocji Kultury i Sztuki</h1>
-        <p>Małopolska Fundacja Promocji Kultury i Sztuki powstała w 2019 roku.<br />
-          Głównym celem Fundacji jest działalność artystyczna i edukacyjna oraz promowanie kultury, sztuki i muzyki
-          polskiej.</p>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="slide slide1 active" id=""></li>
+            <li data-target="#myCarousel" data-slide-to="1" class="slide slide2" id=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class="slide slide3" id=""></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="img-slider">
+                <img class="img-responsive" src="image/10.jpg" alt="First slide">
+                <p>Zagraj ze mną jak w MAINCRAFT</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="img-slider">
+                <img class="img-responsive" src="image/2.jpg" alt="Second slide">
+                <p>Wszystko zaczyna sie od marzeń</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="img-slider">
+                <img class="img-responsive" src="image/6.jpg" alt="Third slide">
+                <p>Kiedyś zagram i zaśpiewam na scenie</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev" class="vievcontrol">
+            <span class="carousel-control-prev-icon" aria-hidden="true"><i class='uil uil-angle-double-left'></i></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next" class="vievcontrol">
+            <span class="carousel-control-next-icon" aria-hidden="true"><i class='uil uil-angle-double-right'></i></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <div class="green-eden-span">
+            <h1 id="green-eden"><em>Małopolska Fundacja</em> Promocji Kultury i Sztuki</h1>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -96,8 +132,10 @@
         <div class="row row-management">
           <div class="col-12 col-md-4 col-management5">
             <div class="img-management">
-              <img src="image/IlonaTomeraChmiel.jpg" alt="Ilona Tomera Chmiel" class="img-responsive"
+              <a href="#" class="img-managment-a">
+                <img src="image/IlonaTomeraChmiel.jpg" alt="Ilona Tomera Chmiel" class="img-responsive"
                 title="Ilona Tomera Chmiel">
+              </a>
             </div>
           </div>
           <div class="col-12 col-md-8 col-management7">
@@ -146,13 +184,91 @@
           </div>
           <div class="col-12 col-md-4 col-management5">
             <div class="img-management">
-              <img src="image/PawelChmiel.jpg" alt="Paweł Chmiel" class="img-responsive" title="Paweł Chmiel">
+              <a href="#" class="img-managment-a">
+                <img src="image/PawelChmiel.jpg" alt="Paweł Chmiel" class="img-responsive" title="Paweł Chmiel">
+              </a>    
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="projects">Projekty</section>
+    <section id="projects">
+      <div class="container projects">
+        <h2>Projekty</h2>
+        <div class="row row-projects">
+          <div class="col-12 col-lg-6">
+            <div class="div-img-description-projects">
+              <div class="div-img-projects">
+                <a href="#" class="picture"><img src="image/1.jpg" alt="" class="img-responsive"></a>
+              </div>
+              <div class="div-description-projects">
+                <h5>Organizujemy festiwale i koncerty</h5>
+                <a href="http://www.uignasia.com/">Więcej</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="div-img-description-projects">
+              <div class="div-img-projects">
+                <a href="#" class="picture"><img src="image/2.jpg" alt="" class="img-responsive"></a>
+              </div>
+              <div class="div-description-projects">
+                <h5>Kursy nauki gry na instrumentach</h5>
+                <a href="http://www.uignasia.com/">Więcej</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-projects">
+          <div class="col-12 col-lg-6">
+            <div class="div-img-description-projects">
+              <div class="div-img-projects">
+                <a href="#" class="picture"><img src="image/3.jpg" alt="" class="img-responsive"></a>
+              </div>
+              <div class="div-description-projects">
+                <h5>Zajęcia dla dzieci, młodzieży i dorosłych „U Ignasia”</h5>
+                <a href="http://www.uignasia.com/">Więcej</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="div-img-description-projects">
+              <div class="div-img-projects">
+                <a href="#" class="picture"><img src="image/4.jpg" alt="" class="img-responsive"></a>
+              </div>
+              <div class="div-description-projects">
+                <h5>Zajęcia wokalne</h5>
+                <a href="http://www.uignasia.com/">Więcej</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-projects">
+          <div class="col-12 col-lg-6">
+            <div class="div-img-description-projects">
+              <div class="div-img-projects">
+                <a href="#" class="picture"><img src="image/5.jpg" alt="" class="img-responsive"></a>
+              </div>
+              <div class="div-description-projects">
+                <h5>Zajęcia umuzykalniające i rowój zdolności muzycznych</h5>
+                <a href="http://www.uignasia.com/">Więcej</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="div-img-description-projects">
+              <div class="div-img-projects">
+                <a href="#" class="picture"><img src="image/6.jpg" alt="" class="img-responsive"></a>
+              </div>
+              <div class="div-description-projects">
+                <h5>Kursy nauki gry na gitarze</h5>
+                <a href="http://www.uignasia.com/">Więcej</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="cooperation">Współpraca</section>
     <section id="location">Lokalizacja</section>
     <section id="contact">Kontakt</section>

@@ -60,6 +60,8 @@ body section {
   text-decoration: none;
   color: black;
   position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 #header .navbar .navbar-nav ul li a:hover {
@@ -69,6 +71,8 @@ body section {
 #header .navbar .navbar-nav ul li a:hover::after {
   -webkit-transform: scale(1);
           transform: scale(1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 #header .navbar .navbar-nav ul li a::after {
@@ -98,19 +102,112 @@ body section {
 #header .div-header {
   width: 100%;
   height: 100%;
+  padding: 0;
 }
 
 #header .div-header .div-header-content {
   height: 100%;
-  padding: 25vh 0;
 }
 
-#header .div-header .div-header-content h1 {
+#header .div-header .div-header-content #myCarousel {
+  position: static;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#header .div-header .div-header-content #myCarousel .carousel-indicators li {
+  background: darkorange;
+  border-color: darkorange;
+  margin: 0 10px;
+  height: 12px;
+  width: 12px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#header .div-header .div-header-content #myCarousel .carousel-indicators li.active {
+  background: #f71803;
+  border-color: #f71803;
+}
+
+#header .div-header .div-header-content #myCarousel .carousel-indicators li:hover {
+  background: #f71803;
+  border-color: #f71803;
+}
+
+#header .div-header .div-header-content #myCarousel .carousel-inner {
+  height: 100%;
+}
+
+#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item {
+  height: 100%;
+}
+
+#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider {
+  height: 100%;
+}
+
+#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider p {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  margin: 0 25%;
+  padding: 30px 30px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 20px;
+  font-size: 40px;
+  font-variant: small-caps;
+}
+
+#header .div-header .div-header-content #myCarousel .carousel-control-prev, #header .div-header .div-header-content #myCarousel .carousel-control-next {
+  opacity: 1;
+}
+
+#header .div-header .div-header-content #myCarousel .carousel-control-prev span.carousel-control-prev-icon, #header .div-header .div-header-content #myCarousel .carousel-control-prev span.carousel-control-next-icon, #header .div-header .div-header-content #myCarousel .carousel-control-next span.carousel-control-prev-icon, #header .div-header .div-header-content #myCarousel .carousel-control-next span.carousel-control-next-icon {
+  background-image: none;
+}
+
+#header .div-header .div-header-content #myCarousel .carousel-control-prev span.carousel-control-prev-icon i, #header .div-header .div-header-content #myCarousel .carousel-control-prev span.carousel-control-next-icon i, #header .div-header .div-header-content #myCarousel .carousel-control-next span.carousel-control-prev-icon i, #header .div-header .div-header-content #myCarousel .carousel-control-next span.carousel-control-next-icon i {
+  color: #f71803;
+  font-size: 60px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#header .div-header .div-header-content #myCarousel .carousel-control-prev:hover span.carousel-control-prev-icon i, #header .div-header .div-header-content #myCarousel .carousel-control-prev:hover span.carousel-control-next-icon i, #header .div-header .div-header-content #myCarousel .carousel-control-next:hover span.carousel-control-prev-icon i, #header .div-header .div-header-content #myCarousel .carousel-control-next:hover span.carousel-control-next-icon i {
+  color: darkorange;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#header .div-header .div-header-content #myCarousel .green-eden-span {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
+
+#header .div-header .div-header-content #myCarousel .green-eden-span h1 {
+  width: 100%;
   text-align: center;
   font-size: 60px;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
   color: darkorange;
+}
+
+#header .div-header .div-header-content #myCarousel .green-eden-span h1 em {
+  color: #f71803;
+  font-style: normal;
 }
 
 #about-us .row-about-us {
@@ -135,13 +232,37 @@ body section {
   padding: 0;
 }
 
-#management .row-management .col-management5 .img-management img {
+#management .row-management .col-management5 .img-management .img-managment-a {
+  overflow: hidden;
+  display: block;
+}
+
+#management .row-management .col-management5 .img-management .img-managment-a img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
   max-height: 450px;
+  margin: 0 auto;
+  display: block;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+
+#management .row-management .col-management5 .img-management .img-managment-a:hover img {
+  -o-object-position: top;
+     object-position: top;
+  transition: all 0.6s;
+  transform: scale(1.15);
+  -o-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  -webkit-transform: scale(1.15);
 }
 
 #management .row-management .col-management7 {
@@ -157,5 +278,94 @@ body section {
 
 #management .row-management .col-management7 .cv p {
   text-overflow: ellipsis;
+}
+
+#projects .projects .row-projects {
+  margin-bottom: 30px;
+}
+
+#projects .projects .row-projects .div-img-description-projects {
+  position: relative;
+}
+
+#projects .projects .row-projects .div-img-description-projects .div-img-projects {
+  width: 100%;
+}
+
+#projects .projects .row-projects .div-img-description-projects .div-img-projects a.picture {
+  overflow: hidden;
+  display: block;
+}
+
+#projects .projects .row-projects .div-img-description-projects .div-img-projects a.picture img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 350px;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
+  margin: 0 auto;
+  display: block;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+
+#projects .projects .row-projects .div-img-description-projects .div-img-projects a.picture:hover img {
+  transition: all 0.6s;
+  transform: scale(1.1);
+  -o-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+#projects .projects .row-projects .div-img-description-projects .div-img-projects a.picture::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  top: 0;
+  background: -webkit-gradient(left top, left bottom, color-stop(61%, rgba(255, 255, 255, 0)), color-stop(62%, rgba(255, 255, 255, 0.04)), color-stop(74%, rgba(36, 36, 36, 0.54)), color-stop(76%, rgba(0, 0, 0, 0.54)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(61%, rgba(255, 255, 255, 0)), color-stop(62%, rgba(255, 255, 255, 0.04)), color-stop(74%, rgba(36, 36, 36, 0.54)), color-stop(76%, rgba(0, 0, 0, 0.54)));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 61%, rgba(255, 255, 255, 0.04) 62%, rgba(36, 36, 36, 0.54) 74%, rgba(0, 0, 0, 0.54) 76%);
+}
+
+@media (max-width: 767px) {
+  #projects .projects .row-projects .div-img-description-projects .div-img-projects a.picture::after {
+    width: 100%;
+  }
+}
+
+#projects .projects .row-projects .div-img-description-projects .div-description-projects {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  z-index: 2;
+}
+
+#projects .projects .row-projects .div-img-description-projects .div-description-projects h5 {
+  color: darkorange;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+
+#projects .projects .row-projects .div-img-description-projects .div-description-projects a {
+  text-decoration: none;
+  color: white;
+  background: darkorange;
+  padding: 5px 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#projects .projects .row-projects .div-img-description-projects .div-description-projects a:hover {
+  background: #f71803;
 }
 /*# sourceMappingURL=style.css.map */

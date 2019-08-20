@@ -18,10 +18,11 @@ body h2 {
   text-transform: uppercase;
   color: darkorange;
   font-weight: 600;
+  margin-bottom: 40px;
 }
 
 body section {
-  padding: 30px 0;
+  padding: 70px 0;
 }
 
 #header {
@@ -169,6 +170,22 @@ body section {
   font-variant: small-caps;
 }
 
+#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider p i {
+  color: white;
+}
+
+#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider p i::before {
+  margin: 0;
+}
+
+#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider p i:first-of-type {
+  margin-right: 10px;
+}
+
+#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider p i:last-of-type {
+  margin-left: 10px;
+}
+
 #header .div-header .div-header-content #myCarousel .carousel-control-prev, #header .div-header .div-header-content #myCarousel .carousel-control-next {
   opacity: 1;
 }
@@ -210,16 +227,21 @@ body section {
   font-style: normal;
 }
 
+#about-us {
+  background: radial-gradient(transparent, orange);
+}
+
 #about-us .row-about-us {
   padding: 30px 0;
 }
 
 #management {
-  background-image: url("../image/halftone-yellow/halftone-yellow/halftone-yellow.png");
+  background-image: url("../image/leather_1/leather_1/leather_1.png");
 }
 
 #management .row-management {
   margin: 30px 0;
+  z-index: 1;
 }
 
 #management .row-management h3 {
@@ -230,14 +252,22 @@ body section {
 
 #management .row-management .col-management5 {
   padding: 0;
+  z-index: 2;
+}
+
+#management .row-management .col-management5 .img-management {
+  z-index: 2;
 }
 
 #management .row-management .col-management5 .img-management .img-managment-a {
   overflow: hidden;
   display: block;
+  z-index: 2;
 }
 
 #management .row-management .col-management5 .img-management .img-managment-a img {
+  position: relative;
+  z-index: 2;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -252,7 +282,27 @@ body section {
   -o-transition: all 1s ease;
 }
 
+#management .row-management .col-management5 .img-management .img-managment-a.ilona::before, #management .row-management .col-management5 .img-management .img-managment-a.pawel::before {
+  content: "";
+  position: absolute;
+  border: 4px dotted #f71803;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+#management .row-management .col-management5 .img-management .img-managment-a.ilona::before {
+  left: -20px;
+  top: -20px;
+}
+
+#management .row-management .col-management5 .img-management .img-managment-a.pawel::before {
+  right: -20px;
+  bottom: -20px;
+}
+
 #management .row-management .col-management5 .img-management .img-managment-a:hover img {
+  z-index: 2;
   -o-object-position: top;
      object-position: top;
   transition: all 0.6s;
@@ -266,18 +316,48 @@ body section {
 }
 
 #management .row-management .col-management7 {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.9);
   max-height: 450px;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+#management .row-management .col-management7 h3 {
+  font-size: 35px;
+}
+
+#management .row-management .col-management7 span {
+  padding: 5px 10px;
+  font-size: 20px;
 }
 
 #management .row-management .col-management7 .cv {
-  white-space: wrap;
-  overflow: hidden;
+  overflow: scroll;
   max-height: 300px;
+  padding-top: 30px;
 }
 
 #management .row-management .col-management7 .cv p {
   text-overflow: ellipsis;
+  color: #7b7b7b;
+}
+
+#management .row-management .col-management7 .cv ul {
+  text-align: start;
+  padding: 0;
+  list-style: none;
+  color: #7b7b7b;
+}
+
+#management .row-management .col-management7 ul.pawelChmiel {
+  text-align: start;
+  padding: 0;
+  list-style: none;
+  padding-top: 30px;
+}
+
+#management .row-management .col-management7 ul.pawelChmiel li {
+  color: #7b7b7b;
 }
 
 #projects .projects .row-projects {

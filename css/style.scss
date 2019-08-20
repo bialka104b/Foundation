@@ -20,9 +20,10 @@ body {
     text-transform: uppercase;
     color: darkorange;
     font-weight: 600;
+    margin-bottom: 40px;
   }
   section {
-    padding: 30px 0;
+    padding: 70px 0;
   }
 }
 #header {
@@ -142,6 +143,18 @@ body {
                 border-radius:20px;
                 font-size: 40px;
                 font-variant: small-caps;
+                i {
+                  color:white;
+                  &::before {
+                    margin:0;
+                  }
+                  &:first-of-type {
+                    margin-right: 10px;
+                  }
+                  &:last-of-type {
+                    margin-left: 10px;
+                  }
+                }
               }
             }
           }
@@ -183,20 +196,20 @@ body {
           }
         }
       }
-
-      
     }
   }
 }
 #about-us {
+  background: radial-gradient(transparent, orange);
   .row-about-us {
     padding: 30px 0;
   }
 }
 #management {
-  background-image: url("../image/halftone-yellow/halftone-yellow/halftone-yellow.png");
+  background-image: url("../image/leather_1/leather_1/leather_1.png");
   .row-management {
     margin: 30px 0;
+    z-index:1;
     h3 {
       font-family: "Poppins", sans-serif;
       text-transform: uppercase;
@@ -204,11 +217,16 @@ body {
     }
     .col-management5 {
       padding: 0;
+      z-index:2;
       .img-management {
+        z-index:2;
         .img-managment-a {
           overflow: hidden;
           display:block;
+          z-index:2;
           img {
+            position: relative;
+            z-index: 2;
             width: 100%;
             object-fit: cover;
             object-position: top;
@@ -219,9 +237,33 @@ body {
             -webkit-transition: all 1s ease;
             -moz-transition: all 1s ease;
             -o-transition: all 1s ease;
+            
+          }
+          &.ilona, &.pawel {
+            &::before {
+              content:"";
+              position:absolute;
+              border:4px dotted $red;
+              height:100%;
+              width:100%;
+              z-index:0;
+            }
+          }
+          &.ilona {
+            &::before {
+              left:-20px;
+              top:-20px;
+            }
+          }
+          &.pawel {
+            &::before {
+              right:-20px;
+              bottom:-20px;
+            }
           }
           &:hover {
             img {
+              z-index: 2;
               object-position: top;
               transition:all 0.6s;
               transform:scale(1.15);
@@ -233,20 +275,54 @@ body {
               -webkit-transform: scale(1.15);
             }
           }
+          
         }
-        
       }
     }
     .col-management7 {
-      background: rgba(255, 255, 255, 0.3);
+      background: rgba(255, 255, 255, 0.9);
       max-height: 450px;
+      text-align: center;
+      padding: 30px 15px;
+      h3 {
+        font-size: 35px;
+      }
+      span {
+        padding: 5px 10px;
+        font-size: 20px;
+      }
       .cv {
-        white-space: wrap;
-        overflow: hidden;
+        // white-space: wrap;
+        overflow: scroll;
         max-height: 300px;
+        padding-top:30px;
+      //   &::-webkit-scrollbar-thumb {
+      //     background:rgb(216, 13, 13);
+      // }
+//         scrollbar-face-color: #000000;
+// scrollbar-shadow-color: #2D2C4D;
+// scrollbar-highlight-color:#7D7E94;
+// scrollbar-3dlight-color: #7D7E94;
+// scrollbar-darkshadow-color: #2D2C4D;
+// scrollbar-track-color: rgb(19, 29, 230);
+// scrollbar-arrow-color: #C1C1D1;
         p {
           text-overflow: ellipsis;
+          color:#7b7b7b;
         }
+        ul {
+          text-align: start;
+          padding: 0;
+          list-style: none;
+          color:#7b7b7b;
+        }
+      }
+      ul.pawelChmiel {
+        text-align: start;
+        padding: 0;
+        list-style: none;
+        li {color:#7b7b7b;}
+        padding-top:30px;
       }
     }
   }

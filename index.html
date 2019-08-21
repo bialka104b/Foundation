@@ -122,7 +122,7 @@
               przedsięwzięć w ramach otrzymanych dotacji.</p>
               <a href="plik.pdf" class="pdf">
                 <p>Szczegółowy pis działalności Fundacji znajdziesz tutaj:</p>
-                <div class="img-statute-download"><img src="image/iconPdf.png" id="statute" class="img-responsive"><div class="download-statute">Pobierz Statut</div></div>
+                <div class="img-statute-download"><img src="image/iconPdf — kopia.png" id="statute" class="img-responsive"><div class="download-statute">Pobierz Statut</div></div>
               </a>
           </div>
         </div>
@@ -300,40 +300,42 @@
         <h2><i class='uil uil-envelope-alt'></i>Kontakt<i class='uil uil-phone'></i></h2>
         <div class="row row-contact">
           <div class="col-12 col-lg-5 col-contact">
-            <img src="image/9.jpg" alt="" class="img-responsive"/>
+            <a href="#" class="picture"><img src="image/9.jpg" alt="" class="img-responsive"/></a>
           </div>
           <div class="col-12 col-lg-7 col-contact">
 
             <div id="contact-container">
-              <form class="form-horizontal" id="contact-form">
+              <form class="form-horizontal">
                 <div id="contact-form">
                   <div class="form-group">
-                    <div class="col-xs-12">
+                    <div class="div-form-group">
                       <input type="text" id="email" name="email" class="form-control" placeholder="Wpisz E-mail">
                     </div>
                   </div>
                   <div class="form-group">
-                    <div class="col-xs-12">
-                      <input type="text" id="phone" name="phone" class="form-control" placeholder="Telefon">
+                    <div class="div-form-group">
+                      <input type="text" id="phone" name="phone" class="form-control" placeholder="Telefon opcjonalnie">
                     </div>
                   </div>
                   <div class="form-group">
-                    <div class="col-xs-12">
-                      <input type="text" id="subject" name="subject" placeholder="Temat" value="Zapytanie ze strony FUNDACJA.PL" class="form-control">
+                    <div class="div-form-group">
+                      <input type="text" id="subject" name="subject" placeholder="Temat" value="Wpisz temat wiadomości" class="form-control">
                     </div>
                   </div>
                   <div class="form-group">
-                    <div class="col-xs-12">
+                    <div class="div-form-group">
                       <textarea id="text" name="text" class="form-control" placeholder="Wiadomość..."></textarea>
                     </div>
                   </div>
                   <div class="form-group">
-                    <div class="col-xs-12 small">
-                      <input type="checkbox" id="agreement" name="agreement" required="required" style="position: relative; top: 2px;">Treść zgody na otrzymanie oferty handlowej należy uzupełnić w panelu administratora.</div>
+                    <div class="small">
+                      <input type="checkbox" id="agreement" name="agreement" required="required" style="position: relative; top: 2px;">
+                      Treść zgody na przetwarzanie danych osobowych
+                    </div>
                   </div>
                   <div class="form-group">
-                    <div class="col-xs-12">
-                      <a class="btn btn-success" id="contact-form-send" onclick="send_message(); return false;">wyślij</a>
+                    <div class="col-xs-12" id="btn-warning">
+                      <a class="btn btn-warning" id="contact-form-send" onclick="send_message(); return false;">Wyślij</a>
                     </div>
                   </div>
                 </div>
@@ -344,7 +346,30 @@
       </div>
     </section>
   </main>
-  <footer></footer>
+  <footer id="footer">
+    <div class="container footer">
+      <div class="row row-footer">
+        <div class="col-12 col-lg-4 col-footer col-adress">
+          <p>Fundacja Promocji Kultury i Sztuki</p>
+          <p>ul. Prof, Michała Bobrzyńskiego 39/52,</p>
+          <p>30-348 Kraków</p>
+        </div>
+        <div class="col-12 col-lg-4 col-footer col-social-media">
+          <div class="row">
+            <div class="col-4"><i class='uil uil-facebook'></i></div>
+            <div class="col-4"><i class='uil uil-youtube'></i></div>
+            <div class="col-4"><i class='uil uil-link-alt'></i></div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-footer">
+          <p>Telefon: +48 655 655 655</p>
+          <p>E-mail: fundacja@fundacja.pl</p>
+          <p>Czynne: od 10 do 18</p>
+        </div>
+        <div class="col-12 privacy-police">Polityka prywatności</div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

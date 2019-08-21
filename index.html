@@ -19,10 +19,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <!--STYLE CSS-->
-  <link rel="stylesheet" href="css/style.css" type="text/css" />
   <!--LINK ICON-->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v1.0.0/css/unicons.css">
+  <!--STYLE CSS-->
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
 <body>
@@ -90,9 +90,9 @@
   <main>
     <section id="about-us">
       <div class="container">
-        <h2>O nas</h2>
+        <h2><i class='uil uil-graduation-hat'></i>O nas<i class='uil uil-graduation-hat'></i></h2>
         <div class="row row-about-us">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 col-about-us">
             <p>Małopolska Fundacja Promocji Kultury i Sztuki powstała w 2019 roku.</p>
             <p>Głównym celem Fundacji jest działalność artystyczna i edukacyjna oraz promowanie kultury, sztuki i muzyki
               polskiej. </p>
@@ -105,11 +105,9 @@
             </p>
             <p>Wszystkie działania Fundacji nakierowane są na rozwój zdolności muzycznych oraz ciągłe podnoszenie
               świadomości artystycznej odbiorców sztuki.</p>
+            <p>Fundacja aktywnie współpracuje z <strong>Ogólnokształcącą Szkołą Muzyczną I st. .im. I. J. Paderewskiego</strong> w Krakowie, wspierając jej działania edukacyjne i dydaktyczne.</p>
           </div>
-          <div class="col-12 col-md-6">
-            <p>Fundacja aktywnie współpracuje z <strong>Ogólnokształcącą Szkołą Muzyczną I st. .im. I. J.
-                Paderewskiego</strong> w
-              Krakowie, wspierając jej działania edukacyjne i dydaktyczne.</p>
+          <div class="col-12 col-md-6 col-about-us">
             <p>Lata doświadczeń Fundatorów oraz współpracowników Fundacji przekładają się na sprawne organizowanie
               przedsięwzięć artystycznych na terenie Krakowa i województwa małopolskiego, całego kraju i Europy, a
               aktywna oraz systematyczna współpraca z artystami wielkich formatów zapewnia wysoki poziom realizowanych
@@ -122,13 +120,18 @@
               wydawnicze <strong>„Poezye - Antoni Waśkowski”, „36 wierszy o niepokoju”, „Nad nami orzeł biały”,</strong>
               oraz rozmaitych
               przedsięwzięć w ramach otrzymanych dotacji.</p>
+              <a href="plik.pdf" class="pdf">
+                <p>Szczegółowy pis działalności Fundacji znajdziesz tutaj:</p>
+                <div class="img-statute-download"><img src="image/iconPdf.png" id="statute" class="img-responsive"><div class="download-statute">Pobierz Statut</div></div>
+              </a>
           </div>
         </div>
       </div>
     </section>
     <section id="management">
       <div class="container">
-        <h2>Zarząd</h2>
+        
+        <h2><i class='uil uil-favorite'></i>Zarząd<i class='uil uil-favorite'></i></h2>
         <div class="row row-management">
           <div class="col-12 col-md-4 col-management5">
             <div class="img-management">
@@ -140,6 +143,7 @@
           </div>
           <div class="col-12 col-md-8 col-management7">
             <h3>Ilona Tomera Chmiel</h3>
+            <span class="line"></span>
             <span>Główny Prezes Zarządu</span>
             <div class="cv">
               <p>Absolwentka wydziałów rytmiki i fortepianu w Liceum Muzycznym im. F. Chopina w Krakowie (1991),
@@ -175,12 +179,15 @@
         <div class="row row-management">
           <div class="col-12 col-md-8 col-management7">
             <h3>Paweł Chmiel</h3>
+            <span class="line"></span>
             <span>Główny Fundator Fundacji Promocji Kultury i Sztuki.</span>
-            <ul class="pawelChmiel">
-              <li>Miłośnik i propagator kultury i muzyki polskiej.</li>
-              <li>Współpracował aktywnie w organizacji przedsięwzięć kulturach, zaangażowany w działania prospołeczne i
-                edukacyjne.</li>
-            </ul>
+            <div class="cv">
+              <ul class="pawelChmiel">
+                <li>Miłośnik i propagator kultury i muzyki polskiej.</li>
+                <li>Współpracował aktywnie w organizacji przedsięwzięć kulturach, zaangażowany w działania prospołeczne i
+                  edukacyjne.</li>
+              </ul>
+            </div>
           </div>
           <div class="col-12 col-md-4 col-management5">
             <div class="img-management">
@@ -194,12 +201,13 @@
     </section>
     <section id="projects">
       <div class="container projects">
-        <h2>Projekty</h2>
+        <h2><i class='uil uil-sperms'></i>Projekty<i class='uil uil-sperms'></i></h2>
         <div class="row row-projects">
           <div class="col-12 col-lg-6">
             <div class="div-img-description-projects">
               <div class="div-img-projects">
-                <a href="#" class="picture"><img src="image/1.jpg" alt="" class="img-responsive"></a>
+                <a href="#img1" class="picture"><img src="image/1.jpg" alt="" class="img-responsive"></a>
+                <a href="#_" class="lightbox" id="img1"><img src="image/1.jpg"></a>
               </div>
               <div class="div-description-projects">
                 <h5>Organizujemy festiwale i koncerty</h5>
@@ -210,7 +218,8 @@
           <div class="col-12 col-lg-6">
             <div class="div-img-description-projects">
               <div class="div-img-projects">
-                <a href="#" class="picture"><img src="image/2.jpg" alt="" class="img-responsive"></a>
+                <a href="#img2" class="picture"><img src="image/2.jpg" alt="" class="img-responsive"></a>
+                <a href="#_" class="lightbox" id="img2"><img src="image/2.jpg"></a>
               </div>
               <div class="div-description-projects">
                 <h5>Kursy nauki gry na instrumentach</h5>
@@ -223,7 +232,8 @@
           <div class="col-12 col-lg-6">
             <div class="div-img-description-projects">
               <div class="div-img-projects">
-                <a href="#" class="picture"><img src="image/3.jpg" alt="" class="img-responsive"></a>
+                <a href="#img3" class="picture"><img src="image/3.jpg" alt="" class="img-responsive"></a>
+                <a href="#_" class="lightbox" id="img3"><img src="image/3.jpg"></a>
               </div>
               <div class="div-description-projects">
                 <h5>Zajęcia dla dzieci, młodzieży i dorosłych „U Ignasia”</h5>
@@ -234,7 +244,8 @@
           <div class="col-12 col-lg-6">
             <div class="div-img-description-projects">
               <div class="div-img-projects">
-                <a href="#" class="picture"><img src="image/4.jpg" alt="" class="img-responsive"></a>
+                <a href="#img4" class="picture"><img src="image/4.jpg" alt="" class="img-responsive"></a>
+                <a href="#_" class="lightbox" id="img4"><img src="image/4.jpg"></a>
               </div>
               <div class="div-description-projects">
                 <h5>Zajęcia wokalne</h5>
@@ -247,7 +258,8 @@
           <div class="col-12 col-lg-6">
             <div class="div-img-description-projects">
               <div class="div-img-projects">
-                <a href="#" class="picture"><img src="image/5.jpg" alt="" class="img-responsive"></a>
+                <a href="#img5" class="picture"><img src="image/5.jpg" alt="" class="img-responsive"></a>
+                <a href="#_" class="lightbox" id="img5"><img src="image/5.jpg"></a>
               </div>
               <div class="div-description-projects">
                 <h5>Zajęcia umuzykalniające i rowój zdolności muzycznych</h5>
@@ -258,7 +270,8 @@
           <div class="col-12 col-lg-6">
             <div class="div-img-description-projects">
               <div class="div-img-projects">
-                <a href="#" class="picture"><img src="image/6.jpg" alt="" class="img-responsive"></a>
+                <a href="#img6" class="picture"><img src="image/6.jpg" alt="" class="img-responsive"></a>
+                <a href="#_" class="lightbox" id="img6"><img src="image/6.jpg"></a>
               </div>
               <div class="div-description-projects">
                 <h5>Kursy nauki gry na gitarze</h5>
@@ -269,9 +282,67 @@
         </div>
       </div>
     </section>
-    <section id="cooperation">Współpraca</section>
-    <section id="location">Lokalizacja</section>
-    <section id="contact">Kontakt</section>
+    <section id="cooperation">
+      <div class="container-fluid cooperation">
+        <h2><i class='uil uil-users-alt'></i>Współpraca<i class='uil uil-users-alt'></i></h2>
+      </div>
+    </section>
+    <section id="location">
+      <div class="container-fluid location">
+        <h2><i class='uil uil-map-marker-alt'></i>Lokalizacja<i class='uil uil-map-marker-alt'></i></h2>
+        <div id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.6996721667047!2d19.89094221610565!3d50.01698407941807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165cf5ccd00001%3A0x60e23c35501c9272!2sFundacja+Promocji+Kultury+i+Sztuki+Ad+Operam!5e0!3m2!1spl!2spl!4v1566377331741!5m2!1spl!2spl" frameborder="0" allowfullscreen>bfdfsdfvfv</iframe>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container contact">
+        <h2><i class='uil uil-envelope-alt'></i>Kontakt<i class='uil uil-phone'></i></h2>
+        <div class="row row-contact">
+          <div class="col-12 col-lg-5 col-contact">
+            <img src="image/9.jpg" alt="" class="img-responsive"/>
+          </div>
+          <div class="col-12 col-lg-7 col-contact">
+
+            <div id="contact-container">
+              <form class="form-horizontal" id="contact-form">
+                <div id="contact-form">
+                  <div class="form-group">
+                    <div class="col-xs-12">
+                      <input type="text" id="email" name="email" class="form-control" placeholder="Wpisz E-mail">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-xs-12">
+                      <input type="text" id="phone" name="phone" class="form-control" placeholder="Telefon">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-xs-12">
+                      <input type="text" id="subject" name="subject" placeholder="Temat" value="Zapytanie ze strony FUNDACJA.PL" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-xs-12">
+                      <textarea id="text" name="text" class="form-control" placeholder="Wiadomość..."></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-xs-12 small">
+                      <input type="checkbox" id="agreement" name="agreement" required="required" style="position: relative; top: 2px;">Treść zgody na otrzymanie oferty handlowej należy uzupełnić w panelu administratora.</div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-xs-12">
+                      <a class="btn btn-success" id="contact-form-send" onclick="send_message(); return false;">wyślij</a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer></footer>
 </body>

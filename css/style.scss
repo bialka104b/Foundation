@@ -13,6 +13,7 @@ $b: 2px;
 }
 body {
   height: auto;
+  
   h2 {
     font-family: "Poppins", sans-serif;
     font-size: 45px;
@@ -21,6 +22,19 @@ body {
     color: darkorange;
     font-weight: 600;
     margin-bottom: 40px;
+    i {
+      &:first-of-type {
+        margin-right: 30px;
+      }
+      &:last-of-type {
+        margin-left: 30px;
+      }
+      &::before {
+        margin-right: 0;
+        margin-left: 0;
+        color:darkorange;
+      }
+    }
   }
   section {
     padding: 70px 0;
@@ -69,7 +83,7 @@ body {
               background-color: $red;
               content: "";
               position: absolute;
-              height: 2px;
+              height: 3px;
               width: 100%;
               bottom: -5px;
               left: 0;
@@ -82,7 +96,7 @@ body {
               color: $red;
               &::after {
                 transform: scale(1);
-                height: 2px;
+                height: 3px;
               }
             }
           }
@@ -203,17 +217,52 @@ body {
   background: radial-gradient(transparent, orange);
   .row-about-us {
     padding: 30px 0;
+    .col-about-us {
+      p {
+        strong {
+          color:darkorange;
+        }
+      }
+      a.pdf {
+        font-weight: 700;
+        text-decoration:none;
+        display:block;
+        text-align: center;
+        .img-statute-download {
+          #statute {
+            width:50px;
+            height:50px;
+            display:block;
+            margin:0 auto;
+          }
+          .download-statute {
+            color:$red;
+          }
+        }
+        p {
+          color:black;
+        }
+      }
+    }
   }
 }
 #management {
   background-image: url("../image/leather_1/leather_1/leather_1.png");
   .row-management {
-    margin: 30px 0;
+    margin: 70px 0;
     z-index:1;
     h3 {
       font-family: "Poppins", sans-serif;
       text-transform: uppercase;
       color: darkorange;
+      // &::after {
+      //   content:"";
+      //   position:absol;
+      //   border-bottom:3px solid $red;
+      //   height:3px;
+      //   width:100px;
+      //   z-index:0;
+      // }
     }
     .col-management5 {
       padding: 0;
@@ -243,10 +292,18 @@ body {
             &::before {
               content:"";
               position:absolute;
-              border:4px dotted $red;
+              border:3px solid $red;
               height:100%;
               width:100%;
               z-index:0;
+            }
+            &::after {
+              content:"";
+              position:absolute;
+              border:3px double $orange;
+              height:100%;
+              width:100%;
+              z-index:1;
             }
           }
           &.ilona {
@@ -254,11 +311,19 @@ body {
               left:-20px;
               top:-20px;
             }
+            &::after {
+              right:-20px;
+              bottom:-20px;
+            }
           }
           &.pawel {
             &::before {
               right:-20px;
               bottom:-20px;
+            }
+            &::after {
+              left:-20px;
+              top:-20px;
             }
           }
           &:hover {
@@ -291,21 +356,34 @@ body {
         padding: 5px 10px;
         font-size: 20px;
       }
+      span.line {
+        display:block;
+        padding: 0;
+        width:100px;
+        height:0;
+        border-bottom:3px solid $red;
+        margin: 0 auto;
+        margin-bottom: 15px;
+      }
       .cv {
-        // white-space: wrap;
-        overflow: scroll;
-        max-height: 300px;
-        padding-top:30px;
-      //   &::-webkit-scrollbar-thumb {
-      //     background:rgb(216, 13, 13);
-      // }
-//         scrollbar-face-color: #000000;
-// scrollbar-shadow-color: #2D2C4D;
-// scrollbar-highlight-color:#7D7E94;
-// scrollbar-3dlight-color: #7D7E94;
-// scrollbar-darkshadow-color: #2D2C4D;
-// scrollbar-track-color: rgb(19, 29, 230);
-// scrollbar-arrow-color: #C1C1D1;
+        overflow: auto;
+        max-height: 220px;
+        padding: 0 40px;
+        margin-top: 30px;
+        &::-webkit-scrollbar {
+          width: 12px;
+        }
+        &::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+          -webkit-box-shadow: inset 0 0 6px darkorange;
+          border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            box-shadow: inset 0 0 6px $red;
+            -webkit-box-shadow: inset 0 0 6px darkorange;
+            background: darkorange;
+        }
         p {
           text-overflow: ellipsis;
           color:#7b7b7b;
@@ -314,15 +392,13 @@ body {
           text-align: start;
           padding: 0;
           list-style: none;
-          color:#7b7b7b;
+          li {
+            color: #7b7b7b;
+          }
         }
-      }
-      ul.pawelChmiel {
-        text-align: start;
-        padding: 0;
-        list-style: none;
-        li {color:#7b7b7b;}
-        padding-top:30px;
+        ul.pawelChmiel {
+          padding-top:30px;
+        }
       }
     }
   }
@@ -383,6 +459,26 @@ body {
               }
             }
           }
+          .lightbox { 
+            display: none;
+            position: fixed; 
+            z-index: 999; 
+            width: 100%; 
+            height: 100%; 
+            text-align: center; 
+            top: 0; 
+            left: 0; 
+            background: rgba(0,0,0,0.5);
+            img { 
+              max-width: 90%; 
+              max-height: 80%; 
+              margin-top: 10%; 
+            }
+            &:target {
+              outline: none; 
+              display: block; 
+            }
+          }
         }
         .div-description-projects {
           width:100%;
@@ -405,6 +501,46 @@ body {
               background:$red;
             }
           }
+        }
+      }
+    }
+  }
+}
+#cooperation {
+  background: radial-gradient(transparent, orange);
+  // .cooperation {
+    
+  // }
+}
+#location {
+  background-image: url(../image/leather_1/leather_1/leather_1.png);
+  .location {
+    padding: 0;
+    #map {
+      iframe {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        height: 500px;
+        border: 3px double darkorange;
+      }
+    }
+  }
+}
+#contact {
+  max-height:700px;
+  .contact {
+    .row-contact {
+      .col-contact {
+        height:100%;
+        img {
+          width: 100%;
+          height:100%;
+          display: block;
+          -o-object-fit: cover;
+          object-fit: cover;
+          max-height: 450px;
+          object-position: top;
         }
       }
     }

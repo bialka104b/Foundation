@@ -21,6 +21,20 @@ body h2 {
   margin-bottom: 40px;
 }
 
+body h2 i:first-of-type {
+  margin-right: 30px;
+}
+
+body h2 i:last-of-type {
+  margin-left: 30px;
+}
+
+body h2 i::before {
+  margin-right: 0;
+  margin-left: 0;
+  color: darkorange;
+}
+
 body section {
   padding: 70px 0;
 }
@@ -80,7 +94,7 @@ body section {
   background-color: #f71803;
   content: "";
   position: absolute;
-  height: 2px;
+  height: 3px;
   width: 100%;
   bottom: -5px;
   left: 0;
@@ -97,7 +111,7 @@ body section {
 #header .navbar .navbar-nav ul li.active a::after {
   -webkit-transform: scale(1);
           transform: scale(1);
-  height: 2px;
+  height: 3px;
 }
 
 #header .div-header {
@@ -235,12 +249,38 @@ body section {
   padding: 30px 0;
 }
 
+#about-us .row-about-us .col-about-us p strong {
+  color: darkorange;
+}
+
+#about-us .row-about-us .col-about-us a.pdf {
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+#about-us .row-about-us .col-about-us a.pdf .img-statute-download #statute {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+#about-us .row-about-us .col-about-us a.pdf .img-statute-download .download-statute {
+  color: #f71803;
+}
+
+#about-us .row-about-us .col-about-us a.pdf p {
+  color: black;
+}
+
 #management {
   background-image: url("../image/leather_1/leather_1/leather_1.png");
 }
 
 #management .row-management {
-  margin: 30px 0;
+  margin: 70px 0;
   z-index: 1;
 }
 
@@ -285,10 +325,19 @@ body section {
 #management .row-management .col-management5 .img-management .img-managment-a.ilona::before, #management .row-management .col-management5 .img-management .img-managment-a.pawel::before {
   content: "";
   position: absolute;
-  border: 4px dotted #f71803;
+  border: 3px solid #f71803;
   height: 100%;
   width: 100%;
   z-index: 0;
+}
+
+#management .row-management .col-management5 .img-management .img-managment-a.ilona::after, #management .row-management .col-management5 .img-management .img-managment-a.pawel::after {
+  content: "";
+  position: absolute;
+  border: 3px double #fbb74d;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }
 
 #management .row-management .col-management5 .img-management .img-managment-a.ilona::before {
@@ -296,9 +345,19 @@ body section {
   top: -20px;
 }
 
+#management .row-management .col-management5 .img-management .img-managment-a.ilona::after {
+  right: -20px;
+  bottom: -20px;
+}
+
 #management .row-management .col-management5 .img-management .img-managment-a.pawel::before {
   right: -20px;
   bottom: -20px;
+}
+
+#management .row-management .col-management5 .img-management .img-managment-a.pawel::after {
+  left: -20px;
+  top: -20px;
 }
 
 #management .row-management .col-management5 .img-management .img-managment-a:hover img {
@@ -331,10 +390,38 @@ body section {
   font-size: 20px;
 }
 
+#management .row-management .col-management7 span.line {
+  display: block;
+  padding: 0;
+  width: 100px;
+  height: 0;
+  border-bottom: 3px solid #f71803;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
 #management .row-management .col-management7 .cv {
-  overflow: scroll;
-  max-height: 300px;
-  padding-top: 30px;
+  overflow: auto;
+  max-height: 220px;
+  padding: 0 40px;
+  margin-top: 30px;
+}
+
+#management .row-management .col-management7 .cv::-webkit-scrollbar {
+  width: 12px;
+}
+
+#management .row-management .col-management7 .cv::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px darkorange;
+  border-radius: 10px;
+}
+
+#management .row-management .col-management7 .cv::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px #f71803;
+  -webkit-box-shadow: inset 0 0 6px darkorange;
+  background: darkorange;
 }
 
 #management .row-management .col-management7 .cv p {
@@ -346,18 +433,14 @@ body section {
   text-align: start;
   padding: 0;
   list-style: none;
+}
+
+#management .row-management .col-management7 .cv ul li {
   color: #7b7b7b;
 }
 
-#management .row-management .col-management7 ul.pawelChmiel {
-  text-align: start;
-  padding: 0;
-  list-style: none;
+#management .row-management .col-management7 .cv ul.pawelChmiel {
   padding-top: 30px;
-}
-
-#management .row-management .col-management7 ul.pawelChmiel li {
-  color: #7b7b7b;
 }
 
 #projects .projects .row-projects {
@@ -422,6 +505,29 @@ body section {
   }
 }
 
+#projects .projects .row-projects .div-img-description-projects .div-img-projects .lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#projects .projects .row-projects .div-img-description-projects .div-img-projects .lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 10%;
+}
+
+#projects .projects .row-projects .div-img-description-projects .div-img-projects .lightbox:target {
+  outline: none;
+  display: block;
+}
+
 #projects .projects .row-projects .div-img-description-projects .div-description-projects {
   width: 100%;
   position: absolute;
@@ -447,5 +553,44 @@ body section {
 
 #projects .projects .row-projects .div-img-description-projects .div-description-projects a:hover {
   background: #f71803;
+}
+
+#cooperation {
+  background: radial-gradient(transparent, orange);
+}
+
+#location {
+  background-image: url(../image/leather_1/leather_1/leather_1.png);
+}
+
+#location .location {
+  padding: 0;
+}
+
+#location .location #map iframe {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: 500px;
+  border: 3px double darkorange;
+}
+
+#contact {
+  max-height: 700px;
+}
+
+#contact .contact .row-contact .col-contact {
+  height: 100%;
+}
+
+#contact .contact .row-contact .col-contact img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-height: 450px;
+  -o-object-position: top;
+     object-position: top;
 }
 /*# sourceMappingURL=style.css.map */

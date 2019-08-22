@@ -67,6 +67,12 @@ body section {
   content: none;
 }
 
+@media (max-width: 767px) {
+  #header .navbar .container-fluid {
+    padding: 0;
+  }
+}
+
 #header .navbar .navbar-header {
   max-width: 250px;
 }
@@ -123,6 +129,61 @@ body section {
   -webkit-transform: scale(1);
           transform: scale(1);
   height: 3px;
+}
+
+@media (max-width: 907px) {
+  #header .navbar .navbar-nav {
+    font-size: 14px;
+  }
+}
+
+#header .navbar .icon-menu {
+  display: block;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  #header .navbar .icon-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  #header .navbar .navbar-header {
+    margin: 0;
+  }
+  #header .navbar .navbar-nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 800;
+    margin: 0;
+    margin-top: 100px;
+  }
+  #header .navbar .navbar-nav .list-inline {
+    margin: 0;
+  }
+  #header .navbar .navbar-nav .list-inline li {
+    display: block;
+    padding: 0;
+  }
+}
+
+#header .fixed {
+  height: 60px;
+  padding: 0 0;
+}
+
+#header .fixed .container-fluid {
+  height: 100%;
+}
+
+#header .fixed .container-fluid .navbar-header {
+  height: 100%;
+}
+
+#header .fixed .container-fluid .navbar-header img {
+  height: 100%;
 }
 
 #header .div-header {
@@ -1052,6 +1113,10 @@ body section {
 
 #footer .footer .row-footer .col-footer .adress-text {
   display: inline-table;
+}
+
+#footer .footer .row-footer .col-adress i {
+  margin-right: 10px;
 }
 
 #footer .footer .row-footer .col-social-media {

@@ -50,7 +50,6 @@ body section {
 }
 
 #header {
-  background-image: url("../image/halftone-yellow/halftone-yellow/halftone-yellow.png");
   height: 100vh;
   font-size: 20px;
 }
@@ -242,7 +241,7 @@ body section {
      object-fit: cover;
 }
 
-#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider p {
+#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider .img-slider-text {
   position: absolute;
   top: 50%;
   width: 50%;
@@ -250,26 +249,43 @@ body section {
   padding: 30px 30px;
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
-  color: white;
   border-radius: 20px;
   font-size: 40px;
   font-variant: small-caps;
 }
 
-#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider p i {
+#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider .img-slider-text .img-slider-icon {
+  padding: 0;
+}
+
+#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider .img-slider-text .img-slider-icon i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: white;
+  width: 100%;
+  height: 100%;
 }
 
-#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider p i::before {
-  margin: 0;
+#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider .img-slider-text .img-slider-icon i::before {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 !important;
+  width: 100%;
 }
 
-#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider p i:first-of-type {
-  margin-right: 10px;
+#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider .img-slider-text .img-slider-icon:first-of-type i::before {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
-#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider p i:last-of-type {
-  margin-left: 10px;
+#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider .img-slider-text .img-slider-p {
+  padding: 0;
+}
+
+#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider .img-slider-text .img-slider-p p {
+  color: white;
 }
 
 #header .div-header .div-header-content #myCarousel .carousel-control-prev,
@@ -320,13 +336,13 @@ body section {
   transition: all 0.3s ease;
 }
 
-#header .div-header .div-header-content #myCarousel .green-eden-span {
+#header .div-header .div-header-content #myCarousel .foundation-h1 {
   position: absolute;
   top: 30%;
   width: 100%;
 }
 
-#header .div-header .div-header-content #myCarousel .green-eden-span h1 {
+#header .div-header .div-header-content #myCarousel .foundation-h1 h1 {
   width: 100%;
   text-align: center;
   font-size: 60px;
@@ -335,7 +351,7 @@ body section {
   color: darkorange;
 }
 
-#header .div-header .div-header-content #myCarousel .green-eden-span h1 em {
+#header .div-header .div-header-content #myCarousel .foundation-h1 h1 em {
   color: #f71803;
   font-style: normal;
 }
@@ -852,6 +868,21 @@ body section {
   font-weight: normal;
 }
 
+#cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider .row-cooperation .col-cooperation {
+  width: 150px;
+  height: 180px;
+}
+
+#cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider .row-cooperation .col-cooperation img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+
 #cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider p {
   font-size: 25px;
   line-height: 30px;
@@ -1046,6 +1077,11 @@ body section {
 
 #contact .contact .row-contact .col-contact #contact-container .form-horizontal #contact-form .form-group .small {
   color: #7b7b7b;
+}
+
+#contact .contact .row-contact .col-contact #contact-container .form-horizontal #contact-form .form-group .small input {
+  position: relative;
+  top: 2px;
 }
 
 #contact .contact .row-contact .col-contact:last-of-type {

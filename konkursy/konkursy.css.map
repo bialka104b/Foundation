@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAC;EACP,MAAM,EAAE,IAAI;CACZ;;AACD,AAAA,IAAI,CAAC;EACJ,WAAW,EAAC,KAAK;EACjB,gBAAgB,EAAE,+CAA+C;CACjE",
+    "sources": [
+        "konkursy.scss"
+    ],
+    "names": [],
+    "file": "konkursy.css"
+}

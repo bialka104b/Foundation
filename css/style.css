@@ -93,6 +93,7 @@ body section {
   position: relative;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 
 #header .navbar .navbar-nav ul li a:hover {
@@ -104,6 +105,10 @@ body section {
           transform: scale(1);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+#header .navbar .navbar-nav ul li a:hover i {
+  color: #f71803;
 }
 
 #header .navbar .navbar-nav ul li a::after {
@@ -131,6 +136,7 @@ body section {
 }
 
 #header .navbar .navbar-nav ul li ul#list-education {
+  display: none;
   position: absolute;
   top: 0;
   margin-left: -40px;
@@ -138,10 +144,17 @@ body section {
   padding-top: 100px;
   background: white;
   z-index: -1;
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
 }
 
 #header .navbar .navbar-nav ul li ul#list-education li {
-  padding: 20px 10px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+#header .navbar .navbar-nav ul li ul#list-education li a::after {
+  height: 1.5px;
 }
 
 @media (max-width: 907px) {
@@ -450,10 +463,12 @@ body section {
 }
 
 @-webkit-keyframes blink {
-  0%, 0% {
+  0%,
+  0% {
     background-position: 200% 0;
   }
-  85%, 95% {
+  85%,
+  95% {
     background-position: 100% 0;
   }
   100% {
@@ -462,10 +477,12 @@ body section {
 }
 
 @keyframes blink {
-  0%, 0% {
+  0%,
+  0% {
     background-position: 200% 0;
   }
-  85%, 95% {
+  85%,
+  95% {
     background-position: 100% 0;
   }
   100% {
@@ -473,39 +490,130 @@ body section {
   }
 }
 
-#management, #education {
+#management,
+#education {
   background-image: url("../image/leather_1/leather_1/leather_1.png");
 }
 
-#management .row-management, #management .row-education, #education .row-management, #education .row-education {
+#management .row-management,
+#management .row-education,
+#education .row-management,
+#education .row-education {
   margin: 70px 0;
   z-index: 1;
 }
 
-#management .row-management h3, #management .row-education h3, #education .row-management h3, #education .row-education h3 {
+#management .row-management h3,
+#management .row-education h3,
+#education .row-management h3,
+#education .row-education h3 {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   color: darkorange;
 }
 
-#management .row-management .col-management5, #management .row-management .col-education5, #management .row-education .col-management5, #management .row-education .col-education5, #education .row-management .col-management5, #education .row-management .col-education5, #education .row-education .col-management5, #education .row-education .col-education5 {
+#management .row-management .col-management5,
+#management .row-management .col-education5,
+#management .row-education .col-management5,
+#management .row-education .col-education5,
+#education .row-management .col-management5,
+#education .row-management .col-education5,
+#education .row-education .col-management5,
+#education .row-education .col-education5 {
   padding: 0;
   z-index: 2;
 }
 
-#management .row-management .col-management5 .img-management, #management .row-management .col-management5 .img-education, #management .row-management .col-education5 .img-management, #management .row-management .col-education5 .img-education, #management .row-education .col-management5 .img-management, #management .row-education .col-management5 .img-education, #management .row-education .col-education5 .img-management, #management .row-education .col-education5 .img-education, #education .row-management .col-management5 .img-management, #education .row-management .col-management5 .img-education, #education .row-management .col-education5 .img-management, #education .row-management .col-education5 .img-education, #education .row-education .col-management5 .img-management, #education .row-education .col-management5 .img-education, #education .row-education .col-education5 .img-management, #education .row-education .col-education5 .img-education {
+#management .row-management .col-management5 .img-management,
+#management .row-management .col-management5 .img-education,
+#management .row-management .col-education5 .img-management,
+#management .row-management .col-education5 .img-education,
+#management .row-education .col-management5 .img-management,
+#management .row-education .col-management5 .img-education,
+#management .row-education .col-education5 .img-management,
+#management .row-education .col-education5 .img-education,
+#education .row-management .col-management5 .img-management,
+#education .row-management .col-management5 .img-education,
+#education .row-management .col-education5 .img-management,
+#education .row-management .col-education5 .img-education,
+#education .row-education .col-management5 .img-management,
+#education .row-education .col-management5 .img-education,
+#education .row-education .col-education5 .img-management,
+#education .row-education .col-education5 .img-education {
   z-index: 2;
   height: 100%;
 }
 
-#management .row-management .col-management5 .img-management .img-managment-a, #management .row-management .col-management5 .img-management .img-education-a, #management .row-management .col-management5 .img-education .img-managment-a, #management .row-management .col-management5 .img-education .img-education-a, #management .row-management .col-education5 .img-management .img-managment-a, #management .row-management .col-education5 .img-management .img-education-a, #management .row-management .col-education5 .img-education .img-managment-a, #management .row-management .col-education5 .img-education .img-education-a, #management .row-education .col-management5 .img-management .img-managment-a, #management .row-education .col-management5 .img-management .img-education-a, #management .row-education .col-management5 .img-education .img-managment-a, #management .row-education .col-management5 .img-education .img-education-a, #management .row-education .col-education5 .img-management .img-managment-a, #management .row-education .col-education5 .img-management .img-education-a, #management .row-education .col-education5 .img-education .img-managment-a, #management .row-education .col-education5 .img-education .img-education-a, #education .row-management .col-management5 .img-management .img-managment-a, #education .row-management .col-management5 .img-management .img-education-a, #education .row-management .col-management5 .img-education .img-managment-a, #education .row-management .col-management5 .img-education .img-education-a, #education .row-management .col-education5 .img-management .img-managment-a, #education .row-management .col-education5 .img-management .img-education-a, #education .row-management .col-education5 .img-education .img-managment-a, #education .row-management .col-education5 .img-education .img-education-a, #education .row-education .col-management5 .img-management .img-managment-a, #education .row-education .col-management5 .img-management .img-education-a, #education .row-education .col-management5 .img-education .img-managment-a, #education .row-education .col-management5 .img-education .img-education-a, #education .row-education .col-education5 .img-management .img-managment-a, #education .row-education .col-education5 .img-management .img-education-a, #education .row-education .col-education5 .img-education .img-managment-a, #education .row-education .col-education5 .img-education .img-education-a {
+#management .row-management .col-management5 .img-management .img-managment-a,
+#management .row-management .col-management5 .img-management .img-education-a,
+#management .row-management .col-management5 .img-education .img-managment-a,
+#management .row-management .col-management5 .img-education .img-education-a,
+#management .row-management .col-education5 .img-management .img-managment-a,
+#management .row-management .col-education5 .img-management .img-education-a,
+#management .row-management .col-education5 .img-education .img-managment-a,
+#management .row-management .col-education5 .img-education .img-education-a,
+#management .row-education .col-management5 .img-management .img-managment-a,
+#management .row-education .col-management5 .img-management .img-education-a,
+#management .row-education .col-management5 .img-education .img-managment-a,
+#management .row-education .col-management5 .img-education .img-education-a,
+#management .row-education .col-education5 .img-management .img-managment-a,
+#management .row-education .col-education5 .img-management .img-education-a,
+#management .row-education .col-education5 .img-education .img-managment-a,
+#management .row-education .col-education5 .img-education .img-education-a,
+#education .row-management .col-management5 .img-management .img-managment-a,
+#education .row-management .col-management5 .img-management .img-education-a,
+#education .row-management .col-management5 .img-education .img-managment-a,
+#education .row-management .col-management5 .img-education .img-education-a,
+#education .row-management .col-education5 .img-management .img-managment-a,
+#education .row-management .col-education5 .img-management .img-education-a,
+#education .row-management .col-education5 .img-education .img-managment-a,
+#education .row-management .col-education5 .img-education .img-education-a,
+#education .row-education .col-management5 .img-management .img-managment-a,
+#education .row-education .col-management5 .img-management .img-education-a,
+#education .row-education .col-management5 .img-education .img-managment-a,
+#education .row-education .col-management5 .img-education .img-education-a,
+#education .row-education .col-education5 .img-management .img-managment-a,
+#education .row-education .col-education5 .img-management .img-education-a,
+#education .row-education .col-education5 .img-education .img-managment-a,
+#education .row-education .col-education5 .img-education .img-education-a {
   overflow: hidden;
   display: block;
   z-index: 2;
   height: 100%;
 }
 
-#management .row-management .col-management5 .img-management .img-managment-a img, #management .row-management .col-management5 .img-management .img-education-a img, #management .row-management .col-management5 .img-education .img-managment-a img, #management .row-management .col-management5 .img-education .img-education-a img, #management .row-management .col-education5 .img-management .img-managment-a img, #management .row-management .col-education5 .img-management .img-education-a img, #management .row-management .col-education5 .img-education .img-managment-a img, #management .row-management .col-education5 .img-education .img-education-a img, #management .row-education .col-management5 .img-management .img-managment-a img, #management .row-education .col-management5 .img-management .img-education-a img, #management .row-education .col-management5 .img-education .img-managment-a img, #management .row-education .col-management5 .img-education .img-education-a img, #management .row-education .col-education5 .img-management .img-managment-a img, #management .row-education .col-education5 .img-management .img-education-a img, #management .row-education .col-education5 .img-education .img-managment-a img, #management .row-education .col-education5 .img-education .img-education-a img, #education .row-management .col-management5 .img-management .img-managment-a img, #education .row-management .col-management5 .img-management .img-education-a img, #education .row-management .col-management5 .img-education .img-managment-a img, #education .row-management .col-management5 .img-education .img-education-a img, #education .row-management .col-education5 .img-management .img-managment-a img, #education .row-management .col-education5 .img-management .img-education-a img, #education .row-management .col-education5 .img-education .img-managment-a img, #education .row-management .col-education5 .img-education .img-education-a img, #education .row-education .col-management5 .img-management .img-managment-a img, #education .row-education .col-management5 .img-management .img-education-a img, #education .row-education .col-management5 .img-education .img-managment-a img, #education .row-education .col-management5 .img-education .img-education-a img, #education .row-education .col-education5 .img-management .img-managment-a img, #education .row-education .col-education5 .img-management .img-education-a img, #education .row-education .col-education5 .img-education .img-managment-a img, #education .row-education .col-education5 .img-education .img-education-a img {
+#management .row-management .col-management5 .img-management .img-managment-a img,
+#management .row-management .col-management5 .img-management .img-education-a img,
+#management .row-management .col-management5 .img-education .img-managment-a img,
+#management .row-management .col-management5 .img-education .img-education-a img,
+#management .row-management .col-education5 .img-management .img-managment-a img,
+#management .row-management .col-education5 .img-management .img-education-a img,
+#management .row-management .col-education5 .img-education .img-managment-a img,
+#management .row-management .col-education5 .img-education .img-education-a img,
+#management .row-education .col-management5 .img-management .img-managment-a img,
+#management .row-education .col-management5 .img-management .img-education-a img,
+#management .row-education .col-management5 .img-education .img-managment-a img,
+#management .row-education .col-management5 .img-education .img-education-a img,
+#management .row-education .col-education5 .img-management .img-managment-a img,
+#management .row-education .col-education5 .img-management .img-education-a img,
+#management .row-education .col-education5 .img-education .img-managment-a img,
+#management .row-education .col-education5 .img-education .img-education-a img,
+#education .row-management .col-management5 .img-management .img-managment-a img,
+#education .row-management .col-management5 .img-management .img-education-a img,
+#education .row-management .col-management5 .img-education .img-managment-a img,
+#education .row-management .col-management5 .img-education .img-education-a img,
+#education .row-management .col-education5 .img-management .img-managment-a img,
+#education .row-management .col-education5 .img-management .img-education-a img,
+#education .row-management .col-education5 .img-education .img-managment-a img,
+#education .row-management .col-education5 .img-education .img-education-a img,
+#education .row-education .col-management5 .img-management .img-managment-a img,
+#education .row-education .col-management5 .img-management .img-education-a img,
+#education .row-education .col-management5 .img-education .img-managment-a img,
+#education .row-education .col-management5 .img-education .img-education-a img,
+#education .row-education .col-education5 .img-management .img-managment-a img,
+#education .row-education .col-education5 .img-management .img-education-a img,
+#education .row-education .col-education5 .img-education .img-managment-a img,
+#education .row-education .col-education5 .img-education .img-education-a img {
   position: relative;
   z-index: 2;
   width: 100%;
@@ -522,7 +630,69 @@ body section {
   -o-transition: all 1s ease;
 }
 
-#management .row-management .col-management5 .img-management .img-managment-a.ilona::before, #management .row-management .col-management5 .img-management .img-managment-a.pawel::before, #management .row-management .col-management5 .img-management .img-education-a.ilona::before, #management .row-management .col-management5 .img-management .img-education-a.pawel::before, #management .row-management .col-management5 .img-education .img-managment-a.ilona::before, #management .row-management .col-management5 .img-education .img-managment-a.pawel::before, #management .row-management .col-management5 .img-education .img-education-a.ilona::before, #management .row-management .col-management5 .img-education .img-education-a.pawel::before, #management .row-management .col-education5 .img-management .img-managment-a.ilona::before, #management .row-management .col-education5 .img-management .img-managment-a.pawel::before, #management .row-management .col-education5 .img-management .img-education-a.ilona::before, #management .row-management .col-education5 .img-management .img-education-a.pawel::before, #management .row-management .col-education5 .img-education .img-managment-a.ilona::before, #management .row-management .col-education5 .img-education .img-managment-a.pawel::before, #management .row-management .col-education5 .img-education .img-education-a.ilona::before, #management .row-management .col-education5 .img-education .img-education-a.pawel::before, #management .row-education .col-management5 .img-management .img-managment-a.ilona::before, #management .row-education .col-management5 .img-management .img-managment-a.pawel::before, #management .row-education .col-management5 .img-management .img-education-a.ilona::before, #management .row-education .col-management5 .img-management .img-education-a.pawel::before, #management .row-education .col-management5 .img-education .img-managment-a.ilona::before, #management .row-education .col-management5 .img-education .img-managment-a.pawel::before, #management .row-education .col-management5 .img-education .img-education-a.ilona::before, #management .row-education .col-management5 .img-education .img-education-a.pawel::before, #management .row-education .col-education5 .img-management .img-managment-a.ilona::before, #management .row-education .col-education5 .img-management .img-managment-a.pawel::before, #management .row-education .col-education5 .img-management .img-education-a.ilona::before, #management .row-education .col-education5 .img-management .img-education-a.pawel::before, #management .row-education .col-education5 .img-education .img-managment-a.ilona::before, #management .row-education .col-education5 .img-education .img-managment-a.pawel::before, #management .row-education .col-education5 .img-education .img-education-a.ilona::before, #management .row-education .col-education5 .img-education .img-education-a.pawel::before, #education .row-management .col-management5 .img-management .img-managment-a.ilona::before, #education .row-management .col-management5 .img-management .img-managment-a.pawel::before, #education .row-management .col-management5 .img-management .img-education-a.ilona::before, #education .row-management .col-management5 .img-management .img-education-a.pawel::before, #education .row-management .col-management5 .img-education .img-managment-a.ilona::before, #education .row-management .col-management5 .img-education .img-managment-a.pawel::before, #education .row-management .col-management5 .img-education .img-education-a.ilona::before, #education .row-management .col-management5 .img-education .img-education-a.pawel::before, #education .row-management .col-education5 .img-management .img-managment-a.ilona::before, #education .row-management .col-education5 .img-management .img-managment-a.pawel::before, #education .row-management .col-education5 .img-management .img-education-a.ilona::before, #education .row-management .col-education5 .img-management .img-education-a.pawel::before, #education .row-management .col-education5 .img-education .img-managment-a.ilona::before, #education .row-management .col-education5 .img-education .img-managment-a.pawel::before, #education .row-management .col-education5 .img-education .img-education-a.ilona::before, #education .row-management .col-education5 .img-education .img-education-a.pawel::before, #education .row-education .col-management5 .img-management .img-managment-a.ilona::before, #education .row-education .col-management5 .img-management .img-managment-a.pawel::before, #education .row-education .col-management5 .img-management .img-education-a.ilona::before, #education .row-education .col-management5 .img-management .img-education-a.pawel::before, #education .row-education .col-management5 .img-education .img-managment-a.ilona::before, #education .row-education .col-management5 .img-education .img-managment-a.pawel::before, #education .row-education .col-management5 .img-education .img-education-a.ilona::before, #education .row-education .col-management5 .img-education .img-education-a.pawel::before, #education .row-education .col-education5 .img-management .img-managment-a.ilona::before, #education .row-education .col-education5 .img-management .img-managment-a.pawel::before, #education .row-education .col-education5 .img-management .img-education-a.ilona::before, #education .row-education .col-education5 .img-management .img-education-a.pawel::before, #education .row-education .col-education5 .img-education .img-managment-a.ilona::before, #education .row-education .col-education5 .img-education .img-managment-a.pawel::before, #education .row-education .col-education5 .img-education .img-education-a.ilona::before, #education .row-education .col-education5 .img-education .img-education-a.pawel::before {
+#management .row-management .col-management5 .img-management .img-managment-a.ilona::before, #management .row-management .col-management5 .img-management .img-managment-a.pawel::before,
+#management .row-management .col-management5 .img-management .img-education-a.ilona::before,
+#management .row-management .col-management5 .img-management .img-education-a.pawel::before,
+#management .row-management .col-management5 .img-education .img-managment-a.ilona::before,
+#management .row-management .col-management5 .img-education .img-managment-a.pawel::before,
+#management .row-management .col-management5 .img-education .img-education-a.ilona::before,
+#management .row-management .col-management5 .img-education .img-education-a.pawel::before,
+#management .row-management .col-education5 .img-management .img-managment-a.ilona::before,
+#management .row-management .col-education5 .img-management .img-managment-a.pawel::before,
+#management .row-management .col-education5 .img-management .img-education-a.ilona::before,
+#management .row-management .col-education5 .img-management .img-education-a.pawel::before,
+#management .row-management .col-education5 .img-education .img-managment-a.ilona::before,
+#management .row-management .col-education5 .img-education .img-managment-a.pawel::before,
+#management .row-management .col-education5 .img-education .img-education-a.ilona::before,
+#management .row-management .col-education5 .img-education .img-education-a.pawel::before,
+#management .row-education .col-management5 .img-management .img-managment-a.ilona::before,
+#management .row-education .col-management5 .img-management .img-managment-a.pawel::before,
+#management .row-education .col-management5 .img-management .img-education-a.ilona::before,
+#management .row-education .col-management5 .img-management .img-education-a.pawel::before,
+#management .row-education .col-management5 .img-education .img-managment-a.ilona::before,
+#management .row-education .col-management5 .img-education .img-managment-a.pawel::before,
+#management .row-education .col-management5 .img-education .img-education-a.ilona::before,
+#management .row-education .col-management5 .img-education .img-education-a.pawel::before,
+#management .row-education .col-education5 .img-management .img-managment-a.ilona::before,
+#management .row-education .col-education5 .img-management .img-managment-a.pawel::before,
+#management .row-education .col-education5 .img-management .img-education-a.ilona::before,
+#management .row-education .col-education5 .img-management .img-education-a.pawel::before,
+#management .row-education .col-education5 .img-education .img-managment-a.ilona::before,
+#management .row-education .col-education5 .img-education .img-managment-a.pawel::before,
+#management .row-education .col-education5 .img-education .img-education-a.ilona::before,
+#management .row-education .col-education5 .img-education .img-education-a.pawel::before,
+#education .row-management .col-management5 .img-management .img-managment-a.ilona::before,
+#education .row-management .col-management5 .img-management .img-managment-a.pawel::before,
+#education .row-management .col-management5 .img-management .img-education-a.ilona::before,
+#education .row-management .col-management5 .img-management .img-education-a.pawel::before,
+#education .row-management .col-management5 .img-education .img-managment-a.ilona::before,
+#education .row-management .col-management5 .img-education .img-managment-a.pawel::before,
+#education .row-management .col-management5 .img-education .img-education-a.ilona::before,
+#education .row-management .col-management5 .img-education .img-education-a.pawel::before,
+#education .row-management .col-education5 .img-management .img-managment-a.ilona::before,
+#education .row-management .col-education5 .img-management .img-managment-a.pawel::before,
+#education .row-management .col-education5 .img-management .img-education-a.ilona::before,
+#education .row-management .col-education5 .img-management .img-education-a.pawel::before,
+#education .row-management .col-education5 .img-education .img-managment-a.ilona::before,
+#education .row-management .col-education5 .img-education .img-managment-a.pawel::before,
+#education .row-management .col-education5 .img-education .img-education-a.ilona::before,
+#education .row-management .col-education5 .img-education .img-education-a.pawel::before,
+#education .row-education .col-management5 .img-management .img-managment-a.ilona::before,
+#education .row-education .col-management5 .img-management .img-managment-a.pawel::before,
+#education .row-education .col-management5 .img-management .img-education-a.ilona::before,
+#education .row-education .col-management5 .img-management .img-education-a.pawel::before,
+#education .row-education .col-management5 .img-education .img-managment-a.ilona::before,
+#education .row-education .col-management5 .img-education .img-managment-a.pawel::before,
+#education .row-education .col-management5 .img-education .img-education-a.ilona::before,
+#education .row-education .col-management5 .img-education .img-education-a.pawel::before,
+#education .row-education .col-education5 .img-management .img-managment-a.ilona::before,
+#education .row-education .col-education5 .img-management .img-managment-a.pawel::before,
+#education .row-education .col-education5 .img-management .img-education-a.ilona::before,
+#education .row-education .col-education5 .img-management .img-education-a.pawel::before,
+#education .row-education .col-education5 .img-education .img-managment-a.ilona::before,
+#education .row-education .col-education5 .img-education .img-managment-a.pawel::before,
+#education .row-education .col-education5 .img-education .img-education-a.ilona::before,
+#education .row-education .col-education5 .img-education .img-education-a.pawel::before {
   content: "";
   position: absolute;
   border: 3px solid #f71803;
@@ -532,12 +702,136 @@ body section {
 }
 
 @media (max-width: 991px) {
-  #management .row-management .col-management5 .img-management .img-managment-a.ilona::before, #management .row-management .col-management5 .img-management .img-managment-a.pawel::before, #management .row-management .col-management5 .img-management .img-education-a.ilona::before, #management .row-management .col-management5 .img-management .img-education-a.pawel::before, #management .row-management .col-management5 .img-education .img-managment-a.ilona::before, #management .row-management .col-management5 .img-education .img-managment-a.pawel::before, #management .row-management .col-management5 .img-education .img-education-a.ilona::before, #management .row-management .col-management5 .img-education .img-education-a.pawel::before, #management .row-management .col-education5 .img-management .img-managment-a.ilona::before, #management .row-management .col-education5 .img-management .img-managment-a.pawel::before, #management .row-management .col-education5 .img-management .img-education-a.ilona::before, #management .row-management .col-education5 .img-management .img-education-a.pawel::before, #management .row-management .col-education5 .img-education .img-managment-a.ilona::before, #management .row-management .col-education5 .img-education .img-managment-a.pawel::before, #management .row-management .col-education5 .img-education .img-education-a.ilona::before, #management .row-management .col-education5 .img-education .img-education-a.pawel::before, #management .row-education .col-management5 .img-management .img-managment-a.ilona::before, #management .row-education .col-management5 .img-management .img-managment-a.pawel::before, #management .row-education .col-management5 .img-management .img-education-a.ilona::before, #management .row-education .col-management5 .img-management .img-education-a.pawel::before, #management .row-education .col-management5 .img-education .img-managment-a.ilona::before, #management .row-education .col-management5 .img-education .img-managment-a.pawel::before, #management .row-education .col-management5 .img-education .img-education-a.ilona::before, #management .row-education .col-management5 .img-education .img-education-a.pawel::before, #management .row-education .col-education5 .img-management .img-managment-a.ilona::before, #management .row-education .col-education5 .img-management .img-managment-a.pawel::before, #management .row-education .col-education5 .img-management .img-education-a.ilona::before, #management .row-education .col-education5 .img-management .img-education-a.pawel::before, #management .row-education .col-education5 .img-education .img-managment-a.ilona::before, #management .row-education .col-education5 .img-education .img-managment-a.pawel::before, #management .row-education .col-education5 .img-education .img-education-a.ilona::before, #management .row-education .col-education5 .img-education .img-education-a.pawel::before, #education .row-management .col-management5 .img-management .img-managment-a.ilona::before, #education .row-management .col-management5 .img-management .img-managment-a.pawel::before, #education .row-management .col-management5 .img-management .img-education-a.ilona::before, #education .row-management .col-management5 .img-management .img-education-a.pawel::before, #education .row-management .col-management5 .img-education .img-managment-a.ilona::before, #education .row-management .col-management5 .img-education .img-managment-a.pawel::before, #education .row-management .col-management5 .img-education .img-education-a.ilona::before, #education .row-management .col-management5 .img-education .img-education-a.pawel::before, #education .row-management .col-education5 .img-management .img-managment-a.ilona::before, #education .row-management .col-education5 .img-management .img-managment-a.pawel::before, #education .row-management .col-education5 .img-management .img-education-a.ilona::before, #education .row-management .col-education5 .img-management .img-education-a.pawel::before, #education .row-management .col-education5 .img-education .img-managment-a.ilona::before, #education .row-management .col-education5 .img-education .img-managment-a.pawel::before, #education .row-management .col-education5 .img-education .img-education-a.ilona::before, #education .row-management .col-education5 .img-education .img-education-a.pawel::before, #education .row-education .col-management5 .img-management .img-managment-a.ilona::before, #education .row-education .col-management5 .img-management .img-managment-a.pawel::before, #education .row-education .col-management5 .img-management .img-education-a.ilona::before, #education .row-education .col-management5 .img-management .img-education-a.pawel::before, #education .row-education .col-management5 .img-education .img-managment-a.ilona::before, #education .row-education .col-management5 .img-education .img-managment-a.pawel::before, #education .row-education .col-management5 .img-education .img-education-a.ilona::before, #education .row-education .col-management5 .img-education .img-education-a.pawel::before, #education .row-education .col-education5 .img-management .img-managment-a.ilona::before, #education .row-education .col-education5 .img-management .img-managment-a.pawel::before, #education .row-education .col-education5 .img-management .img-education-a.ilona::before, #education .row-education .col-education5 .img-management .img-education-a.pawel::before, #education .row-education .col-education5 .img-education .img-managment-a.ilona::before, #education .row-education .col-education5 .img-education .img-managment-a.pawel::before, #education .row-education .col-education5 .img-education .img-education-a.ilona::before, #education .row-education .col-education5 .img-education .img-education-a.pawel::before {
+  #management .row-management .col-management5 .img-management .img-managment-a.ilona::before, #management .row-management .col-management5 .img-management .img-managment-a.pawel::before,
+  #management .row-management .col-management5 .img-management .img-education-a.ilona::before,
+  #management .row-management .col-management5 .img-management .img-education-a.pawel::before,
+  #management .row-management .col-management5 .img-education .img-managment-a.ilona::before,
+  #management .row-management .col-management5 .img-education .img-managment-a.pawel::before,
+  #management .row-management .col-management5 .img-education .img-education-a.ilona::before,
+  #management .row-management .col-management5 .img-education .img-education-a.pawel::before,
+  #management .row-management .col-education5 .img-management .img-managment-a.ilona::before,
+  #management .row-management .col-education5 .img-management .img-managment-a.pawel::before,
+  #management .row-management .col-education5 .img-management .img-education-a.ilona::before,
+  #management .row-management .col-education5 .img-management .img-education-a.pawel::before,
+  #management .row-management .col-education5 .img-education .img-managment-a.ilona::before,
+  #management .row-management .col-education5 .img-education .img-managment-a.pawel::before,
+  #management .row-management .col-education5 .img-education .img-education-a.ilona::before,
+  #management .row-management .col-education5 .img-education .img-education-a.pawel::before,
+  #management .row-education .col-management5 .img-management .img-managment-a.ilona::before,
+  #management .row-education .col-management5 .img-management .img-managment-a.pawel::before,
+  #management .row-education .col-management5 .img-management .img-education-a.ilona::before,
+  #management .row-education .col-management5 .img-management .img-education-a.pawel::before,
+  #management .row-education .col-management5 .img-education .img-managment-a.ilona::before,
+  #management .row-education .col-management5 .img-education .img-managment-a.pawel::before,
+  #management .row-education .col-management5 .img-education .img-education-a.ilona::before,
+  #management .row-education .col-management5 .img-education .img-education-a.pawel::before,
+  #management .row-education .col-education5 .img-management .img-managment-a.ilona::before,
+  #management .row-education .col-education5 .img-management .img-managment-a.pawel::before,
+  #management .row-education .col-education5 .img-management .img-education-a.ilona::before,
+  #management .row-education .col-education5 .img-management .img-education-a.pawel::before,
+  #management .row-education .col-education5 .img-education .img-managment-a.ilona::before,
+  #management .row-education .col-education5 .img-education .img-managment-a.pawel::before,
+  #management .row-education .col-education5 .img-education .img-education-a.ilona::before,
+  #management .row-education .col-education5 .img-education .img-education-a.pawel::before,
+  #education .row-management .col-management5 .img-management .img-managment-a.ilona::before,
+  #education .row-management .col-management5 .img-management .img-managment-a.pawel::before,
+  #education .row-management .col-management5 .img-management .img-education-a.ilona::before,
+  #education .row-management .col-management5 .img-management .img-education-a.pawel::before,
+  #education .row-management .col-management5 .img-education .img-managment-a.ilona::before,
+  #education .row-management .col-management5 .img-education .img-managment-a.pawel::before,
+  #education .row-management .col-management5 .img-education .img-education-a.ilona::before,
+  #education .row-management .col-management5 .img-education .img-education-a.pawel::before,
+  #education .row-management .col-education5 .img-management .img-managment-a.ilona::before,
+  #education .row-management .col-education5 .img-management .img-managment-a.pawel::before,
+  #education .row-management .col-education5 .img-management .img-education-a.ilona::before,
+  #education .row-management .col-education5 .img-management .img-education-a.pawel::before,
+  #education .row-management .col-education5 .img-education .img-managment-a.ilona::before,
+  #education .row-management .col-education5 .img-education .img-managment-a.pawel::before,
+  #education .row-management .col-education5 .img-education .img-education-a.ilona::before,
+  #education .row-management .col-education5 .img-education .img-education-a.pawel::before,
+  #education .row-education .col-management5 .img-management .img-managment-a.ilona::before,
+  #education .row-education .col-management5 .img-management .img-managment-a.pawel::before,
+  #education .row-education .col-management5 .img-management .img-education-a.ilona::before,
+  #education .row-education .col-management5 .img-management .img-education-a.pawel::before,
+  #education .row-education .col-management5 .img-education .img-managment-a.ilona::before,
+  #education .row-education .col-management5 .img-education .img-managment-a.pawel::before,
+  #education .row-education .col-management5 .img-education .img-education-a.ilona::before,
+  #education .row-education .col-management5 .img-education .img-education-a.pawel::before,
+  #education .row-education .col-education5 .img-management .img-managment-a.ilona::before,
+  #education .row-education .col-education5 .img-management .img-managment-a.pawel::before,
+  #education .row-education .col-education5 .img-management .img-education-a.ilona::before,
+  #education .row-education .col-education5 .img-management .img-education-a.pawel::before,
+  #education .row-education .col-education5 .img-education .img-managment-a.ilona::before,
+  #education .row-education .col-education5 .img-education .img-managment-a.pawel::before,
+  #education .row-education .col-education5 .img-education .img-education-a.ilona::before,
+  #education .row-education .col-education5 .img-education .img-education-a.pawel::before {
     display: none;
   }
 }
 
-#management .row-management .col-management5 .img-management .img-managment-a.ilona::after, #management .row-management .col-management5 .img-management .img-managment-a.pawel::after, #management .row-management .col-management5 .img-management .img-education-a.ilona::after, #management .row-management .col-management5 .img-management .img-education-a.pawel::after, #management .row-management .col-management5 .img-education .img-managment-a.ilona::after, #management .row-management .col-management5 .img-education .img-managment-a.pawel::after, #management .row-management .col-management5 .img-education .img-education-a.ilona::after, #management .row-management .col-management5 .img-education .img-education-a.pawel::after, #management .row-management .col-education5 .img-management .img-managment-a.ilona::after, #management .row-management .col-education5 .img-management .img-managment-a.pawel::after, #management .row-management .col-education5 .img-management .img-education-a.ilona::after, #management .row-management .col-education5 .img-management .img-education-a.pawel::after, #management .row-management .col-education5 .img-education .img-managment-a.ilona::after, #management .row-management .col-education5 .img-education .img-managment-a.pawel::after, #management .row-management .col-education5 .img-education .img-education-a.ilona::after, #management .row-management .col-education5 .img-education .img-education-a.pawel::after, #management .row-education .col-management5 .img-management .img-managment-a.ilona::after, #management .row-education .col-management5 .img-management .img-managment-a.pawel::after, #management .row-education .col-management5 .img-management .img-education-a.ilona::after, #management .row-education .col-management5 .img-management .img-education-a.pawel::after, #management .row-education .col-management5 .img-education .img-managment-a.ilona::after, #management .row-education .col-management5 .img-education .img-managment-a.pawel::after, #management .row-education .col-management5 .img-education .img-education-a.ilona::after, #management .row-education .col-management5 .img-education .img-education-a.pawel::after, #management .row-education .col-education5 .img-management .img-managment-a.ilona::after, #management .row-education .col-education5 .img-management .img-managment-a.pawel::after, #management .row-education .col-education5 .img-management .img-education-a.ilona::after, #management .row-education .col-education5 .img-management .img-education-a.pawel::after, #management .row-education .col-education5 .img-education .img-managment-a.ilona::after, #management .row-education .col-education5 .img-education .img-managment-a.pawel::after, #management .row-education .col-education5 .img-education .img-education-a.ilona::after, #management .row-education .col-education5 .img-education .img-education-a.pawel::after, #education .row-management .col-management5 .img-management .img-managment-a.ilona::after, #education .row-management .col-management5 .img-management .img-managment-a.pawel::after, #education .row-management .col-management5 .img-management .img-education-a.ilona::after, #education .row-management .col-management5 .img-management .img-education-a.pawel::after, #education .row-management .col-management5 .img-education .img-managment-a.ilona::after, #education .row-management .col-management5 .img-education .img-managment-a.pawel::after, #education .row-management .col-management5 .img-education .img-education-a.ilona::after, #education .row-management .col-management5 .img-education .img-education-a.pawel::after, #education .row-management .col-education5 .img-management .img-managment-a.ilona::after, #education .row-management .col-education5 .img-management .img-managment-a.pawel::after, #education .row-management .col-education5 .img-management .img-education-a.ilona::after, #education .row-management .col-education5 .img-management .img-education-a.pawel::after, #education .row-management .col-education5 .img-education .img-managment-a.ilona::after, #education .row-management .col-education5 .img-education .img-managment-a.pawel::after, #education .row-management .col-education5 .img-education .img-education-a.ilona::after, #education .row-management .col-education5 .img-education .img-education-a.pawel::after, #education .row-education .col-management5 .img-management .img-managment-a.ilona::after, #education .row-education .col-management5 .img-management .img-managment-a.pawel::after, #education .row-education .col-management5 .img-management .img-education-a.ilona::after, #education .row-education .col-management5 .img-management .img-education-a.pawel::after, #education .row-education .col-management5 .img-education .img-managment-a.ilona::after, #education .row-education .col-management5 .img-education .img-managment-a.pawel::after, #education .row-education .col-management5 .img-education .img-education-a.ilona::after, #education .row-education .col-management5 .img-education .img-education-a.pawel::after, #education .row-education .col-education5 .img-management .img-managment-a.ilona::after, #education .row-education .col-education5 .img-management .img-managment-a.pawel::after, #education .row-education .col-education5 .img-management .img-education-a.ilona::after, #education .row-education .col-education5 .img-management .img-education-a.pawel::after, #education .row-education .col-education5 .img-education .img-managment-a.ilona::after, #education .row-education .col-education5 .img-education .img-managment-a.pawel::after, #education .row-education .col-education5 .img-education .img-education-a.ilona::after, #education .row-education .col-education5 .img-education .img-education-a.pawel::after {
+#management .row-management .col-management5 .img-management .img-managment-a.ilona::after, #management .row-management .col-management5 .img-management .img-managment-a.pawel::after,
+#management .row-management .col-management5 .img-management .img-education-a.ilona::after,
+#management .row-management .col-management5 .img-management .img-education-a.pawel::after,
+#management .row-management .col-management5 .img-education .img-managment-a.ilona::after,
+#management .row-management .col-management5 .img-education .img-managment-a.pawel::after,
+#management .row-management .col-management5 .img-education .img-education-a.ilona::after,
+#management .row-management .col-management5 .img-education .img-education-a.pawel::after,
+#management .row-management .col-education5 .img-management .img-managment-a.ilona::after,
+#management .row-management .col-education5 .img-management .img-managment-a.pawel::after,
+#management .row-management .col-education5 .img-management .img-education-a.ilona::after,
+#management .row-management .col-education5 .img-management .img-education-a.pawel::after,
+#management .row-management .col-education5 .img-education .img-managment-a.ilona::after,
+#management .row-management .col-education5 .img-education .img-managment-a.pawel::after,
+#management .row-management .col-education5 .img-education .img-education-a.ilona::after,
+#management .row-management .col-education5 .img-education .img-education-a.pawel::after,
+#management .row-education .col-management5 .img-management .img-managment-a.ilona::after,
+#management .row-education .col-management5 .img-management .img-managment-a.pawel::after,
+#management .row-education .col-management5 .img-management .img-education-a.ilona::after,
+#management .row-education .col-management5 .img-management .img-education-a.pawel::after,
+#management .row-education .col-management5 .img-education .img-managment-a.ilona::after,
+#management .row-education .col-management5 .img-education .img-managment-a.pawel::after,
+#management .row-education .col-management5 .img-education .img-education-a.ilona::after,
+#management .row-education .col-management5 .img-education .img-education-a.pawel::after,
+#management .row-education .col-education5 .img-management .img-managment-a.ilona::after,
+#management .row-education .col-education5 .img-management .img-managment-a.pawel::after,
+#management .row-education .col-education5 .img-management .img-education-a.ilona::after,
+#management .row-education .col-education5 .img-management .img-education-a.pawel::after,
+#management .row-education .col-education5 .img-education .img-managment-a.ilona::after,
+#management .row-education .col-education5 .img-education .img-managment-a.pawel::after,
+#management .row-education .col-education5 .img-education .img-education-a.ilona::after,
+#management .row-education .col-education5 .img-education .img-education-a.pawel::after,
+#education .row-management .col-management5 .img-management .img-managment-a.ilona::after,
+#education .row-management .col-management5 .img-management .img-managment-a.pawel::after,
+#education .row-management .col-management5 .img-management .img-education-a.ilona::after,
+#education .row-management .col-management5 .img-management .img-education-a.pawel::after,
+#education .row-management .col-management5 .img-education .img-managment-a.ilona::after,
+#education .row-management .col-management5 .img-education .img-managment-a.pawel::after,
+#education .row-management .col-management5 .img-education .img-education-a.ilona::after,
+#education .row-management .col-management5 .img-education .img-education-a.pawel::after,
+#education .row-management .col-education5 .img-management .img-managment-a.ilona::after,
+#education .row-management .col-education5 .img-management .img-managment-a.pawel::after,
+#education .row-management .col-education5 .img-management .img-education-a.ilona::after,
+#education .row-management .col-education5 .img-management .img-education-a.pawel::after,
+#education .row-management .col-education5 .img-education .img-managment-a.ilona::after,
+#education .row-management .col-education5 .img-education .img-managment-a.pawel::after,
+#education .row-management .col-education5 .img-education .img-education-a.ilona::after,
+#education .row-management .col-education5 .img-education .img-education-a.pawel::after,
+#education .row-education .col-management5 .img-management .img-managment-a.ilona::after,
+#education .row-education .col-management5 .img-management .img-managment-a.pawel::after,
+#education .row-education .col-management5 .img-management .img-education-a.ilona::after,
+#education .row-education .col-management5 .img-management .img-education-a.pawel::after,
+#education .row-education .col-management5 .img-education .img-managment-a.ilona::after,
+#education .row-education .col-management5 .img-education .img-managment-a.pawel::after,
+#education .row-education .col-management5 .img-education .img-education-a.ilona::after,
+#education .row-education .col-management5 .img-education .img-education-a.pawel::after,
+#education .row-education .col-education5 .img-management .img-managment-a.ilona::after,
+#education .row-education .col-education5 .img-management .img-managment-a.pawel::after,
+#education .row-education .col-education5 .img-management .img-education-a.ilona::after,
+#education .row-education .col-education5 .img-management .img-education-a.pawel::after,
+#education .row-education .col-education5 .img-education .img-managment-a.ilona::after,
+#education .row-education .col-education5 .img-education .img-managment-a.pawel::after,
+#education .row-education .col-education5 .img-education .img-education-a.ilona::after,
+#education .row-education .col-education5 .img-education .img-education-a.pawel::after {
   content: "";
   position: absolute;
   border: 3px double #fbb74d;
@@ -547,32 +841,249 @@ body section {
 }
 
 @media (max-width: 991px) {
-  #management .row-management .col-management5 .img-management .img-managment-a.ilona::after, #management .row-management .col-management5 .img-management .img-managment-a.pawel::after, #management .row-management .col-management5 .img-management .img-education-a.ilona::after, #management .row-management .col-management5 .img-management .img-education-a.pawel::after, #management .row-management .col-management5 .img-education .img-managment-a.ilona::after, #management .row-management .col-management5 .img-education .img-managment-a.pawel::after, #management .row-management .col-management5 .img-education .img-education-a.ilona::after, #management .row-management .col-management5 .img-education .img-education-a.pawel::after, #management .row-management .col-education5 .img-management .img-managment-a.ilona::after, #management .row-management .col-education5 .img-management .img-managment-a.pawel::after, #management .row-management .col-education5 .img-management .img-education-a.ilona::after, #management .row-management .col-education5 .img-management .img-education-a.pawel::after, #management .row-management .col-education5 .img-education .img-managment-a.ilona::after, #management .row-management .col-education5 .img-education .img-managment-a.pawel::after, #management .row-management .col-education5 .img-education .img-education-a.ilona::after, #management .row-management .col-education5 .img-education .img-education-a.pawel::after, #management .row-education .col-management5 .img-management .img-managment-a.ilona::after, #management .row-education .col-management5 .img-management .img-managment-a.pawel::after, #management .row-education .col-management5 .img-management .img-education-a.ilona::after, #management .row-education .col-management5 .img-management .img-education-a.pawel::after, #management .row-education .col-management5 .img-education .img-managment-a.ilona::after, #management .row-education .col-management5 .img-education .img-managment-a.pawel::after, #management .row-education .col-management5 .img-education .img-education-a.ilona::after, #management .row-education .col-management5 .img-education .img-education-a.pawel::after, #management .row-education .col-education5 .img-management .img-managment-a.ilona::after, #management .row-education .col-education5 .img-management .img-managment-a.pawel::after, #management .row-education .col-education5 .img-management .img-education-a.ilona::after, #management .row-education .col-education5 .img-management .img-education-a.pawel::after, #management .row-education .col-education5 .img-education .img-managment-a.ilona::after, #management .row-education .col-education5 .img-education .img-managment-a.pawel::after, #management .row-education .col-education5 .img-education .img-education-a.ilona::after, #management .row-education .col-education5 .img-education .img-education-a.pawel::after, #education .row-management .col-management5 .img-management .img-managment-a.ilona::after, #education .row-management .col-management5 .img-management .img-managment-a.pawel::after, #education .row-management .col-management5 .img-management .img-education-a.ilona::after, #education .row-management .col-management5 .img-management .img-education-a.pawel::after, #education .row-management .col-management5 .img-education .img-managment-a.ilona::after, #education .row-management .col-management5 .img-education .img-managment-a.pawel::after, #education .row-management .col-management5 .img-education .img-education-a.ilona::after, #education .row-management .col-management5 .img-education .img-education-a.pawel::after, #education .row-management .col-education5 .img-management .img-managment-a.ilona::after, #education .row-management .col-education5 .img-management .img-managment-a.pawel::after, #education .row-management .col-education5 .img-management .img-education-a.ilona::after, #education .row-management .col-education5 .img-management .img-education-a.pawel::after, #education .row-management .col-education5 .img-education .img-managment-a.ilona::after, #education .row-management .col-education5 .img-education .img-managment-a.pawel::after, #education .row-management .col-education5 .img-education .img-education-a.ilona::after, #education .row-management .col-education5 .img-education .img-education-a.pawel::after, #education .row-education .col-management5 .img-management .img-managment-a.ilona::after, #education .row-education .col-management5 .img-management .img-managment-a.pawel::after, #education .row-education .col-management5 .img-management .img-education-a.ilona::after, #education .row-education .col-management5 .img-management .img-education-a.pawel::after, #education .row-education .col-management5 .img-education .img-managment-a.ilona::after, #education .row-education .col-management5 .img-education .img-managment-a.pawel::after, #education .row-education .col-management5 .img-education .img-education-a.ilona::after, #education .row-education .col-management5 .img-education .img-education-a.pawel::after, #education .row-education .col-education5 .img-management .img-managment-a.ilona::after, #education .row-education .col-education5 .img-management .img-managment-a.pawel::after, #education .row-education .col-education5 .img-management .img-education-a.ilona::after, #education .row-education .col-education5 .img-management .img-education-a.pawel::after, #education .row-education .col-education5 .img-education .img-managment-a.ilona::after, #education .row-education .col-education5 .img-education .img-managment-a.pawel::after, #education .row-education .col-education5 .img-education .img-education-a.ilona::after, #education .row-education .col-education5 .img-education .img-education-a.pawel::after {
+  #management .row-management .col-management5 .img-management .img-managment-a.ilona::after, #management .row-management .col-management5 .img-management .img-managment-a.pawel::after,
+  #management .row-management .col-management5 .img-management .img-education-a.ilona::after,
+  #management .row-management .col-management5 .img-management .img-education-a.pawel::after,
+  #management .row-management .col-management5 .img-education .img-managment-a.ilona::after,
+  #management .row-management .col-management5 .img-education .img-managment-a.pawel::after,
+  #management .row-management .col-management5 .img-education .img-education-a.ilona::after,
+  #management .row-management .col-management5 .img-education .img-education-a.pawel::after,
+  #management .row-management .col-education5 .img-management .img-managment-a.ilona::after,
+  #management .row-management .col-education5 .img-management .img-managment-a.pawel::after,
+  #management .row-management .col-education5 .img-management .img-education-a.ilona::after,
+  #management .row-management .col-education5 .img-management .img-education-a.pawel::after,
+  #management .row-management .col-education5 .img-education .img-managment-a.ilona::after,
+  #management .row-management .col-education5 .img-education .img-managment-a.pawel::after,
+  #management .row-management .col-education5 .img-education .img-education-a.ilona::after,
+  #management .row-management .col-education5 .img-education .img-education-a.pawel::after,
+  #management .row-education .col-management5 .img-management .img-managment-a.ilona::after,
+  #management .row-education .col-management5 .img-management .img-managment-a.pawel::after,
+  #management .row-education .col-management5 .img-management .img-education-a.ilona::after,
+  #management .row-education .col-management5 .img-management .img-education-a.pawel::after,
+  #management .row-education .col-management5 .img-education .img-managment-a.ilona::after,
+  #management .row-education .col-management5 .img-education .img-managment-a.pawel::after,
+  #management .row-education .col-management5 .img-education .img-education-a.ilona::after,
+  #management .row-education .col-management5 .img-education .img-education-a.pawel::after,
+  #management .row-education .col-education5 .img-management .img-managment-a.ilona::after,
+  #management .row-education .col-education5 .img-management .img-managment-a.pawel::after,
+  #management .row-education .col-education5 .img-management .img-education-a.ilona::after,
+  #management .row-education .col-education5 .img-management .img-education-a.pawel::after,
+  #management .row-education .col-education5 .img-education .img-managment-a.ilona::after,
+  #management .row-education .col-education5 .img-education .img-managment-a.pawel::after,
+  #management .row-education .col-education5 .img-education .img-education-a.ilona::after,
+  #management .row-education .col-education5 .img-education .img-education-a.pawel::after,
+  #education .row-management .col-management5 .img-management .img-managment-a.ilona::after,
+  #education .row-management .col-management5 .img-management .img-managment-a.pawel::after,
+  #education .row-management .col-management5 .img-management .img-education-a.ilona::after,
+  #education .row-management .col-management5 .img-management .img-education-a.pawel::after,
+  #education .row-management .col-management5 .img-education .img-managment-a.ilona::after,
+  #education .row-management .col-management5 .img-education .img-managment-a.pawel::after,
+  #education .row-management .col-management5 .img-education .img-education-a.ilona::after,
+  #education .row-management .col-management5 .img-education .img-education-a.pawel::after,
+  #education .row-management .col-education5 .img-management .img-managment-a.ilona::after,
+  #education .row-management .col-education5 .img-management .img-managment-a.pawel::after,
+  #education .row-management .col-education5 .img-management .img-education-a.ilona::after,
+  #education .row-management .col-education5 .img-management .img-education-a.pawel::after,
+  #education .row-management .col-education5 .img-education .img-managment-a.ilona::after,
+  #education .row-management .col-education5 .img-education .img-managment-a.pawel::after,
+  #education .row-management .col-education5 .img-education .img-education-a.ilona::after,
+  #education .row-management .col-education5 .img-education .img-education-a.pawel::after,
+  #education .row-education .col-management5 .img-management .img-managment-a.ilona::after,
+  #education .row-education .col-management5 .img-management .img-managment-a.pawel::after,
+  #education .row-education .col-management5 .img-management .img-education-a.ilona::after,
+  #education .row-education .col-management5 .img-management .img-education-a.pawel::after,
+  #education .row-education .col-management5 .img-education .img-managment-a.ilona::after,
+  #education .row-education .col-management5 .img-education .img-managment-a.pawel::after,
+  #education .row-education .col-management5 .img-education .img-education-a.ilona::after,
+  #education .row-education .col-management5 .img-education .img-education-a.pawel::after,
+  #education .row-education .col-education5 .img-management .img-managment-a.ilona::after,
+  #education .row-education .col-education5 .img-management .img-managment-a.pawel::after,
+  #education .row-education .col-education5 .img-management .img-education-a.ilona::after,
+  #education .row-education .col-education5 .img-management .img-education-a.pawel::after,
+  #education .row-education .col-education5 .img-education .img-managment-a.ilona::after,
+  #education .row-education .col-education5 .img-education .img-managment-a.pawel::after,
+  #education .row-education .col-education5 .img-education .img-education-a.ilona::after,
+  #education .row-education .col-education5 .img-education .img-education-a.pawel::after {
     display: none;
   }
 }
 
-#management .row-management .col-management5 .img-management .img-managment-a.ilona::before, #management .row-management .col-management5 .img-management .img-education-a.ilona::before, #management .row-management .col-management5 .img-education .img-managment-a.ilona::before, #management .row-management .col-management5 .img-education .img-education-a.ilona::before, #management .row-management .col-education5 .img-management .img-managment-a.ilona::before, #management .row-management .col-education5 .img-management .img-education-a.ilona::before, #management .row-management .col-education5 .img-education .img-managment-a.ilona::before, #management .row-management .col-education5 .img-education .img-education-a.ilona::before, #management .row-education .col-management5 .img-management .img-managment-a.ilona::before, #management .row-education .col-management5 .img-management .img-education-a.ilona::before, #management .row-education .col-management5 .img-education .img-managment-a.ilona::before, #management .row-education .col-management5 .img-education .img-education-a.ilona::before, #management .row-education .col-education5 .img-management .img-managment-a.ilona::before, #management .row-education .col-education5 .img-management .img-education-a.ilona::before, #management .row-education .col-education5 .img-education .img-managment-a.ilona::before, #management .row-education .col-education5 .img-education .img-education-a.ilona::before, #education .row-management .col-management5 .img-management .img-managment-a.ilona::before, #education .row-management .col-management5 .img-management .img-education-a.ilona::before, #education .row-management .col-management5 .img-education .img-managment-a.ilona::before, #education .row-management .col-management5 .img-education .img-education-a.ilona::before, #education .row-management .col-education5 .img-management .img-managment-a.ilona::before, #education .row-management .col-education5 .img-management .img-education-a.ilona::before, #education .row-management .col-education5 .img-education .img-managment-a.ilona::before, #education .row-management .col-education5 .img-education .img-education-a.ilona::before, #education .row-education .col-management5 .img-management .img-managment-a.ilona::before, #education .row-education .col-management5 .img-management .img-education-a.ilona::before, #education .row-education .col-management5 .img-education .img-managment-a.ilona::before, #education .row-education .col-management5 .img-education .img-education-a.ilona::before, #education .row-education .col-education5 .img-management .img-managment-a.ilona::before, #education .row-education .col-education5 .img-management .img-education-a.ilona::before, #education .row-education .col-education5 .img-education .img-managment-a.ilona::before, #education .row-education .col-education5 .img-education .img-education-a.ilona::before {
+#management .row-management .col-management5 .img-management .img-managment-a.ilona::before,
+#management .row-management .col-management5 .img-management .img-education-a.ilona::before,
+#management .row-management .col-management5 .img-education .img-managment-a.ilona::before,
+#management .row-management .col-management5 .img-education .img-education-a.ilona::before,
+#management .row-management .col-education5 .img-management .img-managment-a.ilona::before,
+#management .row-management .col-education5 .img-management .img-education-a.ilona::before,
+#management .row-management .col-education5 .img-education .img-managment-a.ilona::before,
+#management .row-management .col-education5 .img-education .img-education-a.ilona::before,
+#management .row-education .col-management5 .img-management .img-managment-a.ilona::before,
+#management .row-education .col-management5 .img-management .img-education-a.ilona::before,
+#management .row-education .col-management5 .img-education .img-managment-a.ilona::before,
+#management .row-education .col-management5 .img-education .img-education-a.ilona::before,
+#management .row-education .col-education5 .img-management .img-managment-a.ilona::before,
+#management .row-education .col-education5 .img-management .img-education-a.ilona::before,
+#management .row-education .col-education5 .img-education .img-managment-a.ilona::before,
+#management .row-education .col-education5 .img-education .img-education-a.ilona::before,
+#education .row-management .col-management5 .img-management .img-managment-a.ilona::before,
+#education .row-management .col-management5 .img-management .img-education-a.ilona::before,
+#education .row-management .col-management5 .img-education .img-managment-a.ilona::before,
+#education .row-management .col-management5 .img-education .img-education-a.ilona::before,
+#education .row-management .col-education5 .img-management .img-managment-a.ilona::before,
+#education .row-management .col-education5 .img-management .img-education-a.ilona::before,
+#education .row-management .col-education5 .img-education .img-managment-a.ilona::before,
+#education .row-management .col-education5 .img-education .img-education-a.ilona::before,
+#education .row-education .col-management5 .img-management .img-managment-a.ilona::before,
+#education .row-education .col-management5 .img-management .img-education-a.ilona::before,
+#education .row-education .col-management5 .img-education .img-managment-a.ilona::before,
+#education .row-education .col-management5 .img-education .img-education-a.ilona::before,
+#education .row-education .col-education5 .img-management .img-managment-a.ilona::before,
+#education .row-education .col-education5 .img-management .img-education-a.ilona::before,
+#education .row-education .col-education5 .img-education .img-managment-a.ilona::before,
+#education .row-education .col-education5 .img-education .img-education-a.ilona::before {
   left: -20px;
   top: -20px;
 }
 
-#management .row-management .col-management5 .img-management .img-managment-a.ilona::after, #management .row-management .col-management5 .img-management .img-education-a.ilona::after, #management .row-management .col-management5 .img-education .img-managment-a.ilona::after, #management .row-management .col-management5 .img-education .img-education-a.ilona::after, #management .row-management .col-education5 .img-management .img-managment-a.ilona::after, #management .row-management .col-education5 .img-management .img-education-a.ilona::after, #management .row-management .col-education5 .img-education .img-managment-a.ilona::after, #management .row-management .col-education5 .img-education .img-education-a.ilona::after, #management .row-education .col-management5 .img-management .img-managment-a.ilona::after, #management .row-education .col-management5 .img-management .img-education-a.ilona::after, #management .row-education .col-management5 .img-education .img-managment-a.ilona::after, #management .row-education .col-management5 .img-education .img-education-a.ilona::after, #management .row-education .col-education5 .img-management .img-managment-a.ilona::after, #management .row-education .col-education5 .img-management .img-education-a.ilona::after, #management .row-education .col-education5 .img-education .img-managment-a.ilona::after, #management .row-education .col-education5 .img-education .img-education-a.ilona::after, #education .row-management .col-management5 .img-management .img-managment-a.ilona::after, #education .row-management .col-management5 .img-management .img-education-a.ilona::after, #education .row-management .col-management5 .img-education .img-managment-a.ilona::after, #education .row-management .col-management5 .img-education .img-education-a.ilona::after, #education .row-management .col-education5 .img-management .img-managment-a.ilona::after, #education .row-management .col-education5 .img-management .img-education-a.ilona::after, #education .row-management .col-education5 .img-education .img-managment-a.ilona::after, #education .row-management .col-education5 .img-education .img-education-a.ilona::after, #education .row-education .col-management5 .img-management .img-managment-a.ilona::after, #education .row-education .col-management5 .img-management .img-education-a.ilona::after, #education .row-education .col-management5 .img-education .img-managment-a.ilona::after, #education .row-education .col-management5 .img-education .img-education-a.ilona::after, #education .row-education .col-education5 .img-management .img-managment-a.ilona::after, #education .row-education .col-education5 .img-management .img-education-a.ilona::after, #education .row-education .col-education5 .img-education .img-managment-a.ilona::after, #education .row-education .col-education5 .img-education .img-education-a.ilona::after {
+#management .row-management .col-management5 .img-management .img-managment-a.ilona::after,
+#management .row-management .col-management5 .img-management .img-education-a.ilona::after,
+#management .row-management .col-management5 .img-education .img-managment-a.ilona::after,
+#management .row-management .col-management5 .img-education .img-education-a.ilona::after,
+#management .row-management .col-education5 .img-management .img-managment-a.ilona::after,
+#management .row-management .col-education5 .img-management .img-education-a.ilona::after,
+#management .row-management .col-education5 .img-education .img-managment-a.ilona::after,
+#management .row-management .col-education5 .img-education .img-education-a.ilona::after,
+#management .row-education .col-management5 .img-management .img-managment-a.ilona::after,
+#management .row-education .col-management5 .img-management .img-education-a.ilona::after,
+#management .row-education .col-management5 .img-education .img-managment-a.ilona::after,
+#management .row-education .col-management5 .img-education .img-education-a.ilona::after,
+#management .row-education .col-education5 .img-management .img-managment-a.ilona::after,
+#management .row-education .col-education5 .img-management .img-education-a.ilona::after,
+#management .row-education .col-education5 .img-education .img-managment-a.ilona::after,
+#management .row-education .col-education5 .img-education .img-education-a.ilona::after,
+#education .row-management .col-management5 .img-management .img-managment-a.ilona::after,
+#education .row-management .col-management5 .img-management .img-education-a.ilona::after,
+#education .row-management .col-management5 .img-education .img-managment-a.ilona::after,
+#education .row-management .col-management5 .img-education .img-education-a.ilona::after,
+#education .row-management .col-education5 .img-management .img-managment-a.ilona::after,
+#education .row-management .col-education5 .img-management .img-education-a.ilona::after,
+#education .row-management .col-education5 .img-education .img-managment-a.ilona::after,
+#education .row-management .col-education5 .img-education .img-education-a.ilona::after,
+#education .row-education .col-management5 .img-management .img-managment-a.ilona::after,
+#education .row-education .col-management5 .img-management .img-education-a.ilona::after,
+#education .row-education .col-management5 .img-education .img-managment-a.ilona::after,
+#education .row-education .col-management5 .img-education .img-education-a.ilona::after,
+#education .row-education .col-education5 .img-management .img-managment-a.ilona::after,
+#education .row-education .col-education5 .img-management .img-education-a.ilona::after,
+#education .row-education .col-education5 .img-education .img-managment-a.ilona::after,
+#education .row-education .col-education5 .img-education .img-education-a.ilona::after {
   right: -20px;
   bottom: -20px;
 }
 
-#management .row-management .col-management5 .img-management .img-managment-a.pawel::before, #management .row-management .col-management5 .img-management .img-education-a.pawel::before, #management .row-management .col-management5 .img-education .img-managment-a.pawel::before, #management .row-management .col-management5 .img-education .img-education-a.pawel::before, #management .row-management .col-education5 .img-management .img-managment-a.pawel::before, #management .row-management .col-education5 .img-management .img-education-a.pawel::before, #management .row-management .col-education5 .img-education .img-managment-a.pawel::before, #management .row-management .col-education5 .img-education .img-education-a.pawel::before, #management .row-education .col-management5 .img-management .img-managment-a.pawel::before, #management .row-education .col-management5 .img-management .img-education-a.pawel::before, #management .row-education .col-management5 .img-education .img-managment-a.pawel::before, #management .row-education .col-management5 .img-education .img-education-a.pawel::before, #management .row-education .col-education5 .img-management .img-managment-a.pawel::before, #management .row-education .col-education5 .img-management .img-education-a.pawel::before, #management .row-education .col-education5 .img-education .img-managment-a.pawel::before, #management .row-education .col-education5 .img-education .img-education-a.pawel::before, #education .row-management .col-management5 .img-management .img-managment-a.pawel::before, #education .row-management .col-management5 .img-management .img-education-a.pawel::before, #education .row-management .col-management5 .img-education .img-managment-a.pawel::before, #education .row-management .col-management5 .img-education .img-education-a.pawel::before, #education .row-management .col-education5 .img-management .img-managment-a.pawel::before, #education .row-management .col-education5 .img-management .img-education-a.pawel::before, #education .row-management .col-education5 .img-education .img-managment-a.pawel::before, #education .row-management .col-education5 .img-education .img-education-a.pawel::before, #education .row-education .col-management5 .img-management .img-managment-a.pawel::before, #education .row-education .col-management5 .img-management .img-education-a.pawel::before, #education .row-education .col-management5 .img-education .img-managment-a.pawel::before, #education .row-education .col-management5 .img-education .img-education-a.pawel::before, #education .row-education .col-education5 .img-management .img-managment-a.pawel::before, #education .row-education .col-education5 .img-management .img-education-a.pawel::before, #education .row-education .col-education5 .img-education .img-managment-a.pawel::before, #education .row-education .col-education5 .img-education .img-education-a.pawel::before {
+#management .row-management .col-management5 .img-management .img-managment-a.pawel::before,
+#management .row-management .col-management5 .img-management .img-education-a.pawel::before,
+#management .row-management .col-management5 .img-education .img-managment-a.pawel::before,
+#management .row-management .col-management5 .img-education .img-education-a.pawel::before,
+#management .row-management .col-education5 .img-management .img-managment-a.pawel::before,
+#management .row-management .col-education5 .img-management .img-education-a.pawel::before,
+#management .row-management .col-education5 .img-education .img-managment-a.pawel::before,
+#management .row-management .col-education5 .img-education .img-education-a.pawel::before,
+#management .row-education .col-management5 .img-management .img-managment-a.pawel::before,
+#management .row-education .col-management5 .img-management .img-education-a.pawel::before,
+#management .row-education .col-management5 .img-education .img-managment-a.pawel::before,
+#management .row-education .col-management5 .img-education .img-education-a.pawel::before,
+#management .row-education .col-education5 .img-management .img-managment-a.pawel::before,
+#management .row-education .col-education5 .img-management .img-education-a.pawel::before,
+#management .row-education .col-education5 .img-education .img-managment-a.pawel::before,
+#management .row-education .col-education5 .img-education .img-education-a.pawel::before,
+#education .row-management .col-management5 .img-management .img-managment-a.pawel::before,
+#education .row-management .col-management5 .img-management .img-education-a.pawel::before,
+#education .row-management .col-management5 .img-education .img-managment-a.pawel::before,
+#education .row-management .col-management5 .img-education .img-education-a.pawel::before,
+#education .row-management .col-education5 .img-management .img-managment-a.pawel::before,
+#education .row-management .col-education5 .img-management .img-education-a.pawel::before,
+#education .row-management .col-education5 .img-education .img-managment-a.pawel::before,
+#education .row-management .col-education5 .img-education .img-education-a.pawel::before,
+#education .row-education .col-management5 .img-management .img-managment-a.pawel::before,
+#education .row-education .col-management5 .img-management .img-education-a.pawel::before,
+#education .row-education .col-management5 .img-education .img-managment-a.pawel::before,
+#education .row-education .col-management5 .img-education .img-education-a.pawel::before,
+#education .row-education .col-education5 .img-management .img-managment-a.pawel::before,
+#education .row-education .col-education5 .img-management .img-education-a.pawel::before,
+#education .row-education .col-education5 .img-education .img-managment-a.pawel::before,
+#education .row-education .col-education5 .img-education .img-education-a.pawel::before {
   right: -20px;
   bottom: -20px;
 }
 
-#management .row-management .col-management5 .img-management .img-managment-a.pawel::after, #management .row-management .col-management5 .img-management .img-education-a.pawel::after, #management .row-management .col-management5 .img-education .img-managment-a.pawel::after, #management .row-management .col-management5 .img-education .img-education-a.pawel::after, #management .row-management .col-education5 .img-management .img-managment-a.pawel::after, #management .row-management .col-education5 .img-management .img-education-a.pawel::after, #management .row-management .col-education5 .img-education .img-managment-a.pawel::after, #management .row-management .col-education5 .img-education .img-education-a.pawel::after, #management .row-education .col-management5 .img-management .img-managment-a.pawel::after, #management .row-education .col-management5 .img-management .img-education-a.pawel::after, #management .row-education .col-management5 .img-education .img-managment-a.pawel::after, #management .row-education .col-management5 .img-education .img-education-a.pawel::after, #management .row-education .col-education5 .img-management .img-managment-a.pawel::after, #management .row-education .col-education5 .img-management .img-education-a.pawel::after, #management .row-education .col-education5 .img-education .img-managment-a.pawel::after, #management .row-education .col-education5 .img-education .img-education-a.pawel::after, #education .row-management .col-management5 .img-management .img-managment-a.pawel::after, #education .row-management .col-management5 .img-management .img-education-a.pawel::after, #education .row-management .col-management5 .img-education .img-managment-a.pawel::after, #education .row-management .col-management5 .img-education .img-education-a.pawel::after, #education .row-management .col-education5 .img-management .img-managment-a.pawel::after, #education .row-management .col-education5 .img-management .img-education-a.pawel::after, #education .row-management .col-education5 .img-education .img-managment-a.pawel::after, #education .row-management .col-education5 .img-education .img-education-a.pawel::after, #education .row-education .col-management5 .img-management .img-managment-a.pawel::after, #education .row-education .col-management5 .img-management .img-education-a.pawel::after, #education .row-education .col-management5 .img-education .img-managment-a.pawel::after, #education .row-education .col-management5 .img-education .img-education-a.pawel::after, #education .row-education .col-education5 .img-management .img-managment-a.pawel::after, #education .row-education .col-education5 .img-management .img-education-a.pawel::after, #education .row-education .col-education5 .img-education .img-managment-a.pawel::after, #education .row-education .col-education5 .img-education .img-education-a.pawel::after {
+#management .row-management .col-management5 .img-management .img-managment-a.pawel::after,
+#management .row-management .col-management5 .img-management .img-education-a.pawel::after,
+#management .row-management .col-management5 .img-education .img-managment-a.pawel::after,
+#management .row-management .col-management5 .img-education .img-education-a.pawel::after,
+#management .row-management .col-education5 .img-management .img-managment-a.pawel::after,
+#management .row-management .col-education5 .img-management .img-education-a.pawel::after,
+#management .row-management .col-education5 .img-education .img-managment-a.pawel::after,
+#management .row-management .col-education5 .img-education .img-education-a.pawel::after,
+#management .row-education .col-management5 .img-management .img-managment-a.pawel::after,
+#management .row-education .col-management5 .img-management .img-education-a.pawel::after,
+#management .row-education .col-management5 .img-education .img-managment-a.pawel::after,
+#management .row-education .col-management5 .img-education .img-education-a.pawel::after,
+#management .row-education .col-education5 .img-management .img-managment-a.pawel::after,
+#management .row-education .col-education5 .img-management .img-education-a.pawel::after,
+#management .row-education .col-education5 .img-education .img-managment-a.pawel::after,
+#management .row-education .col-education5 .img-education .img-education-a.pawel::after,
+#education .row-management .col-management5 .img-management .img-managment-a.pawel::after,
+#education .row-management .col-management5 .img-management .img-education-a.pawel::after,
+#education .row-management .col-management5 .img-education .img-managment-a.pawel::after,
+#education .row-management .col-management5 .img-education .img-education-a.pawel::after,
+#education .row-management .col-education5 .img-management .img-managment-a.pawel::after,
+#education .row-management .col-education5 .img-management .img-education-a.pawel::after,
+#education .row-management .col-education5 .img-education .img-managment-a.pawel::after,
+#education .row-management .col-education5 .img-education .img-education-a.pawel::after,
+#education .row-education .col-management5 .img-management .img-managment-a.pawel::after,
+#education .row-education .col-management5 .img-management .img-education-a.pawel::after,
+#education .row-education .col-management5 .img-education .img-managment-a.pawel::after,
+#education .row-education .col-management5 .img-education .img-education-a.pawel::after,
+#education .row-education .col-education5 .img-management .img-managment-a.pawel::after,
+#education .row-education .col-education5 .img-management .img-education-a.pawel::after,
+#education .row-education .col-education5 .img-education .img-managment-a.pawel::after,
+#education .row-education .col-education5 .img-education .img-education-a.pawel::after {
   left: -20px;
   top: -20px;
 }
 
-#management .row-management .col-management5 .img-management .img-managment-a:hover img, #management .row-management .col-management5 .img-management .img-education-a:hover img, #management .row-management .col-management5 .img-education .img-managment-a:hover img, #management .row-management .col-management5 .img-education .img-education-a:hover img, #management .row-management .col-education5 .img-management .img-managment-a:hover img, #management .row-management .col-education5 .img-management .img-education-a:hover img, #management .row-management .col-education5 .img-education .img-managment-a:hover img, #management .row-management .col-education5 .img-education .img-education-a:hover img, #management .row-education .col-management5 .img-management .img-managment-a:hover img, #management .row-education .col-management5 .img-management .img-education-a:hover img, #management .row-education .col-management5 .img-education .img-managment-a:hover img, #management .row-education .col-management5 .img-education .img-education-a:hover img, #management .row-education .col-education5 .img-management .img-managment-a:hover img, #management .row-education .col-education5 .img-management .img-education-a:hover img, #management .row-education .col-education5 .img-education .img-managment-a:hover img, #management .row-education .col-education5 .img-education .img-education-a:hover img, #education .row-management .col-management5 .img-management .img-managment-a:hover img, #education .row-management .col-management5 .img-management .img-education-a:hover img, #education .row-management .col-management5 .img-education .img-managment-a:hover img, #education .row-management .col-management5 .img-education .img-education-a:hover img, #education .row-management .col-education5 .img-management .img-managment-a:hover img, #education .row-management .col-education5 .img-management .img-education-a:hover img, #education .row-management .col-education5 .img-education .img-managment-a:hover img, #education .row-management .col-education5 .img-education .img-education-a:hover img, #education .row-education .col-management5 .img-management .img-managment-a:hover img, #education .row-education .col-management5 .img-management .img-education-a:hover img, #education .row-education .col-management5 .img-education .img-managment-a:hover img, #education .row-education .col-management5 .img-education .img-education-a:hover img, #education .row-education .col-education5 .img-management .img-managment-a:hover img, #education .row-education .col-education5 .img-management .img-education-a:hover img, #education .row-education .col-education5 .img-education .img-managment-a:hover img, #education .row-education .col-education5 .img-education .img-education-a:hover img {
+#management .row-management .col-management5 .img-management .img-managment-a:hover img,
+#management .row-management .col-management5 .img-management .img-education-a:hover img,
+#management .row-management .col-management5 .img-education .img-managment-a:hover img,
+#management .row-management .col-management5 .img-education .img-education-a:hover img,
+#management .row-management .col-education5 .img-management .img-managment-a:hover img,
+#management .row-management .col-education5 .img-management .img-education-a:hover img,
+#management .row-management .col-education5 .img-education .img-managment-a:hover img,
+#management .row-management .col-education5 .img-education .img-education-a:hover img,
+#management .row-education .col-management5 .img-management .img-managment-a:hover img,
+#management .row-education .col-management5 .img-management .img-education-a:hover img,
+#management .row-education .col-management5 .img-education .img-managment-a:hover img,
+#management .row-education .col-management5 .img-education .img-education-a:hover img,
+#management .row-education .col-education5 .img-management .img-managment-a:hover img,
+#management .row-education .col-education5 .img-management .img-education-a:hover img,
+#management .row-education .col-education5 .img-education .img-managment-a:hover img,
+#management .row-education .col-education5 .img-education .img-education-a:hover img,
+#education .row-management .col-management5 .img-management .img-managment-a:hover img,
+#education .row-management .col-management5 .img-management .img-education-a:hover img,
+#education .row-management .col-management5 .img-education .img-managment-a:hover img,
+#education .row-management .col-management5 .img-education .img-education-a:hover img,
+#education .row-management .col-education5 .img-management .img-managment-a:hover img,
+#education .row-management .col-education5 .img-management .img-education-a:hover img,
+#education .row-management .col-education5 .img-education .img-managment-a:hover img,
+#education .row-management .col-education5 .img-education .img-education-a:hover img,
+#education .row-education .col-management5 .img-management .img-managment-a:hover img,
+#education .row-education .col-management5 .img-management .img-education-a:hover img,
+#education .row-education .col-management5 .img-education .img-managment-a:hover img,
+#education .row-education .col-management5 .img-education .img-education-a:hover img,
+#education .row-education .col-education5 .img-management .img-managment-a:hover img,
+#education .row-education .col-education5 .img-management .img-education-a:hover img,
+#education .row-education .col-education5 .img-education .img-managment-a:hover img,
+#education .row-education .col-education5 .img-education .img-education-a:hover img {
   z-index: 2;
   -o-object-position: top;
      object-position: top;
@@ -586,22 +1097,50 @@ body section {
   -webkit-transform: scale(1.15);
 }
 
-#management .row-management .col-management7, #management .row-management .col-education7, #management .row-education .col-management7, #management .row-education .col-education7, #education .row-management .col-management7, #education .row-management .col-education7, #education .row-education .col-management7, #education .row-education .col-education7 {
+#management .row-management .col-management7,
+#management .row-management .col-education7,
+#management .row-education .col-management7,
+#management .row-education .col-education7,
+#education .row-management .col-management7,
+#education .row-management .col-education7,
+#education .row-education .col-management7,
+#education .row-education .col-education7 {
   background: rgba(255, 255, 255, 0.9);
   text-align: center;
   padding: 30px 15px;
 }
 
-#management .row-management .col-management7 h3, #management .row-management .col-education7 h3, #management .row-education .col-management7 h3, #management .row-education .col-education7 h3, #education .row-management .col-management7 h3, #education .row-management .col-education7 h3, #education .row-education .col-management7 h3, #education .row-education .col-education7 h3 {
+#management .row-management .col-management7 h3,
+#management .row-management .col-education7 h3,
+#management .row-education .col-management7 h3,
+#management .row-education .col-education7 h3,
+#education .row-management .col-management7 h3,
+#education .row-management .col-education7 h3,
+#education .row-education .col-management7 h3,
+#education .row-education .col-education7 h3 {
   font-size: 35px;
 }
 
-#management .row-management .col-management7 span, #management .row-management .col-education7 span, #management .row-education .col-management7 span, #management .row-education .col-education7 span, #education .row-management .col-management7 span, #education .row-management .col-education7 span, #education .row-education .col-management7 span, #education .row-education .col-education7 span {
+#management .row-management .col-management7 span,
+#management .row-management .col-education7 span,
+#management .row-education .col-management7 span,
+#management .row-education .col-education7 span,
+#education .row-management .col-management7 span,
+#education .row-management .col-education7 span,
+#education .row-education .col-management7 span,
+#education .row-education .col-education7 span {
   padding: 5px 10px;
   font-size: 20px;
 }
 
-#management .row-management .col-management7 span.line, #management .row-management .col-education7 span.line, #management .row-education .col-management7 span.line, #management .row-education .col-education7 span.line, #education .row-management .col-management7 span.line, #education .row-management .col-education7 span.line, #education .row-education .col-management7 span.line, #education .row-education .col-education7 span.line {
+#management .row-management .col-management7 span.line,
+#management .row-management .col-education7 span.line,
+#management .row-education .col-management7 span.line,
+#management .row-education .col-education7 span.line,
+#education .row-management .col-management7 span.line,
+#education .row-management .col-education7 span.line,
+#education .row-education .col-management7 span.line,
+#education .row-education .col-education7 span.line {
   display: block;
   padding: 0;
   width: 100px;
@@ -611,46 +1150,166 @@ body section {
   margin-bottom: 15px;
 }
 
-#management .row-management .col-management7 .cv, #management .row-management .col-management7 .education-description, #management .row-management .col-education7 .cv, #management .row-management .col-education7 .education-description, #management .row-education .col-management7 .cv, #management .row-education .col-management7 .education-description, #management .row-education .col-education7 .cv, #management .row-education .col-education7 .education-description, #education .row-management .col-management7 .cv, #education .row-management .col-management7 .education-description, #education .row-management .col-education7 .cv, #education .row-management .col-education7 .education-description, #education .row-education .col-management7 .cv, #education .row-education .col-management7 .education-description, #education .row-education .col-education7 .cv, #education .row-education .col-education7 .education-description {
+#management .row-management .col-management7 .cv,
+#management .row-management .col-management7 .education-description,
+#management .row-management .col-education7 .cv,
+#management .row-management .col-education7 .education-description,
+#management .row-education .col-management7 .cv,
+#management .row-education .col-management7 .education-description,
+#management .row-education .col-education7 .cv,
+#management .row-education .col-education7 .education-description,
+#education .row-management .col-management7 .cv,
+#education .row-management .col-management7 .education-description,
+#education .row-management .col-education7 .cv,
+#education .row-management .col-education7 .education-description,
+#education .row-education .col-management7 .cv,
+#education .row-education .col-management7 .education-description,
+#education .row-education .col-education7 .cv,
+#education .row-education .col-education7 .education-description {
   overflow: auto;
   max-height: 220px;
   padding: 0 40px;
   margin-top: 30px;
 }
 
-#management .row-management .col-management7 .cv::-webkit-scrollbar, #management .row-management .col-management7 .education-description::-webkit-scrollbar, #management .row-management .col-education7 .cv::-webkit-scrollbar, #management .row-management .col-education7 .education-description::-webkit-scrollbar, #management .row-education .col-management7 .cv::-webkit-scrollbar, #management .row-education .col-management7 .education-description::-webkit-scrollbar, #management .row-education .col-education7 .cv::-webkit-scrollbar, #management .row-education .col-education7 .education-description::-webkit-scrollbar, #education .row-management .col-management7 .cv::-webkit-scrollbar, #education .row-management .col-management7 .education-description::-webkit-scrollbar, #education .row-management .col-education7 .cv::-webkit-scrollbar, #education .row-management .col-education7 .education-description::-webkit-scrollbar, #education .row-education .col-management7 .cv::-webkit-scrollbar, #education .row-education .col-management7 .education-description::-webkit-scrollbar, #education .row-education .col-education7 .cv::-webkit-scrollbar, #education .row-education .col-education7 .education-description::-webkit-scrollbar {
+#management .row-management .col-management7 .cv::-webkit-scrollbar,
+#management .row-management .col-management7 .education-description::-webkit-scrollbar,
+#management .row-management .col-education7 .cv::-webkit-scrollbar,
+#management .row-management .col-education7 .education-description::-webkit-scrollbar,
+#management .row-education .col-management7 .cv::-webkit-scrollbar,
+#management .row-education .col-management7 .education-description::-webkit-scrollbar,
+#management .row-education .col-education7 .cv::-webkit-scrollbar,
+#management .row-education .col-education7 .education-description::-webkit-scrollbar,
+#education .row-management .col-management7 .cv::-webkit-scrollbar,
+#education .row-management .col-management7 .education-description::-webkit-scrollbar,
+#education .row-management .col-education7 .cv::-webkit-scrollbar,
+#education .row-management .col-education7 .education-description::-webkit-scrollbar,
+#education .row-education .col-management7 .cv::-webkit-scrollbar,
+#education .row-education .col-management7 .education-description::-webkit-scrollbar,
+#education .row-education .col-education7 .cv::-webkit-scrollbar,
+#education .row-education .col-education7 .education-description::-webkit-scrollbar {
   width: 12px;
 }
 
-#management .row-management .col-management7 .cv::-webkit-scrollbar-track, #management .row-management .col-management7 .education-description::-webkit-scrollbar-track, #management .row-management .col-education7 .cv::-webkit-scrollbar-track, #management .row-management .col-education7 .education-description::-webkit-scrollbar-track, #management .row-education .col-management7 .cv::-webkit-scrollbar-track, #management .row-education .col-management7 .education-description::-webkit-scrollbar-track, #management .row-education .col-education7 .cv::-webkit-scrollbar-track, #management .row-education .col-education7 .education-description::-webkit-scrollbar-track, #education .row-management .col-management7 .cv::-webkit-scrollbar-track, #education .row-management .col-management7 .education-description::-webkit-scrollbar-track, #education .row-management .col-education7 .cv::-webkit-scrollbar-track, #education .row-management .col-education7 .education-description::-webkit-scrollbar-track, #education .row-education .col-management7 .cv::-webkit-scrollbar-track, #education .row-education .col-management7 .education-description::-webkit-scrollbar-track, #education .row-education .col-education7 .cv::-webkit-scrollbar-track, #education .row-education .col-education7 .education-description::-webkit-scrollbar-track {
+#management .row-management .col-management7 .cv::-webkit-scrollbar-track,
+#management .row-management .col-management7 .education-description::-webkit-scrollbar-track,
+#management .row-management .col-education7 .cv::-webkit-scrollbar-track,
+#management .row-management .col-education7 .education-description::-webkit-scrollbar-track,
+#management .row-education .col-management7 .cv::-webkit-scrollbar-track,
+#management .row-education .col-management7 .education-description::-webkit-scrollbar-track,
+#management .row-education .col-education7 .cv::-webkit-scrollbar-track,
+#management .row-education .col-education7 .education-description::-webkit-scrollbar-track,
+#education .row-management .col-management7 .cv::-webkit-scrollbar-track,
+#education .row-management .col-management7 .education-description::-webkit-scrollbar-track,
+#education .row-management .col-education7 .cv::-webkit-scrollbar-track,
+#education .row-management .col-education7 .education-description::-webkit-scrollbar-track,
+#education .row-education .col-management7 .cv::-webkit-scrollbar-track,
+#education .row-education .col-management7 .education-description::-webkit-scrollbar-track,
+#education .row-education .col-education7 .cv::-webkit-scrollbar-track,
+#education .row-education .col-education7 .education-description::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: inset 0 0 6px darkorange;
   border-radius: 10px;
 }
 
-#management .row-management .col-management7 .cv::-webkit-scrollbar-thumb, #management .row-management .col-management7 .education-description::-webkit-scrollbar-thumb, #management .row-management .col-education7 .cv::-webkit-scrollbar-thumb, #management .row-management .col-education7 .education-description::-webkit-scrollbar-thumb, #management .row-education .col-management7 .cv::-webkit-scrollbar-thumb, #management .row-education .col-management7 .education-description::-webkit-scrollbar-thumb, #management .row-education .col-education7 .cv::-webkit-scrollbar-thumb, #management .row-education .col-education7 .education-description::-webkit-scrollbar-thumb, #education .row-management .col-management7 .cv::-webkit-scrollbar-thumb, #education .row-management .col-management7 .education-description::-webkit-scrollbar-thumb, #education .row-management .col-education7 .cv::-webkit-scrollbar-thumb, #education .row-management .col-education7 .education-description::-webkit-scrollbar-thumb, #education .row-education .col-management7 .cv::-webkit-scrollbar-thumb, #education .row-education .col-management7 .education-description::-webkit-scrollbar-thumb, #education .row-education .col-education7 .cv::-webkit-scrollbar-thumb, #education .row-education .col-education7 .education-description::-webkit-scrollbar-thumb {
+#management .row-management .col-management7 .cv::-webkit-scrollbar-thumb,
+#management .row-management .col-management7 .education-description::-webkit-scrollbar-thumb,
+#management .row-management .col-education7 .cv::-webkit-scrollbar-thumb,
+#management .row-management .col-education7 .education-description::-webkit-scrollbar-thumb,
+#management .row-education .col-management7 .cv::-webkit-scrollbar-thumb,
+#management .row-education .col-management7 .education-description::-webkit-scrollbar-thumb,
+#management .row-education .col-education7 .cv::-webkit-scrollbar-thumb,
+#management .row-education .col-education7 .education-description::-webkit-scrollbar-thumb,
+#education .row-management .col-management7 .cv::-webkit-scrollbar-thumb,
+#education .row-management .col-management7 .education-description::-webkit-scrollbar-thumb,
+#education .row-management .col-education7 .cv::-webkit-scrollbar-thumb,
+#education .row-management .col-education7 .education-description::-webkit-scrollbar-thumb,
+#education .row-education .col-management7 .cv::-webkit-scrollbar-thumb,
+#education .row-education .col-management7 .education-description::-webkit-scrollbar-thumb,
+#education .row-education .col-education7 .cv::-webkit-scrollbar-thumb,
+#education .row-education .col-education7 .education-description::-webkit-scrollbar-thumb {
   border-radius: 10px;
   box-shadow: inset 0 0 6px #f71803;
   -webkit-box-shadow: inset 0 0 6px darkorange;
   background: darkorange;
 }
 
-#management .row-management .col-management7 .cv p, #management .row-management .col-management7 .education-description p, #management .row-management .col-education7 .cv p, #management .row-management .col-education7 .education-description p, #management .row-education .col-management7 .cv p, #management .row-education .col-management7 .education-description p, #management .row-education .col-education7 .cv p, #management .row-education .col-education7 .education-description p, #education .row-management .col-management7 .cv p, #education .row-management .col-management7 .education-description p, #education .row-management .col-education7 .cv p, #education .row-management .col-education7 .education-description p, #education .row-education .col-management7 .cv p, #education .row-education .col-management7 .education-description p, #education .row-education .col-education7 .cv p, #education .row-education .col-education7 .education-description p {
+#management .row-management .col-management7 .cv p,
+#management .row-management .col-management7 .education-description p,
+#management .row-management .col-education7 .cv p,
+#management .row-management .col-education7 .education-description p,
+#management .row-education .col-management7 .cv p,
+#management .row-education .col-management7 .education-description p,
+#management .row-education .col-education7 .cv p,
+#management .row-education .col-education7 .education-description p,
+#education .row-management .col-management7 .cv p,
+#education .row-management .col-management7 .education-description p,
+#education .row-management .col-education7 .cv p,
+#education .row-management .col-education7 .education-description p,
+#education .row-education .col-management7 .cv p,
+#education .row-education .col-management7 .education-description p,
+#education .row-education .col-education7 .cv p,
+#education .row-education .col-education7 .education-description p {
   text-overflow: ellipsis;
   color: #7b7b7b;
 }
 
-#management .row-management .col-management7 .cv ul, #management .row-management .col-management7 .education-description ul, #management .row-management .col-education7 .cv ul, #management .row-management .col-education7 .education-description ul, #management .row-education .col-management7 .cv ul, #management .row-education .col-management7 .education-description ul, #management .row-education .col-education7 .cv ul, #management .row-education .col-education7 .education-description ul, #education .row-management .col-management7 .cv ul, #education .row-management .col-management7 .education-description ul, #education .row-management .col-education7 .cv ul, #education .row-management .col-education7 .education-description ul, #education .row-education .col-management7 .cv ul, #education .row-education .col-management7 .education-description ul, #education .row-education .col-education7 .cv ul, #education .row-education .col-education7 .education-description ul {
+#management .row-management .col-management7 .cv ul,
+#management .row-management .col-management7 .education-description ul,
+#management .row-management .col-education7 .cv ul,
+#management .row-management .col-education7 .education-description ul,
+#management .row-education .col-management7 .cv ul,
+#management .row-education .col-management7 .education-description ul,
+#management .row-education .col-education7 .cv ul,
+#management .row-education .col-education7 .education-description ul,
+#education .row-management .col-management7 .cv ul,
+#education .row-management .col-management7 .education-description ul,
+#education .row-management .col-education7 .cv ul,
+#education .row-management .col-education7 .education-description ul,
+#education .row-education .col-management7 .cv ul,
+#education .row-education .col-management7 .education-description ul,
+#education .row-education .col-education7 .cv ul,
+#education .row-education .col-education7 .education-description ul {
   text-align: start;
   padding: 0;
   list-style: none;
 }
 
-#management .row-management .col-management7 .cv ul li, #management .row-management .col-management7 .education-description ul li, #management .row-management .col-education7 .cv ul li, #management .row-management .col-education7 .education-description ul li, #management .row-education .col-management7 .cv ul li, #management .row-education .col-management7 .education-description ul li, #management .row-education .col-education7 .cv ul li, #management .row-education .col-education7 .education-description ul li, #education .row-management .col-management7 .cv ul li, #education .row-management .col-management7 .education-description ul li, #education .row-management .col-education7 .cv ul li, #education .row-management .col-education7 .education-description ul li, #education .row-education .col-management7 .cv ul li, #education .row-education .col-management7 .education-description ul li, #education .row-education .col-education7 .cv ul li, #education .row-education .col-education7 .education-description ul li {
+#management .row-management .col-management7 .cv ul li,
+#management .row-management .col-management7 .education-description ul li,
+#management .row-management .col-education7 .cv ul li,
+#management .row-management .col-education7 .education-description ul li,
+#management .row-education .col-management7 .cv ul li,
+#management .row-education .col-management7 .education-description ul li,
+#management .row-education .col-education7 .cv ul li,
+#management .row-education .col-education7 .education-description ul li,
+#education .row-management .col-management7 .cv ul li,
+#education .row-management .col-management7 .education-description ul li,
+#education .row-management .col-education7 .cv ul li,
+#education .row-management .col-education7 .education-description ul li,
+#education .row-education .col-management7 .cv ul li,
+#education .row-education .col-management7 .education-description ul li,
+#education .row-education .col-education7 .cv ul li,
+#education .row-education .col-education7 .education-description ul li {
   color: #7b7b7b;
 }
 
-#management .row-management .col-management7 .cv ul.pawelChmiel, #management .row-management .col-management7 .education-description ul.pawelChmiel, #management .row-management .col-education7 .cv ul.pawelChmiel, #management .row-management .col-education7 .education-description ul.pawelChmiel, #management .row-education .col-management7 .cv ul.pawelChmiel, #management .row-education .col-management7 .education-description ul.pawelChmiel, #management .row-education .col-education7 .cv ul.pawelChmiel, #management .row-education .col-education7 .education-description ul.pawelChmiel, #education .row-management .col-management7 .cv ul.pawelChmiel, #education .row-management .col-management7 .education-description ul.pawelChmiel, #education .row-management .col-education7 .cv ul.pawelChmiel, #education .row-management .col-education7 .education-description ul.pawelChmiel, #education .row-education .col-management7 .cv ul.pawelChmiel, #education .row-education .col-management7 .education-description ul.pawelChmiel, #education .row-education .col-education7 .cv ul.pawelChmiel, #education .row-education .col-education7 .education-description ul.pawelChmiel {
+#management .row-management .col-management7 .cv ul.pawelChmiel,
+#management .row-management .col-management7 .education-description ul.pawelChmiel,
+#management .row-management .col-education7 .cv ul.pawelChmiel,
+#management .row-management .col-education7 .education-description ul.pawelChmiel,
+#management .row-education .col-management7 .cv ul.pawelChmiel,
+#management .row-education .col-management7 .education-description ul.pawelChmiel,
+#management .row-education .col-education7 .cv ul.pawelChmiel,
+#management .row-education .col-education7 .education-description ul.pawelChmiel,
+#education .row-management .col-management7 .cv ul.pawelChmiel,
+#education .row-management .col-management7 .education-description ul.pawelChmiel,
+#education .row-management .col-education7 .cv ul.pawelChmiel,
+#education .row-management .col-education7 .education-description ul.pawelChmiel,
+#education .row-education .col-management7 .cv ul.pawelChmiel,
+#education .row-education .col-management7 .education-description ul.pawelChmiel,
+#education .row-education .col-education7 .cv ul.pawelChmiel,
+#education .row-education .col-education7 .education-description ul.pawelChmiel {
   padding-top: 30px;
 }
 
@@ -797,7 +1456,7 @@ body section {
 }
 
 #projects .projects .row-projects .div-img-description-projects .div-description-projects .more a:hover::after {
-  content: '\e830';
+  content: "\e830";
   font-family: unicons;
   position: absolute;
   width: 100%;
@@ -810,10 +1469,12 @@ body section {
 }
 
 @keyframes blink {
-  0%, 0% {
+  0%,
+  0% {
     background-position: 200% 0;
   }
-  85%, 95% {
+  85%,
+  95% {
     background-position: 100% 0;
   }
   100% {
@@ -891,7 +1552,7 @@ body section {
 }
 
 #education .education .row-education .col-education7 .education-description .more a:hover::after {
-  content: '\e830';
+  content: "\e830";
   font-family: unicons;
   position: absolute;
   width: 100%;
@@ -904,10 +1565,12 @@ body section {
 }
 
 @keyframes blink {
-  0%, 0% {
+  0%,
+  0% {
     background-position: 200% 0;
   }
-  85%, 95% {
+  85%,
+  95% {
     background-position: 100% 0;
   }
   100% {

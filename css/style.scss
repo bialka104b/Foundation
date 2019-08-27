@@ -74,7 +74,6 @@ body {
         padding: 0;
         list-style: none;
         li {
-          // display: inline-block;
           padding-right: 10px;
           padding-left: 10px;
           text-transform: uppercase;
@@ -111,6 +110,18 @@ body {
               }
             }
           }
+          ul#list-education {
+            position: absolute;
+            top:0;
+            margin-left:-40px;
+            padding: 30px;
+            padding-top: 100px;
+            background:white;
+            z-index:-1;
+            li {
+              padding: 20px 10px;
+            }
+          }
         }
       }
       @media (max-width:907px) {
@@ -142,9 +153,9 @@ body {
           li {
             display: block;
             padding: 0;
+            
           }
         }
-        
       }
     }
   }
@@ -226,7 +237,7 @@ body {
                     }
                   }
                 }
-                .img-slider-icon:first-of-type {
+                .img-slider-icon:last-of-type {
                   i {
                     &::before {
                       transform: scaleX(-1);
@@ -760,7 +771,7 @@ body {
         .img-education {
           .img-education-a {
             img {
-              object-fit: contain;
+              object-fit: cover;
             }
           }
         }

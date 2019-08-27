@@ -130,6 +130,20 @@ body section {
   height: 3px;
 }
 
+#header .navbar .navbar-nav ul li ul#list-education {
+  position: absolute;
+  top: 0;
+  margin-left: -40px;
+  padding: 30px;
+  padding-top: 100px;
+  background: white;
+  z-index: -1;
+}
+
+#header .navbar .navbar-nav ul li ul#list-education li {
+  padding: 20px 10px;
+}
+
 @media (max-width: 907px) {
   #header .navbar .navbar-nav {
     font-size: 14px;
@@ -275,7 +289,7 @@ body section {
   width: 100%;
 }
 
-#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider .img-slider-text .img-slider-icon:first-of-type i::before {
+#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider .img-slider-text .img-slider-icon:last-of-type i::before {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
@@ -818,8 +832,8 @@ body section {
 }
 
 #education .education .row-education .col-education5 .img-education .img-education-a img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #education .education .row-education .col-education7 h3 {

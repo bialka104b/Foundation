@@ -1,7 +1,252 @@
+$orange: #fbb74d;
+$orange-opacity: rgba(251, 183, 77, 0.8);
+$red: #f71803;
+$a: 100%;
+$b: 2px;
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap");
 #header {
 	height: auto;
 }
 main {
 	padding-top:100px;
 	background-image: url(../image/leather_1/leather_1/leather_1.png);
+	#contest-workshops-training {
+		.card-header {
+			background-color:white;
+			border:0px;
+			margin-bottom:20px;
+			.card-header-tabs {
+				border:0px;
+				li.nav-item {
+					a.nav-link {
+						font-size:20px;
+						text-decoration: none;
+						color:black;
+						text-transform: uppercase;
+						display:block;
+						border:0;
+						border-radius:0;
+						margin:0;
+						transition: all 0.3s ease;
+						&:hover {
+							background-image: url(../image/leather_1/leather_1/leather_1.png);
+							// color:$red;
+							transition: all 0.3s ease;
+						}
+					}
+					a.active {
+						color:$red;
+					}
+				}
+			}
+		}
+		.card-body {
+			padding: 0;
+		}
+		.contest, .workshops, .training {
+			.row-contest {
+				margin-bottom: 20px;
+				.col-contest {
+					.div-img-description-contest {
+						position: relative;
+						height:100%;
+						.div-img-contest {
+							height:100%;
+							width: 100%;
+							a.picture {
+								overflow: hidden;
+								display: block;
+								img {
+									object-fit: cover;
+									width: 100%;
+									height: 350px;
+									transition-duration: 3s;
+									margin: 0 auto;
+									display: block;
+									transition: all 1s ease;
+									-webkit-transition: all 1s ease;
+									-moz-transition: all 1s ease;
+									-o-transition: all 1s ease;
+								}
+								&:hover {
+									img {
+										transition: all 0.6s;
+										transform: scale(1.1);
+										-o-transition: all 0.6s;
+										-moz-transition: all 0.6s;
+										-webkit-transition: all 0.6s;
+										-moz-transform: scale(1.1);
+										-o-transform: scale(1.1);
+										-webkit-transform: scale(1.1);
+									}
+								}
+								&::after {
+									content: "";
+									position: absolute;
+									width: 100%;
+									// width: calc(#{$a} - #{$b});
+									height: 100%;
+									background: rgba(0, 0, 0, 0.5);
+									z-index: 1;
+									top: 0;
+									background: -moz-linear-gradient(
+										top,
+										rgba(255, 255, 255, 0) 61%,
+										rgba(255, 255, 255, 0.04) 62%,
+										rgba(36, 36, 36, 0.54) 74%,
+										rgba(0, 0, 0, 0.54) 76%
+									);
+									background: -webkit-gradient(
+										left top,
+										left bottom,
+										color-stop(61%, rgba(255, 255, 255, 0)),
+										color-stop(62%, rgba(255, 255, 255, 0.04)),
+										color-stop(74%, rgba(36, 36, 36, 0.54)),
+										color-stop(76%, rgba(0, 0, 0, 0.54))
+									);
+									background: -webkit-linear-gradient(
+										top,
+										rgba(255, 255, 255, 0) 61%,
+										rgba(255, 255, 255, 0.04) 62%,
+										rgba(36, 36, 36, 0.54) 74%,
+										rgba(0, 0, 0, 0.54) 76%
+									);
+									background: -o-linear-gradient(
+										top,
+										rgba(255, 255, 255, 0) 61%,
+										rgba(255, 255, 255, 0.04) 62%,
+										rgba(36, 36, 36, 0.54) 74%,
+										rgba(0, 0, 0, 0.54) 76%
+									);
+									background: -ms-linear-gradient(
+										top,
+										rgba(255, 255, 255, 0) 61%,
+										rgba(255, 255, 255, 0.04) 62%,
+										rgba(36, 36, 36, 0.54) 74%,
+										rgba(0, 0, 0, 0.54) 76%
+									);
+									background: linear-gradient(
+										to bottom,
+										rgba(255, 255, 255, 0) 61%,
+										rgba(255, 255, 255, 0.04) 62%,
+										rgba(36, 36, 36, 0.54) 74%,
+										rgba(0, 0, 0, 0.54) 76%
+									);
+									@media (max-width: 767px) {
+										width: 100%;
+									}
+								}
+							}
+							.lightbox {
+								display: none;
+								position: fixed;
+								z-index: 999;
+								width: 100%;
+								height: 100%;
+								text-align: center;
+								top: 0;
+								left: 0;
+								background: rgba(0, 0, 0, 0.5);
+								img {
+									max-width: 90%;
+									max-height: 80%;
+									margin-top: 10%;
+								}
+								&:target {
+									outline: none;
+									display: block;
+								}
+							}
+						}
+						.div-description-contest {
+							width: 100%;
+							position: absolute;
+							bottom: 0;
+							padding: 15px;
+							z-index: 2;
+							h5 {
+								color: white;
+								font-family: "Poppins", sans-serif;
+								font-size: 20px;
+							}
+							.more {
+								padding: 0;
+								background: $orange;
+								position: relative;
+								width: 100px;
+								height: 40px;
+								a {
+									color: white;
+									border-radius: 0;
+									position: absolute;
+									text-decoration: none;
+									padding: 10px 12px;
+									width: 100%;
+									height: 100%;
+									transition: all 0.5s ease;
+									text-transform: uppercase;
+									font-size: 14px;
+									&:hover {
+										transition: all 0.5s ease;
+										&::before {
+											animation: blink 2s infinite;
+											content: "Więcej";
+											background: linear-gradient(
+											to right,
+											$orange,
+											$red 50%,
+											$red 50%,
+											$orange
+											);
+											background-size: 200% 200%;
+											background-position: -100% 0;
+											position: absolute;
+											width: 100%;
+											height: 100%;
+											left: 0;
+											top: 0;
+											padding: 10px 12px;
+										}
+										&::after {
+											content: '\e830';
+											font-family: unicons;
+											position: absolute;
+											width: 100%;
+											height: 100%;
+											left: 100%;
+											text-align-last: end;
+											top: 0;
+											padding: 10px 12px;
+											margin-left: -100px;
+										}
+										@keyframes blink {
+											0%, 0% {
+												background-position: 200% 0;
+											}
+											85%, 95% {
+												background-position: 100% 0;
+											}
+											100% {
+												background-position: 200% 0;
+											}
+										}
+									}
+									i {
+										color:white;
+										margin-left:5px;
+										z-index:20;
+										&::before {
+											margin:0;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

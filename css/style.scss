@@ -388,9 +388,9 @@ body {
     }
   }
 }
-#management {
+#management, #education {
   background-image: url("../image/leather_1/leather_1/leather_1.png");
-  .row-management {
+  .row-management, .row-education {
     margin: 70px 0;
     z-index: 1;
     h3 {
@@ -406,13 +406,13 @@ body {
       //   z-index:0;
       // }
     }
-    .col-management5 {
+    .col-management5, .col-education5 {
       padding: 0;
       z-index: 2;
-      .img-management {
+      .img-management, .img-education {
         z-index: 2;
         height: 100%;
-        .img-managment-a {
+        .img-managment-a, .img-education-a {
           overflow: hidden;
           display: block;
           z-index: 2;
@@ -493,7 +493,7 @@ body {
         }
       }
     }
-    .col-management7 {
+    .col-management7, .col-education7 {
       background: rgba(255, 255, 255, 0.9);
       text-align: center;
       padding: 30px 15px;
@@ -513,7 +513,7 @@ body {
         margin: 0 auto;
         margin-bottom: 15px;
       }
-      .cv {
+      .cv, .education-description {
         overflow: auto;
         max-height: 220px;
         padding: 0 40px;
@@ -753,6 +753,106 @@ body {
     }
   }
 }
+#education {
+  .education {
+    .row-education {
+      .col-education5 {
+        .img-education {
+          .img-education-a {
+            img {
+              object-fit: contain;
+            }
+          }
+        }
+      }
+      .col-education7 {
+        h3 {
+          padding: 0 40px;
+        }
+        .education-description {
+          p {
+            text-align: left;
+          }
+          .more {
+            padding: 0;
+            background: $orange;
+            position: relative;
+            width: 100px;
+            height: 40px;
+            margin-top:15px;
+            a {
+              color: white;
+              border-radius: 0;
+              position: absolute;
+              text-decoration: none;
+              padding: 10px 12px;
+              width: 100%;
+              height: 100%;
+              transition: all 0.5s ease;
+              text-transform: uppercase;
+              font-size: 14px;
+              display:block;
+              &:hover {
+                transition: all 0.5s ease;
+                &::before {
+                  animation: blink 2s infinite;
+                  content: "Więcej";
+                  background: linear-gradient(
+                  to right,
+                  $orange,
+                  $red 50%,
+                  $red 50%,
+                  $orange
+                  );
+                  background-size: 200% 200%;
+                  background-position: -100% 0;
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  left: 0;
+                  top: 0;
+                  padding: 10px 12px;
+                  text-align: left;
+                }
+                &::after {
+                  content: '\e830';
+                  font-family: unicons;
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  left: 100%;
+                  text-align-last: end;
+                  top: 0;
+                  padding: 10px 12px;
+                  margin-left: -100px;
+                }
+                @keyframes blink {
+                  0%, 0% {
+                    background-position: 200% 0;
+                  }
+                  85%, 95% {
+                    background-position: 100% 0;
+                  }
+                  100% {
+                    background-position: 200% 0;
+                  }
+                }
+              }
+              i {
+                color:white;
+                margin-left:5px;
+                z-index:20;
+                &::before {
+                  margin:0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 #cooperation {
   background: radial-gradient(transparent, $orange);
   .cooperation {
@@ -826,6 +926,8 @@ body {
           display: block;
           width: 60px;
           height: 60px;
+          top:88%;
+          bottom: -20px;
           span.carousel-control-prev-icon,
           span.carousel-control-next-icon {
             background-image: none;
@@ -876,7 +978,7 @@ body {
         width: 90%;
         height: 500px;
         border: 3px double darkorange;
-        padding-right: 1px;
+        padding: 1px;
       }
     }
   }
@@ -923,18 +1025,9 @@ body {
               .form-group {
                 margin: 0;
                 margin-bottom: 30px;
-                // #email {
-
-                // }
-                // #phone {}
                 #subject {
                   color: #7b7b7b;
                 }
-                // #text {}
-                // #agreement {}
-                // .div-form-group {
-
-                // }
                 #btn-warning {
                   padding: 0;
                   background: darkorange;
@@ -942,8 +1035,6 @@ body {
                   width: 150px;
                   height: 50px;
                   .btn-warning {
-                    // border-color:darkorange;
-                    // background: darkorange;
                     color: white;
                     border-radius: 0;
                     position: absolute;
@@ -993,7 +1084,6 @@ body {
                 .form-control {
                   color: #7b7b7b;
                   font-size: 14px;
-                  /* box-shadow: none; */
                   border: 0;
                   padding: 5px 15px;
                   border-radius: 0;
@@ -1046,7 +1136,6 @@ body {
             }
           }
         }
-        
         p {
           font-weight: 700;
           line-height:30px;
@@ -1073,7 +1162,6 @@ body {
         }
         .adress-text {
           display: inline-table;
-          
         }
       }
       .col-adress {

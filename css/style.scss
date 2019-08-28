@@ -43,6 +43,9 @@ body {
         color: darkorange;
       }
     }
+    @media (max-width: 767px) {
+      font-size: 30px !important;
+    }
   }
   section {
     padding: 70px 0;
@@ -143,6 +146,13 @@ body {
     .icon-menu {
       display: block;
       cursor: pointer;
+      @media (max-width: 767px) {
+        margin: 0 20px 0 auto;
+        font-size: 30px;
+        i::before {
+          font-weight: 900;
+        }
+      }
     }
     @media (min-width: 768px) {
       .icon-menu {
@@ -150,21 +160,40 @@ body {
       }
     }
     @media (max-width: 767px) {
+      padding: 0;
+      position: fixed;
       .navbar-header {
         margin: 0;
       }
       .navbar-nav {
         display: none;
-        position: absolute;
         width: 100%;
         z-index: 800;
+        background: white;
+        position: static;
         margin: 0;
-        margin-top: 100px;
         .list-inline {
           margin: 0;
+          padding: 20px;
+          top: 40px;
+          text-align: center;
           li {
             display: block;
             padding: 0;
+            padding: 10px 20px;
+            font-size: 20px;
+            a::after {
+              display: none;
+            }
+            ul#list-education {
+              position: static;
+              margin-left: 0;
+              padding: 5px 0;
+              li {
+                padding: 5px;
+                font-size: 18px;
+              }
+            }
           }
         }
       }
@@ -320,6 +349,35 @@ body {
         }
       }
     }
+    @media (max-width: 767px) {
+      .div-header-content {
+        #myCarousel {
+          .carousel-inner {
+            .carousel-item {
+              .img-slider {
+                .img-slider-text {
+                  width: 60%;
+                  margin: 0 20%;
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+          .carousel-control-next,
+          .carousel-control-prev {
+            top: 100px;
+          }
+          .foundation-h1 {
+            top: 15%;
+            h1 {
+              font-size: 30px;
+              padding: 50px;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
   }
 }
 #about-us {
@@ -410,6 +468,9 @@ body {
         }
       }
     }
+    @media (max-width: 767px) {
+      margin: 0;
+    }
   }
 }
 #management,
@@ -423,14 +484,6 @@ body {
       font-family: "Poppins", sans-serif;
       text-transform: uppercase;
       color: darkorange;
-      // &::after {
-      //   content:"";
-      //   position:absol;
-      //   border-bottom:3px solid $red;
-      //   height:3px;
-      //   width:100px;
-      //   z-index:0;
-      // }
     }
     .col-management5,
     .col-education5 {
@@ -520,6 +573,9 @@ body {
             }
           }
         }
+        @media (max-width: 767px) {
+          max-height: 400px;
+        }
       }
     }
     .col-management7,
@@ -529,10 +585,16 @@ body {
       padding: 30px 15px;
       h3 {
         font-size: 35px;
+        @media (max-width: 767px) {
+          font-size: 25px;
+        }
       }
       span {
         padding: 5px 10px;
         font-size: 20px;
+        @media (max-width: 767px) {
+          font-size: 18px;
+        }
       }
       span.line {
         display: block;
@@ -577,8 +639,17 @@ body {
         }
         ul.pawelChmiel {
           padding-top: 30px;
+          @media (max-width: 767px) {
+            padding-top: 0;
+          }
+        }
+        @media (max-width: 767px) {
+          margin-top: 10px;
         }
       }
+    }
+    @media (max-width: 767px) {
+      margin: 0;
     }
   }
 }
@@ -783,6 +854,9 @@ body {
           }
         }
       }
+      @media (max-width: 767px) {
+        margin: 0;
+      }
     }
   }
 }
@@ -932,6 +1006,10 @@ body {
                   color: $red;
                   font-weight: normal;
                 }
+                @media (max-width: 767px) {
+                  font-size: 25px !important;
+                  text-align: center;
+                }
               }
               .row-cooperation {
                 .col-cooperation {
@@ -951,6 +1029,12 @@ body {
                 line-height: 30px;
                 margin-top: 10px;
                 margin-bottom: 50px;
+                @media (max-width: 767px) {
+                  font-size: 18px !important;
+                }
+              }
+              @media (max-width: 767px) {
+                text-align: left;
               }
             }
           }
@@ -1142,7 +1226,21 @@ body {
           padding-bottom: 10px;
         }
       }
+      @media (max-width: 767px) {
+        margin: 0;
+        .col-contact {
+          &:last-of-type {
+            margin-top: 20px;
+            .form-group:last-of-type {
+              margin: 0 auto !important;
+            }
+          }
+        }
+      }
     }
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 35px;
   }
 }
 #footer {
@@ -1231,7 +1329,20 @@ body {
             color: $red;
             transition: all 0.5s ease;
           }
+          span.copy {
+            margin-right: 10px;
+          }
+          @media (max-width: 767px) {
+            margin-left: 2.8px;
+            text-align: left;
+            span.copy {
+              margin-right: 12.8px;
+            }
+          }
         }
+      }
+      @media (max-width: 767px) {
+        margin: 0;
       }
     }
   }

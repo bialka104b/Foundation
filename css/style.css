@@ -45,6 +45,12 @@ body h2 i::before {
   color: darkorange;
 }
 
+@media (max-width: 767px) {
+  body h2 {
+    font-size: 30px !important;
+  }
+}
+
 body section {
   padding: 70px 0;
 }
@@ -168,6 +174,16 @@ body section {
   cursor: pointer;
 }
 
+@media (max-width: 767px) {
+  #header .navbar .icon-menu {
+    margin: 0 20px 0 auto;
+    font-size: 30px;
+  }
+  #header .navbar .icon-menu i::before {
+    font-weight: 900;
+  }
+}
+
 @media (min-width: 768px) {
   #header .navbar .icon-menu {
     display: none;
@@ -175,23 +191,44 @@ body section {
 }
 
 @media (max-width: 767px) {
+  #header .navbar {
+    padding: 0;
+    position: fixed;
+  }
   #header .navbar .navbar-header {
     margin: 0;
   }
   #header .navbar .navbar-nav {
     display: none;
-    position: absolute;
     width: 100%;
     z-index: 800;
+    background: white;
+    position: static;
     margin: 0;
-    margin-top: 100px;
   }
   #header .navbar .navbar-nav .list-inline {
     margin: 0;
+    padding: 20px;
+    top: 40px;
+    text-align: center;
   }
   #header .navbar .navbar-nav .list-inline li {
     display: block;
     padding: 0;
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  #header .navbar .navbar-nav .list-inline li a::after {
+    display: none;
+  }
+  #header .navbar .navbar-nav .list-inline li ul#list-education {
+    position: static;
+    margin-left: 0;
+    padding: 5px 0;
+  }
+  #header .navbar .navbar-nav .list-inline li ul#list-education li {
+    padding: 5px;
+    font-size: 18px;
   }
 }
 
@@ -383,6 +420,26 @@ body section {
   font-style: normal;
 }
 
+@media (max-width: 767px) {
+  #header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider .img-slider-text {
+    width: 60%;
+    margin: 0 20%;
+    font-size: 20px;
+  }
+  #header .div-header .div-header-content #myCarousel .carousel-control-next,
+  #header .div-header .div-header-content #myCarousel .carousel-control-prev {
+    top: 100px;
+  }
+  #header .div-header .div-header-content #myCarousel .foundation-h1 {
+    top: 15%;
+  }
+  #header .div-header .div-header-content #myCarousel .foundation-h1 h1 {
+    font-size: 30px;
+    padding: 50px;
+    margin: 0;
+  }
+}
+
 #about-us {
   background: radial-gradient(transparent, #fbb74d);
 }
@@ -487,6 +544,12 @@ body section {
   }
   100% {
     background-position: 200% 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #about-us .row-about-us {
+    margin: 0;
   }
 }
 
@@ -1097,6 +1160,27 @@ body section {
   -webkit-transform: scale(1.15);
 }
 
+@media (max-width: 767px) {
+  #management .row-management .col-management5 .img-management,
+  #management .row-management .col-management5 .img-education,
+  #management .row-management .col-education5 .img-management,
+  #management .row-management .col-education5 .img-education,
+  #management .row-education .col-management5 .img-management,
+  #management .row-education .col-management5 .img-education,
+  #management .row-education .col-education5 .img-management,
+  #management .row-education .col-education5 .img-education,
+  #education .row-management .col-management5 .img-management,
+  #education .row-management .col-management5 .img-education,
+  #education .row-management .col-education5 .img-management,
+  #education .row-management .col-education5 .img-education,
+  #education .row-education .col-management5 .img-management,
+  #education .row-education .col-management5 .img-education,
+  #education .row-education .col-education5 .img-management,
+  #education .row-education .col-education5 .img-education {
+    max-height: 400px;
+  }
+}
+
 #management .row-management .col-management7,
 #management .row-management .col-education7,
 #management .row-education .col-management7,
@@ -1121,6 +1205,19 @@ body section {
   font-size: 35px;
 }
 
+@media (max-width: 767px) {
+  #management .row-management .col-management7 h3,
+  #management .row-management .col-education7 h3,
+  #management .row-education .col-management7 h3,
+  #management .row-education .col-education7 h3,
+  #education .row-management .col-management7 h3,
+  #education .row-management .col-education7 h3,
+  #education .row-education .col-management7 h3,
+  #education .row-education .col-education7 h3 {
+    font-size: 25px;
+  }
+}
+
 #management .row-management .col-management7 span,
 #management .row-management .col-education7 span,
 #management .row-education .col-management7 span,
@@ -1131,6 +1228,19 @@ body section {
 #education .row-education .col-education7 span {
   padding: 5px 10px;
   font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  #management .row-management .col-management7 span,
+  #management .row-management .col-education7 span,
+  #management .row-education .col-management7 span,
+  #management .row-education .col-education7 span,
+  #education .row-management .col-management7 span,
+  #education .row-management .col-education7 span,
+  #education .row-education .col-management7 span,
+  #education .row-education .col-education7 span {
+    font-size: 18px;
+  }
 }
 
 #management .row-management .col-management7 span.line,
@@ -1313,6 +1423,57 @@ body section {
   padding-top: 30px;
 }
 
+@media (max-width: 767px) {
+  #management .row-management .col-management7 .cv ul.pawelChmiel,
+  #management .row-management .col-management7 .education-description ul.pawelChmiel,
+  #management .row-management .col-education7 .cv ul.pawelChmiel,
+  #management .row-management .col-education7 .education-description ul.pawelChmiel,
+  #management .row-education .col-management7 .cv ul.pawelChmiel,
+  #management .row-education .col-management7 .education-description ul.pawelChmiel,
+  #management .row-education .col-education7 .cv ul.pawelChmiel,
+  #management .row-education .col-education7 .education-description ul.pawelChmiel,
+  #education .row-management .col-management7 .cv ul.pawelChmiel,
+  #education .row-management .col-management7 .education-description ul.pawelChmiel,
+  #education .row-management .col-education7 .cv ul.pawelChmiel,
+  #education .row-management .col-education7 .education-description ul.pawelChmiel,
+  #education .row-education .col-management7 .cv ul.pawelChmiel,
+  #education .row-education .col-management7 .education-description ul.pawelChmiel,
+  #education .row-education .col-education7 .cv ul.pawelChmiel,
+  #education .row-education .col-education7 .education-description ul.pawelChmiel {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #management .row-management .col-management7 .cv,
+  #management .row-management .col-management7 .education-description,
+  #management .row-management .col-education7 .cv,
+  #management .row-management .col-education7 .education-description,
+  #management .row-education .col-management7 .cv,
+  #management .row-education .col-management7 .education-description,
+  #management .row-education .col-education7 .cv,
+  #management .row-education .col-education7 .education-description,
+  #education .row-management .col-management7 .cv,
+  #education .row-management .col-management7 .education-description,
+  #education .row-management .col-education7 .cv,
+  #education .row-management .col-education7 .education-description,
+  #education .row-education .col-management7 .cv,
+  #education .row-education .col-management7 .education-description,
+  #education .row-education .col-education7 .cv,
+  #education .row-education .col-education7 .education-description {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  #management .row-management,
+  #management .row-education,
+  #education .row-management,
+  #education .row-education {
+    margin: 0;
+  }
+}
+
 #projects .projects .row-projects {
   margin-bottom: 30px;
 }
@@ -1492,6 +1653,12 @@ body section {
   margin: 0;
 }
 
+@media (max-width: 767px) {
+  #projects .projects .row-projects {
+    margin: 0;
+  }
+}
+
 #education .education .row-education .col-education5 .img-education .img-education-a img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1639,6 +1806,13 @@ body section {
   font-weight: normal;
 }
 
+@media (max-width: 767px) {
+  #cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider h3 {
+    font-size: 25px !important;
+    text-align: center;
+  }
+}
+
 #cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider .row-cooperation .col-cooperation {
   width: 150px;
   height: 180px;
@@ -1659,6 +1833,18 @@ body section {
   line-height: 30px;
   margin-top: 10px;
   margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  #cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider p {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider {
+    text-align: left;
+  }
 }
 
 #cooperation .cooperation #carousel1 .carousel .carousel-control-prev,
@@ -1861,6 +2047,24 @@ body section {
   padding-bottom: 10px;
 }
 
+@media (max-width: 767px) {
+  #contact .contact .row-contact {
+    margin: 0;
+  }
+  #contact .contact .row-contact .col-contact:last-of-type {
+    margin-top: 20px;
+  }
+  #contact .contact .row-contact .col-contact:last-of-type .form-group:last-of-type {
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #contact {
+    padding-bottom: 35px;
+  }
+}
+
 #footer {
   background: radial-gradient(transparent, #fbb74d);
   padding: 70px 0 30px;
@@ -1961,5 +2165,25 @@ body section {
   color: #f71803;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+#footer .footer .row-footer .privacy-police a span.copy {
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  #footer .footer .row-footer .privacy-police a {
+    margin-left: 2.8px;
+    text-align: left;
+  }
+  #footer .footer .row-footer .privacy-police a span.copy {
+    margin-right: 12.8px;
+  }
+}
+
+@media (max-width: 767px) {
+  #footer .footer .row-footer {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

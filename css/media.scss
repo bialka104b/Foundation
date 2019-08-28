@@ -1,103 +1,193 @@
-#header {
-  .navbar {
-    @media (max-width: 500px) {
-      padding: 0;
-      position: static;
-    }
-    .container-fluid {
-      .icon-menu {
-        @media (max-width: 500px) {
-          margin: 0 auto;
-        }
-      }
-      .navbar-nav {
-        @media (max-width: 500px) {
-          background: white;
-          position: static;
-          margin-top: 0;
-          .list-inline {
-            padding: 20px;
-            top: 40px;
-            text-align: center;
-            li {
-              a::after {
-                display: none;
-              }
-              ul#list-education {
-                position: static;
-                margin-left: 0;
-                padding: 5px 0;
-                li {
-                  padding: 0;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .div-header {
-    .div-header-content {
-      #myCarousel {
-        .carousel-inner {
-        }
-        .carousel-control-next,
-        .carousel-control-prev {
-          @media (max-width: 500px) {
-            top: 100px;
-          }
-        }
-        .foundation-h1 {
-          h1 {
-            @media (max-width: 500px) {
-              font-size: 25px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// h2 {
+//   @media (max-width: 767px) {
+//     font-size: 30px !important;
+//   }
+// }
+// #header {
+//   .navbar {
+//     @media (max-width: 767px) {
+//       padding: 0;
+//       position: fixed;
+//     }
+//     .container-fluid {
+//       .icon-menu {
+//         @media (max-width: 767px) {
+//           margin: 0 20px 0 auto;
+//           font-size: 30px;
+//           i::before {
+//             font-weight: 900;
+//           }
+//         }
+//       }
+//       .navbar-nav {
+//         @media (max-width: 767px) {
+//           background: white;
+//           position: static;
+//           margin: 0;
+//           .list-inline {
+//             padding: 20px;
+//             top: 40px;
+//             text-align: center;
+//             li {
+//               padding: 10px 20px;
+//               font-size: 20px;
+//               a::after {
+//                 display: none;
+//               }
+//               ul#list-education {
+//                 position: static;
+//                 margin-left: 0;
+//                 padding: 5px 0;
+//                 li {
+//                   padding: 5px;
+//                   font-size: 18px;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .div-header {
+//     .div-header-content {
+//       #myCarousel {
+//         .carousel-inner {
+//           .carousel-item {
+//             .img-slider {
+//               .img-slider-text {
+//                 @media (max-width: 767px) {
+//                   width: 60%;
+//                   margin: 0 20%;
+//                   font-size: 20px;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//         .carousel-control-next,
+//         .carousel-control-prev {
+//           @media (max-width: 767px) {
+//             top: 100px;
+//           }
+//         }
+//         .foundation-h1 {
+//           @media (max-width: 767px) {
+//             top: 15%;
 
-#about-us {
-  .row-about-us {
-    @media (max-width: 500px) {
-      margin: 0;
-    }
-  }
-}
-#management {
-  .row-management {
-    @media (max-width: 500px) {
-      margin: 0;
-    }
-  }
-}
-#projects {
-  .projects {
-    .row-projects {
-      @media (max-width: 500px) {
-        margin: 0;
-      }
-    }
-  }
-}
-#contact {
-  .contact {
-    .row-contact {
-      @media (max-width: 500px) {
-        margin: 0;
-      }
-    }
-  }
-}
-#footer {
-  .footer {
-    .row-footer {
-      @media (max-width: 500px) {
-        margin: 0;
-      }
-    }
-  }
-}
+//             h1 {
+//               font-size: 30px;
+//               padding: 50px;
+//               margin: 0;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// #about-us {
+//   .row-about-us {
+//     @media (max-width: 767px) {
+//       margin: 0;
+//     }
+//   }
+// }
+// #management {
+//   .row-management {
+//     @media (max-width: 767px) {
+//       margin: 0;
+//       .col-management5 {
+//         .img-management {
+//           max-height: 400px;
+//         }
+//       }
+//       .col-management7 {
+//         h3 {
+//           font-size: 25px;
+//         }
+//         span {
+//           font-size: 18px;
+//         }
+//         .cv {
+//           margin-top: 10px;
+//           ul.pawelChmiel {
+//             padding-top: 0;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// #projects {
+//   .projects {
+//     .row-projects {
+//       @media (max-width: 767px) {
+//         margin: 0;
+//       }
+//     }
+//   }
+// }
+// #education {
+//   .education {
+//     @media (max-width: 767px) {
+//       .col-education7 {
+// h3 {
+//   font-size: 25px;
+// }
+// span {
+//   font-size: 18px;
+// }
+// .education-description {
+// margin-top: 10px;
+//         }
+//       }
+//     }
+//   }
+// }
+// #cooperation {
+//   @media (max-width: 767px) {
+//     .cooperation {
+//       #carousel1 {
+//         #myCarousel1 {
+//           .carousel-inner {
+//             .carousel-item {
+//               .img-slider {
+//   text-align: left;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (max-width: 767px) {
+//   #contact {
+//     padding-bottom: 35px;
+//     .contact {
+//       .row-contact {
+//         margin: 0;
+//         .col-contact {
+//           &:last-of-type {
+//             margin-top: 20px;
+//             .form-group:last-of-type {
+//               margin: 0 auto !important;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// #footer {
+//   .footer {
+// .row-footer {
+//   @media (max-width: 767px) {
+//     margin: 0;
+//   }
+// }
+//   }
+// }

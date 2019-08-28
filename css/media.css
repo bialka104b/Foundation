@@ -1,0 +1,43 @@
+@media (max-width: 500px) {
+  #header .navbar {
+    padding: 0;
+    position: static;
+  }
+}
+
+@media (max-width: 500px) {
+  #header .div-header .div-header-content #myCarousel .foundation-h1 h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  #about-us .row-about-us {
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  #management .row-management {
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  #projects .projects .row-projects {
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  #contact .contact .row-contact {
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  #footer .footer .row-footer {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=media.css.map */

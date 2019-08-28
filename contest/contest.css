@@ -293,7 +293,7 @@ main #gallery .gallery .row-header .row {
   width: 100%;
 }
 
-main #gallery .gallery .row-header .col-12, main #gallery .gallery .row-header .col-lg-12, main #gallery .gallery .row-header .col-lg-4, main #gallery .gallery .row-header .col-lg-6, main #gallery .gallery .row-header .col-lg-3, main #gallery .gallery .row-header .col-lg-2 {
+main #gallery .gallery .row-header .col-12, main #gallery .gallery .row-header .col-lg-12, main #gallery .gallery .row-header .col-lg-4, main #gallery .gallery .row-header .col-lg-6, main #gallery .gallery .row-header .col-lg-3, main #gallery .gallery .row-header .col-lg-2, main #gallery .gallery .row-header .col-lg-1 {
   padding: 0;
   height: 100%;
 }
@@ -333,6 +333,11 @@ main #gallery .gallery .row-header .row-column .vertical-column .row-column1 .ro
   height: 40%;
   width: 100%;
   margin: 0;
+}
+
+main #gallery .gallery .row-header .col-lg-7 {
+  padding: 0;
+  height: 100%;
 }
 
 main #gallery .gallery a.picture {

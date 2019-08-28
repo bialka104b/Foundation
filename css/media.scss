@@ -1,0 +1,67 @@
+#header {
+  .navbar {
+    @media (max-width: 500px) {
+      padding: 0;
+      position: static;
+    }
+    .container-fluid {
+    }
+  }
+  .div-header {
+    .div-header-content {
+      #myCarousel {
+        .carousel-inner {
+        }
+        .foundation-h1 {
+          h1 {
+            @media (max-width: 500px) {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#about-us {
+  .row-about-us {
+    @media (max-width: 500px) {
+      margin: 0;
+    }
+  }
+}
+#management {
+  .row-management {
+    @media (max-width: 500px) {
+      margin: 0;
+    }
+  }
+}
+#projects {
+  .projects {
+    .row-projects {
+      @media (max-width: 500px) {
+        margin: 0;
+      }
+    }
+  }
+}
+#contact {
+  .contact {
+    .row-contact {
+      @media (max-width: 500px) {
+        margin: 0;
+      }
+    }
+  }
+}
+#footer {
+  .footer {
+    .row-footer {
+      @media (max-width: 500px) {
+        margin: 0;
+      }
+    }
+  }
+}

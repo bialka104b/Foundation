@@ -6,6 +6,43 @@
 }
 
 @media (max-width: 500px) {
+  #header .navbar .container-fluid .icon-menu {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  #header .navbar .container-fluid .navbar-nav {
+    background: white;
+    position: static;
+    margin-top: 0;
+  }
+  #header .navbar .container-fluid .navbar-nav .list-inline {
+    padding: 20px;
+    top: 40px;
+    text-align: center;
+  }
+  #header .navbar .container-fluid .navbar-nav .list-inline li a::after {
+    display: none;
+  }
+  #header .navbar .container-fluid .navbar-nav .list-inline li ul#list-education {
+    position: static;
+    margin-left: 0;
+    padding: 5px 0;
+  }
+  #header .navbar .container-fluid .navbar-nav .list-inline li ul#list-education li {
+    padding: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  #header .div-header .div-header-content #myCarousel .carousel-control-next,
+  #header .div-header .div-header-content #myCarousel .carousel-control-prev {
+    top: 100px;
+  }
+}
+
+@media (max-width: 500px) {
   #header .div-header .div-header-content #myCarousel .foundation-h1 h1 {
     font-size: 25px;
   }

@@ -5,12 +5,48 @@
       position: static;
     }
     .container-fluid {
+      .icon-menu {
+        @media (max-width: 500px) {
+          margin: 0 auto;
+        }
+      }
+      .navbar-nav {
+        @media (max-width: 500px) {
+          background: white;
+          position: static;
+          margin-top: 0;
+          .list-inline {
+            padding: 20px;
+            top: 40px;
+            text-align: center;
+            li {
+              a::after {
+                display: none;
+              }
+              ul#list-education {
+                position: static;
+                margin-left: 0;
+                padding: 5px 0;
+                li {
+                  padding: 0;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
   .div-header {
     .div-header-content {
       #myCarousel {
         .carousel-inner {
+        }
+        .carousel-control-next,
+        .carousel-control-prev {
+          @media (max-width: 500px) {
+            top: 100px;
+          }
         }
         .foundation-h1 {
           h1 {

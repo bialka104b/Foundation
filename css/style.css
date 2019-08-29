@@ -174,6 +174,12 @@ body section {
   cursor: pointer;
 }
 
+#header .navbar .icon-menu i::before {
+  background-image: -webkit-gradient(linear, left top, right top, from(#f71803), to(#fbb74d));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media (max-width: 767px) {
   #header .navbar .icon-menu {
     margin: 0 20px 0 auto;
@@ -544,6 +550,18 @@ body section {
   }
   100% {
     background-position: 200% 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #about-us .row-about-us .col-about-us a.pdf .img-statute-download .download-statute {
+    height: 30px;
+  }
+  #about-us .row-about-us .col-about-us a.pdf .img-statute-download .download-statute span {
+    padding: 5px 12px;
+  }
+  #about-us .row-about-us .col-about-us a.pdf .img-statute-download .download-statute span:hover::before {
+    padding: 5px 12px;
   }
 }
 
@@ -1478,6 +1496,12 @@ body section {
   margin-bottom: 30px;
 }
 
+@media (max-width: 767px) {
+  #projects .projects .row-projects .col-projects {
+    padding: 8px 15px;
+  }
+}
+
 #projects .projects .row-projects .div-img-description-projects {
   position: relative;
 }
@@ -1573,6 +1597,12 @@ body section {
   font-size: 30px;
 }
 
+@media (max-width: 767px) {
+  #projects .projects .row-projects .div-img-description-projects .div-description-projects h5 {
+    font-size: 18px;
+  }
+}
+
 #projects .projects .row-projects .div-img-description-projects .div-description-projects .more {
   padding: 0;
   background: #fbb74d;
@@ -1651,6 +1681,24 @@ body section {
 
 #projects .projects .row-projects .div-img-description-projects .div-description-projects .more a i::before {
   margin: 0;
+}
+
+@media (max-width: 767px) {
+  #projects .projects .row-projects .div-img-description-projects .div-description-projects .more a {
+    padding: 5px 12px;
+  }
+  #projects .projects .row-projects .div-img-description-projects .div-description-projects .more a:hover:before {
+    padding: 5px 12px;
+  }
+  #projects .projects .row-projects .div-img-description-projects .div-description-projects .more a:hover:after {
+    padding: 5px 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  #projects .projects .row-projects .div-img-description-projects .div-description-projects .more {
+    height: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1753,6 +1801,24 @@ body section {
 
 #education .education .row-education .col-education7 .education-description .more a i::before {
   margin: 0;
+}
+
+@media (max-width: 767px) {
+  #education .education .row-education .col-education7 .education-description .more a {
+    padding: 5px 12px;
+  }
+  #education .education .row-education .col-education7 .education-description .more a:hover:before {
+    padding: 5px 12px;
+  }
+  #education .education .row-education .col-education7 .education-description .more a:hover:after {
+    padding: 5px 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  #education .education .row-education .col-education7 .education-description .more {
+    height: 30px;
+  }
 }
 
 #cooperation {
@@ -2021,6 +2087,22 @@ body section {
   }
 }
 
+@media (max-width: 767px) {
+  #contact .contact .row-contact .col-contact #contact-container .form-horizontal #contact-form .form-group #btn-warning .btn-warning {
+    font-size: 14px;
+    padding: 10px 22px;
+  }
+  #contact .contact .row-contact .col-contact #contact-container .form-horizontal #contact-form .form-group #btn-warning .btn-warning:hover::before {
+    padding: 10px 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  #contact .contact .row-contact .col-contact #contact-container .form-horizontal #contact-form .form-group #btn-warning {
+    height: 40px;
+  }
+}
+
 #contact .contact .row-contact .col-contact #contact-container .form-horizontal #contact-form .form-group .form-control {
   color: #7b7b7b;
   font-size: 14px;
@@ -2050,6 +2132,12 @@ body section {
 @media (max-width: 767px) {
   #contact .contact .row-contact {
     margin: 0;
+  }
+  #contact .contact .row-contact .col-contact:first-of-type a {
+    max-height: 400px;
+  }
+  #contact .contact .row-contact .col-contact:first-of-type a img {
+    max-height: 400px;
   }
   #contact .contact .row-contact .col-contact:last-of-type {
     margin-top: 20px;
@@ -2131,6 +2219,12 @@ body section {
   margin-right: 10px;
 }
 
+@media (max-width: 767px) {
+  #footer .footer .row-footer .col-adress i {
+    margin-right: 7.2px;
+  }
+}
+
 #footer .footer .row-footer .col-social-media {
   padding-right: 40px;
   padding-left: 40px;
@@ -2169,6 +2263,7 @@ body section {
 
 #footer .footer .row-footer .privacy-police a span.copy {
   margin-right: 10px;
+  padding-left: .2em;
 }
 
 @media (max-width: 767px) {

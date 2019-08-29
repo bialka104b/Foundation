@@ -130,7 +130,9 @@ body {
             li {
               padding: 10px;
               font-size: 14px;
+              
               a {
+                
                 &::after {
                   height: 1.5px;
                 }
@@ -146,6 +148,14 @@ body {
     .icon-menu {
       display: block;
       cursor: pointer;
+      i {
+        &::before {
+          background-image: -webkit-gradient(linear, left top, right top, from($red), to($orange));
+	        -webkit-background-clip: text;
+	        -webkit-text-fill-color: transparent;
+        }
+      }
+      
       @media (max-width: 767px) {
         margin: 0 20px 0 auto;
         font-size: 30px;
@@ -464,6 +474,17 @@ body {
                 }
               }
             }
+            @media (max-width: 767px) {
+              height: 30px;
+              span {
+                padding: 5px 12px;
+                &:hover {
+                  &::before {
+                    padding: 5px 12px;
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -657,7 +678,11 @@ body {
   .projects {
     .row-projects {
       margin-bottom: 30px;
-
+      .col-projects {
+        @media (max-width:767px) {
+          padding:8px 15px;
+        }
+      }
       .div-img-description-projects {
         position: relative;
         .div-img-projects {
@@ -777,6 +802,9 @@ body {
             color: white;
             font-family: "Poppins", sans-serif;
             font-size: 30px;
+            @media (max-width:767px) {
+              font-size: 18px;
+            }
           }
           .more {
             padding: 0;
@@ -850,7 +878,22 @@ body {
                   margin: 0;
                 }
               }
+              @media (max-width:767px) {
+                padding: 5px 12px;
+                &:hover {
+                  &:before {
+                    padding: 5px 12px;
+                  }
+                  &:after {
+                    padding: 5px 12px;
+                  }
+                }
+              }
             }
+            @media (max-width:767px) {
+              height: 30px;
+            }
+            
           }
         }
       }
@@ -955,6 +998,20 @@ body {
                   margin: 0;
                 }
               }
+              @media (max-width:767px) {
+                padding: 5px 12px;
+                &:hover {
+                  &:before {
+                    padding: 5px 12px;
+                  }
+                  &:after {
+                    padding: 5px 12px;
+                  }
+                }
+              }
+            }
+            @media (max-width:767px) {
+              height: 30px;
             }
           }
         }
@@ -1198,6 +1255,18 @@ body {
                         }
                       }
                     }
+                    @media (max-width:767px) {
+                      font-size:14px;
+                      padding: 10px 22px;
+                      &:hover {
+                        &::before {
+                          padding: 10px 22px;
+                        }
+                      }
+                    }
+                  }
+                  @media (max-width:767px) {
+                    height:40px;
                   }
                 }
                 .form-control {
@@ -1229,6 +1298,14 @@ body {
       @media (max-width: 767px) {
         margin: 0;
         .col-contact {
+          &:first-of-type {
+            a {
+              max-height: 400px;
+              img {
+                max-height:400px;
+              }
+            }
+          }
           &:last-of-type {
             margin-top: 20px;
             .form-group:last-of-type {
@@ -1300,6 +1377,9 @@ body {
       .col-adress {
         i {
           margin-right: 10px;
+          @media (max-width:767px) {
+            margin-right: 7.2px;
+          }
         }
       }
       .col-social-media {
@@ -1331,6 +1411,7 @@ body {
           }
           span.copy {
             margin-right: 10px;
+            padding-left: .2em;
           }
           @media (max-width: 767px) {
             margin-left: 2.8px;

@@ -17,10 +17,13 @@ main {
 			background-color:white;
 			border:0px;
 			margin-bottom:20px;
+			padding: 0;
 			.card-header-tabs {
 				border:0px;
+				width:auto;
 				li.nav-item {
-					padding: 0 15px;
+					padding: 7.5px 15px;
+					
 					a.nav-link {
 						font-size:20px;
 						position: relative;
@@ -38,9 +41,9 @@ main {
 							transition: all 0.3s ease;
 							color: $red;
 							&::after {
-                			transform: scale(1);
-                			transition: all 0.5s ease;
-              				}
+                transform: scale(1);
+                transition: all 0.5s ease;
+              }
 						}
 						&::after {
               background-color: $red;
@@ -59,6 +62,46 @@ main {
 						&::after {
 							transform: scale(1);
 							height: 3px;
+						}
+					}
+					@media (max-width:767px) {
+						a.nav-link {
+							font-size:16px;
+							&::after {
+								bottom: 5px;
+							}
+						}
+					}
+					
+				}
+				@media (max-width:767px) {
+					margin:0;
+				}
+			}
+			#icon-search {
+				text-align: center;;
+    		width: 47px;
+				float: right;
+				font-size: 20px;
+				font-weight: 900;
+				color:white;
+				height:47px;
+				margin-top:-47px;
+				z-index:5;
+				.icon-search {
+					height: 100%;
+					i {
+						display:block;
+						margin: 0;
+						height: 100%;
+						&::before {
+							margin: 0;
+							display:block;
+							line-height: 47px;
+							background-image: -webkit-gradient(linear, left top, right top, from($red), to($orange));
+							color:white;
+							width:100%;
+							font-weight: 900;
 						}
 					}
 				}
@@ -267,6 +310,9 @@ main {
 							}
 						}
 					}
+					@media (max-width:991px) {
+						padding: 8px 15px;
+					}
 				}
 			}
 		}
@@ -327,6 +373,22 @@ main {
 					padding: 0;
 					height: 100%;
 				}
+				@media (max-width:991px) {
+					height: 100%;
+
+					&:first-of-type {
+						display:none;
+					}
+					&:last-of-type {
+						.there-is-no {
+							display:none;
+						}
+						.col-lg-7, .col-lg-4 {
+							height:50%;
+						}
+					}
+				}
+				
 			}
 			a.picture {
 				display: block;
@@ -377,6 +439,9 @@ main {
 					-webkit-transform: scale(1.1);
 				}
 			}
+		}
+		@media (max-width:567px) {
+			display:none;
 		}
 	}
 }

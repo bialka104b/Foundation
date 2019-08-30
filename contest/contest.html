@@ -80,6 +80,12 @@
               aria-selected="false">Szkolenia</a>
           </li>
         </ul>
+        <div id="icon-search">
+          <div class="icon-search"><i class='uil uil-search'></i></div>
+          <div class="search">
+            
+          </div>
+        </div>
       </div>
       <div class="container card-body">
         <div class="tab-content" id="myTabContent">
@@ -475,48 +481,48 @@
           </div>
         </div>
         <div class="row row-header">
-          <div class="col-lg-7">
+          <div class="col-12 col-lg-7">
             <div class="row row-column">
               <div class="col-lg-12">
                 <div class="row row-column2">
-                  <div class="col-lg-2">
+                  <div class="col-2 col-lg-2">
                     <a href="#image14" class="picture"><img src="../image/Szkola_Art/IMG_4494.jpg" alt=""
                         class="img-responsive"></a>
                     <a href="#_" class="lightbox" id="image14"><img src="../image/Szkola_Art/IMG_4494.jpg"></a>
                   </div>
-                  <div class="col-lg-2">
+                  <div class="col-2 col-lg-2">
                     <a href="#image15" class="picture"><img src="../image/Szkola_Art/IMG_4705.jpg" alt=""
                         class="img-responsive"></a>
                     <a href="#_" class="lightbox" id="image15"><img src="../image/Szkola_Art/IMG_4705.jpg"></a>
                   </div>
-                  <div class="col-lg-2">
+                  <div class="col-2 col-lg-2">
                     <a href="#image16" class="picture"><img src="../image/Szkola_Art/IMG_4395.jpg" alt=""
                         class="img-responsive"></a>
                     <a href="#_" class="lightbox" id="image16"><img src="../image/Szkola_Art/IMG_4395.jpg"></a>
                   </div>
-                  <div class="col-lg-2">
+                  <div class="col-2 col-lg-2">
                     <a href="#image17" class="picture"><img src="../image/Szkola_Art/IMG_4432.jpg" alt=""
                         class="img-responsive"></a>
                     <a href="#_" class="lightbox" id="image17"><img src="../image/Szkola_Art/IMG_4432.jpg"></a>
                   </div>
-                  <div class="col-lg-2">
+                  <div class="col-2 col-lg-2">
                     <a href="#image18" class="picture"><img src="../image/Szkola_Art/IMG_4516.jpg" alt=""
                         class="img-responsive"></a>
                     <a href="#_" class="lightbox" id="image18"><img src="../image/Szkola_Art/IMG_4516.jpg"></a>
                   </div>
-                  <div class="col-lg-2">
+                  <div class="col-2 col-lg-2">
                     <a href="#image19" class="picture"><img src="../image/Szkola_Art/IMG_4485.jpg" alt=""
                         class="img-responsive"></a>
                     <a href="#_" class="lightbox" id="image19"><img src="../image/Szkola_Art/IMG_4485.jpg"></a>
                   </div>
                 </div>
                 <div class="row row-column2">
-                  <div class="col-lg-6">
+                  <div class="col-8 col-lg-6">
                     <a href="#image20" class="picture"><img src="../image/Szkola_Art/IMG_4150.jpg" alt=""
                         class="img-responsive"></a>
                     <a href="#_" class="lightbox" id="image20"><img src="../image/Szkola_Art/IMG_4150.jpg"></a>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-4 col-lg-6">
                     <a href="#image21" class="picture"><img src="../image/Szkola_Art/IMG_4602.jpg" alt=""
                         class="img-responsive"></a>
                     <a href="#_" class="lightbox" id="image21"><img src="../image/Szkola_Art/IMG_4602.jpg"></a>
@@ -525,32 +531,32 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-1">
+          <div class="col-12 col-lg-1 there-is-no">
             <div class="row row-column">
-              <div class="col-lg-12">
+              <div class="col-12 col-lg-12">
                 <a href="#image22" class="picture"><img src="../image/Szkola_Art/IMG_5195.jpg" alt=""
                     class="img-responsive"></a>
                 <a href="#_" class="lightbox" id="image22"><img src="../image/Szkola_Art/IMG_5195.jpg"></a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-12 col-lg-4">
             <div class="row row-column">
               <div class="col-lg-12">
                 <div class="row row-column2">
-                  <div class="col-lg-6">
+                  <div class="col-6 col-lg-6">
                     <a href="#image23" class="picture"><img src="../image/Szkola_Art/IMG_4901.jpg" alt=""
                         class="img-responsive"></a>
                     <a href="#_" class="lightbox" id="image23"><img src="../image/Szkola_Art/IMG_4901.jpg"></a>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-6 col-lg-6">
                     <a href="#image24" class="picture"><img src="../image/Szkola_Art/IMG_4806.jpg" alt=""
                         class="img-responsive"></a>
                     <a href="#_" class="lightbox" id="image24"><img src="../image/Szkola_Art/IMG_4806.jpg"></a>
                   </div>
                 </div>
                 <div class="row row-column2">
-                  <div class="col-12">
+                  <div class="col-12 col-12">
                     <a href="#image25" class="picture"><img src="../image/Szkola_Art/IMG_4899.jpg" alt=""
                         class="img-responsive"></a>
                     <a href="#_" class="lightbox" id="image25"><img src="../image/Szkola_Art/IMG_4899.jpg"></a>
@@ -597,6 +603,14 @@
     $(document).ready(function () {
       $('.click-education').click(function () {
         $('#list-education').slideToggle("fast");
+        window.onresize = function() {
+            if (window.innerWidth > 891) {
+                $('#menu-container-1').css({display : 'block'}); //ten kod odwróci działanie slide Toggle jeśli rozsuniesz okno przeglądarki.
+            }
+            if (window.innerWidth <= 891) {
+                $('#menu-container-1').css({display : 'none'}); //analogicznie ten kod odwróci działanie slide Toggle jeśli zsuniesz okno przeglądarki z powrotem. Potrzebne tylko na urządzeniach desktopowych przy rozszerzaniu i zwężaniu okna przeglądarki
+            }
+        }
       });
     });
   </script>

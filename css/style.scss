@@ -71,6 +71,9 @@ body {
     }
     .navbar-header {
       max-width: 250px;
+      @media (max-width: 767px) {
+        margin: 0;
+      }
     }
     .navbar-nav {
       ul {
@@ -141,41 +144,10 @@ body {
           }
         }
       }
-      @media (max-width: 907px) {
+      @media (max-width: 1087px) {
         font-size: 14px;
       }
-    }
-    .icon-menu {
-      display: block;
-      cursor: pointer;
-      i {
-        &::before {
-          background-image: -webkit-gradient(linear, left top, right top, from($red), to($orange));
-	        -webkit-background-clip: text;
-	        -webkit-text-fill-color: transparent;
-        }
-      }
-      
-      @media (max-width: 767px) {
-        margin: 0 20px 0 auto;
-        font-size: 30px;
-        i::before {
-          font-weight: 900;
-        }
-      }
-    }
-    @media (min-width: 768px) {
-      .icon-menu {
-        display: none;
-      }
-    }
-    @media (max-width: 767px) {
-      padding: 0;
-      position: fixed;
-      .navbar-header {
-        margin: 0;
-      }
-      .navbar-nav {
+      @media (max-width: 890px) {
         display: none;
         width: 100%;
         z-index: 800;
@@ -206,6 +178,32 @@ body {
             }
           }
         }
+      }
+      @media (min-width: 891px) {
+        .list-inline {
+          margin:0;
+        }
+      }
+    }
+    .icon-menu {
+      display: block;
+      cursor: pointer;
+      i {
+        &::before {
+          background-image: -webkit-gradient(linear, left top, right top, from($red), to($orange));
+	        -webkit-background-clip: text;
+	        -webkit-text-fill-color: transparent;
+        }
+      }
+      @media (max-width: 890px) {
+        margin: 0 20px 0 auto;
+        font-size: 30px;
+        i::before {
+          font-weight: 900;
+        }
+      }
+      @media (min-width: 891px) {
+        display: none;
       }
     }
   }
@@ -679,7 +677,7 @@ body {
     .row-projects {
       margin-bottom: 30px;
       .col-projects {
-        @media (max-width:767px) {
+        @media (max-width:991px) {
           padding:8px 15px;
         }
       }
@@ -897,7 +895,7 @@ body {
           }
         }
       }
-      @media (max-width: 767px) {
+      @media (max-width: 991px) {
         margin: 0;
       }
     }
@@ -1295,7 +1293,7 @@ body {
           padding-bottom: 10px;
         }
       }
-      @media (max-width: 767px) {
+      @media (max-width: 991px) {
         margin: 0;
         .col-contact {
           &:first-of-type {
@@ -1303,6 +1301,7 @@ body {
               max-height: 400px;
               img {
                 max-height:400px;
+                object-position: 50% 20%;
               }
             }
           }

@@ -2323,6 +2323,7 @@ body section {
   bottom: 35px;
   right: 35px;
   border-radius: 3px;
+  z-index: 10;
 }
 
 #scroll:hover {

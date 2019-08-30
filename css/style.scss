@@ -1445,3 +1445,31 @@ body {
     padding: 30px 0 30px;
   }
 }
+#scroll {
+  position: fixed;
+  background: darkorange;
+  width: 47px;
+  height: 47px;
+  bottom: 35px;
+  right: 35px;
+  border-radius: 3px;
+  &:hover {
+    background: $red;
+  }
+  a {
+    text-decoration: none;
+  }
+  i {
+    color: white;
+    display: block;
+    height: 100%;
+    margin: 0;
+    font-size: 45px;
+    &::before {
+      display: block;
+      line-height: 47px;
+      width: 100%;
+      margin: 0;
+    }
+  }
+}

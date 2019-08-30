@@ -49,6 +49,9 @@ body {
   }
   section {
     padding: 70px 0;
+    @media (max-width: 767px) {
+      padding: 30px 0;
+    }
   }
 }
 #header {
@@ -133,9 +136,8 @@ body {
             li {
               padding: 10px;
               font-size: 14px;
-              
+
               a {
-                
                 &::after {
                   height: 1.5px;
                 }
@@ -181,7 +183,7 @@ body {
       }
       @media (min-width: 891px) {
         .list-inline {
-          margin:0;
+          margin: 0;
         }
       }
     }
@@ -190,9 +192,15 @@ body {
       cursor: pointer;
       i {
         &::before {
-          background-image: -webkit-gradient(linear, left top, right top, from($red), to($orange));
-	        -webkit-background-clip: text;
-	        -webkit-text-fill-color: transparent;
+          background-image: -webkit-gradient(
+            linear,
+            left top,
+            right top,
+            from($red),
+            to($orange)
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
       }
       @media (max-width: 890px) {
@@ -205,6 +213,11 @@ body {
       @media (min-width: 891px) {
         display: none;
       }
+    }
+    @media (max-width: 582px) {
+      width: 100% !important;
+      padding: 10px 0 !important;
+      display: block !important;
     }
   }
   .fixed {
@@ -677,8 +690,8 @@ body {
     .row-projects {
       margin-bottom: 30px;
       .col-projects {
-        @media (max-width:991px) {
-          padding:8px 15px;
+        @media (max-width: 991px) {
+          padding: 8px 15px;
         }
       }
       .div-img-description-projects {
@@ -800,7 +813,7 @@ body {
             color: white;
             font-family: "Poppins", sans-serif;
             font-size: 30px;
-            @media (max-width:767px) {
+            @media (max-width: 767px) {
               font-size: 18px;
             }
           }
@@ -876,7 +889,7 @@ body {
                   margin: 0;
                 }
               }
-              @media (max-width:767px) {
+              @media (max-width: 767px) {
                 padding: 5px 12px;
                 &:hover {
                   &:before {
@@ -888,10 +901,9 @@ body {
                 }
               }
             }
-            @media (max-width:767px) {
+            @media (max-width: 767px) {
               height: 30px;
             }
-            
           }
         }
       }
@@ -996,7 +1008,7 @@ body {
                   margin: 0;
                 }
               }
-              @media (max-width:767px) {
+              @media (max-width: 767px) {
                 padding: 5px 12px;
                 &:hover {
                   &:before {
@@ -1008,7 +1020,7 @@ body {
                 }
               }
             }
-            @media (max-width:767px) {
+            @media (max-width: 767px) {
               height: 30px;
             }
           }
@@ -1253,8 +1265,8 @@ body {
                         }
                       }
                     }
-                    @media (max-width:767px) {
-                      font-size:14px;
+                    @media (max-width: 767px) {
+                      font-size: 14px;
                       padding: 10px 22px;
                       &:hover {
                         &::before {
@@ -1263,8 +1275,8 @@ body {
                       }
                     }
                   }
-                  @media (max-width:767px) {
-                    height:40px;
+                  @media (max-width: 767px) {
+                    height: 40px;
                   }
                 }
                 .form-control {
@@ -1300,7 +1312,7 @@ body {
             a {
               max-height: 400px;
               img {
-                max-height:400px;
+                max-height: 400px;
                 object-position: 50% 20%;
               }
             }
@@ -1376,7 +1388,7 @@ body {
       .col-adress {
         i {
           margin-right: 10px;
-          @media (max-width:767px) {
+          @media (max-width: 767px) {
             margin-right: 7.2px;
           }
         }
@@ -1410,7 +1422,7 @@ body {
           }
           span.copy {
             margin-right: 10px;
-            padding-left: .2em;
+            padding-left: 0.2em;
           }
           @media (max-width: 767px) {
             margin-left: 2.8px;
@@ -1425,5 +1437,11 @@ body {
         margin: 0;
       }
     }
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    padding: 30px 0 30px;
   }
 }

@@ -11,6 +11,15 @@ main {
   background-image: url(../image/leather_1/leather_1/leather_1.png);
 }
 
+@media (max-width: 1200px) {
+  main #contest-workshops-training h2 i:first-of-type {
+    margin-right: 7px;
+  }
+  main #contest-workshops-training h2 i:last-of-type {
+    margin-left: 7px;
+  }
+}
+
 main #contest-workshops-training .card-header {
   background-color: white;
   border: 0px;
@@ -88,6 +97,10 @@ main #contest-workshops-training .card-header .card-header-tabs li.nav-item a.ac
   main #contest-workshops-training .card-header .card-header-tabs li.nav-item a.nav-link::after {
     bottom: 5px;
   }
+}
+
+main #contest-workshops-training .card-header .card-header-tabs li.nav-item:last-of-type {
+  margin-right: 47px;
 }
 
 main #contest-workshops-training .card-header #icon-search {
@@ -383,6 +396,18 @@ main #contest-workshops-training .contest .row-contest .col-contest .div-img-des
 @media (max-width: 991px) {
   main #contest-workshops-training .contest .row-contest .col-contest, main #contest-workshops-training .workshops .row-contest .col-contest, main #contest-workshops-training .training .row-contest .col-contest {
     padding: 8px 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  main #contest-workshops-training .contest .row-contest .col-contest, main #contest-workshops-training .workshops .row-contest .col-contest, main #contest-workshops-training .training .row-contest .col-contest {
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 581px) {
+  main #contest-workshops-training .contest .row-contest, main #contest-workshops-training .workshops .row-contest, main #contest-workshops-training .training .row-contest {
+    margin: 0;
   }
 }
 

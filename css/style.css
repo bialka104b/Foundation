@@ -55,6 +55,12 @@ body section {
   padding: 70px 0;
 }
 
+@media (max-width: 767px) {
+  body section {
+    padding: 30px 0;
+  }
+}
+
 #header {
   height: 100vh;
   font-size: 20px;
@@ -240,6 +246,14 @@ body section {
 @media (min-width: 891px) {
   #header .navbar .icon-menu {
     display: none;
+  }
+}
+
+@media (max-width: 582px) {
+  #header .navbar {
+    width: 100% !important;
+    padding: 10px 0 !important;
+    display: block !important;
   }
 }
 
@@ -2270,7 +2284,7 @@ body section {
 
 #footer .footer .row-footer .privacy-police a span.copy {
   margin-right: 10px;
-  padding-left: .2em;
+  padding-left: 0.2em;
 }
 
 @media (max-width: 767px) {
@@ -2286,6 +2300,18 @@ body section {
 @media (max-width: 767px) {
   #footer .footer .row-footer {
     margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #footer .footer {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #footer {
+    padding: 30px 0 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

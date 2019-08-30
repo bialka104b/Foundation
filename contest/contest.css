@@ -21,6 +21,7 @@ main #contest-workshops-training .card-header {
 main #contest-workshops-training .card-header .card-header-tabs {
   border: 0px;
   width: auto;
+  margin: 0;
 }
 
 main #contest-workshops-training .card-header .card-header-tabs li.nav-item {
@@ -89,21 +90,15 @@ main #contest-workshops-training .card-header .card-header-tabs li.nav-item a.ac
   }
 }
 
-@media (max-width: 767px) {
-  main #contest-workshops-training .card-header .card-header-tabs {
-    margin: 0;
-  }
-}
-
 main #contest-workshops-training .card-header #icon-search {
   text-align: center;
-  width: 47px;
   float: right;
   font-size: 20px;
   font-weight: 900;
   color: white;
-  height: 47px;
-  margin-top: -47px;
+  width: 62px;
+  height: 62px;
+  margin-top: -62px;
   z-index: 5;
 }
 
@@ -120,11 +115,74 @@ main #contest-workshops-training .card-header #icon-search .icon-search i {
 main #contest-workshops-training .card-header #icon-search .icon-search i::before {
   margin: 0;
   display: block;
-  line-height: 47px;
+  line-height: 62px;
   background-image: -webkit-gradient(linear, left top, right top, from(#f71803), to(#fbb74d));
   color: white;
   width: 100%;
   font-weight: 900;
+}
+
+@media (max-width: 767px) {
+  main #contest-workshops-training .card-header #icon-search {
+    width: 47px;
+    height: 56.4px;
+    margin-top: -56.4px;
+  }
+  main #contest-workshops-training .card-header #icon-search .icon-search i::before {
+    line-height: 56.4px;
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  main #contest-workshops-training .card-header #icon-search {
+    width: 62px;
+    height: 62px;
+    margin-top: -62px;
+  }
+}
+
+main #contest-workshops-training .card-header #icon-search .search {
+  position: relative;
+  width: 400px;
+  right: 0px;
+  left: -338px;
+  z-index: 2;
+  font-size: 14px;
+  padding: 5px;
+  background: #fbb74d;
+  top: 12px;
+  display: none;
+}
+
+main #contest-workshops-training .card-header #icon-search .search #tringle {
+  width: 0;
+  border-left: 31px solid transparent;
+  border-right: 31px solid transparent;
+  border-bottom: 12px solid #fbb74d;
+  margin: -12px auto 0px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+main #contest-workshops-training .card-header #icon-search .search .div-input-search .input-search {
+  display: block;
+  border: none;
+  width: 100%;
+  padding: 7.5px 15px;
+  font-weight: normal;
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  main #contest-workshops-training .card-header #icon-search .search {
+    left: -353px;
+  }
+  main #contest-workshops-training .card-header #icon-search .search #tringle {
+    border-left: 24.5px solid transparent;
+    border-right: 24.5px solid transparent;
+  }
 }
 
 main #contest-workshops-training .card-body {

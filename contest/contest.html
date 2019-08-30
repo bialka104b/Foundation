@@ -83,7 +83,12 @@
         <div id="icon-search">
           <div class="icon-search"><i class='uil uil-search'></i></div>
           <div class="search">
-            
+            <div id="tringle"></div>
+            <div class="div-input-search">
+              <input type="text" id="subject" name="subject" placeholder="Wyszukaj" value="Wyszukaj temat"
+                class="input-search" />
+            </div>
+
           </div>
         </div>
       </div>
@@ -603,13 +608,24 @@
     $(document).ready(function () {
       $('.click-education').click(function () {
         $('#list-education').slideToggle("fast");
-        window.onresize = function() {
-            if (window.innerWidth > 891) {
-                $('#menu-container-1').css({display : 'block'}); //ten kod odwróci działanie slide Toggle jeśli rozsuniesz okno przeglądarki.
-            }
-            if (window.innerWidth <= 891) {
-                $('#menu-container-1').css({display : 'none'}); //analogicznie ten kod odwróci działanie slide Toggle jeśli zsuniesz okno przeglądarki z powrotem. Potrzebne tylko na urządzeniach desktopowych przy rozszerzaniu i zwężaniu okna przeglądarki
-            }
+        window.onresize = function () {
+          if (window.innerWidth > 891) {
+            $('#menu-container-1').css({ display: 'block' }); //ten kod odwróci działanie slide Toggle jeśli rozsuniesz okno przeglądarki.
+          }
+          if (window.innerWidth <= 891) {
+            $('#menu-container-1').css({ display: 'none' }); //analogicznie ten kod odwróci działanie slide Toggle jeśli zsuniesz okno przeglądarki z powrotem. Potrzebne tylko na urządzeniach desktopowych przy rozszerzaniu i zwężaniu okna przeglądarki
+          }
+        }
+      });
+      $('.icon-search').click(function () {
+        $('.search').slideToggle("fast");
+        window.onresize = function () {
+          if (window.innerWidth > 891) {
+            $('#menu-container-1').css({ display: 'block' }); //ten kod odwróci działanie slide Toggle jeśli rozsuniesz okno przeglądarki.
+          }
+          if (window.innerWidth <= 891) {
+            $('#menu-container-1').css({ display: 'none' }); //analogicznie ten kod odwróci działanie slide Toggle jeśli zsuniesz okno przeglądarki z powrotem. Potrzebne tylko na urządzeniach desktopowych przy rozszerzaniu i zwężaniu okna przeglądarki
+          }
         }
       });
     });

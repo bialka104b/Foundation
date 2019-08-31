@@ -71,7 +71,8 @@ body {
       @media (max-width: 767px) {
         padding: 0;
       }
-      @media (max-width: 568px) {
+      @media (max-width: 767px) {
+        //568
         height: 60px;
         padding: 0;
         .navbar-header {

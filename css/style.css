@@ -84,7 +84,7 @@ body section {
   }
 }
 
-@media (max-width: 568px) {
+@media (max-width: 767px) {
   #header .navbar .container-fluid {
     height: 60px;
     padding: 0;

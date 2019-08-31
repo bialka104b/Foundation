@@ -262,7 +262,7 @@ body section {
   }
 }
 
-@media (max-width: 582px) {
+@media (max-width: 767px) {
   #header .navbar {
     width: 100% !important;
     padding: 0 !important;

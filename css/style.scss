@@ -226,7 +226,8 @@ body {
         display: none;
       }
     }
-    @media (max-width: 582px) {
+    @media (max-width: 767px) {
+      //582
       width: 100% !important;
       padding: 0 !important;
       display: block !important;

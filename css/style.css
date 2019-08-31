@@ -458,6 +458,12 @@ body section {
   font-style: normal;
 }
 
+@media (max-width: 1200px) and (min-width: 767px) {
+  #header .div-header .div-header-content #myCarousel .foundation-h1 {
+    top: 20%;
+  }
+}
+
 @media (max-width: 767px) {
   #header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider .img-slider-text {
     width: 60%;

@@ -1081,7 +1081,8 @@ body {
   }
 }
 #cooperation {
-  background: radial-gradient(transparent, $orange);
+  // background: radial-gradient(transparent, $orange);
+  background: linear-gradient(to bottom, white, $orange);
   .cooperation {
     #carousel1 {
       .carousel {
@@ -1204,7 +1205,7 @@ body {
     }
   }
   @media (max-width:767px) {
-    background: $orange;
+    // background: $orange;
   }
 }
 #location {

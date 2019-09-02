@@ -1886,7 +1886,8 @@ body section {
 }
 
 #cooperation {
-  background: radial-gradient(transparent, #fbb74d);
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#fbb74d));
+  background: linear-gradient(to bottom, white, #fbb74d);
 }
 
 #cooperation .cooperation #carousel1 .carousel .carousel-indicators {
@@ -2031,12 +2032,6 @@ body section {
   }
   #cooperation .cooperation #carousel1 .carousel .carousel-control-prev {
     margin-left: -60px;
-  }
-}
-
-@media (max-width: 767px) {
-  #cooperation {
-    background: #fbb74d;
   }
 }
 

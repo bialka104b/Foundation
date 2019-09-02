@@ -17,6 +17,7 @@ $(document).ready(function() {
       }
     };
   });
+  
   $("#aboutAs").on("click", function(e) {
     e.preventDefault();
     $("#list-menu1").slideToggle(500); // list AboutUS

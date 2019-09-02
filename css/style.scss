@@ -311,13 +311,6 @@ body {
                     }
                   }
                 }
-                .img-slider-icon:last-of-type {
-                  i {
-                    &::before {
-                      transform: scaleX(-1);
-                    }
-                  }
-                }
                 .img-slider-p {
                   padding: 0;
                   p {
@@ -484,7 +477,7 @@ body {
           .download-statute {
             font-weight: normal;
             padding: 0;
-            background: $orange;
+            background: darkorange;;
             position: relative;
             width: 150px;
             height: 40px;

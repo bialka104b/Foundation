@@ -377,11 +377,6 @@ body section {
   width: 100%;
 }
 
-#header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider .img-slider-text .img-slider-icon:last-of-type i::before {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-}
-
 #header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider .img-slider-text .img-slider-p {
   padding: 0;
 }
@@ -548,7 +543,7 @@ body section {
 #about-us .row-about-us .col-about-us a.pdf .img-statute-download .download-statute {
   font-weight: normal;
   padding: 0;
-  background: #fbb74d;
+  background: darkorange;
   position: relative;
   width: 150px;
   height: 40px;

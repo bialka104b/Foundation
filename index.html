@@ -46,9 +46,9 @@
             <li>
               <a class="click-education">Edukacja<i class='uil uil-angle-down'></i></a>
               <ul id="list-education">
-                <li><a href="#education">Edukacja</a></li>
-                <li><a href="http://www.uignasia.com">U Ignasia</a></li>
-                <li><a href="contest/contest.html">Konkursy, warsztaty, szkolenia</a></li>
+                <li class="list-education-li"><a href="#education">Edukacja</a></li>
+                <li class="list-education-li"><a href="http://www.uignasia.com">U Ignasia</a></li>
+                <li class="list-education-li"><a href="contest/contest.html">Konkursy, warsztaty, szkolenia</a></li>
               </ul>
             </li>
             <li><a href="#cooperation">Współpraca</a></li>
@@ -548,9 +548,18 @@
   <script type="text/javascript">
     $(document).ready(function () {
       $('.click-education').click(function () {
-        $('#list-education').slideToggle("fast");
+        $('#list-education').stop().slideToggle("fast");
+        // if (!e.target.matches('.list-education-li'))closeMenu()
+        // $(".list-education-li").on("click", function(e) {
+        //   e.preventDefault();
+        //   $("#list-education").slideToggle("fast");
+        // });
       });
     });
+    // $(".list-education-li").on("click", function(e) {
+  //   e.preventDefault();
+  //   $("#list-education").css({ display: "none" });
+  // });
   </script>
 </body>
 

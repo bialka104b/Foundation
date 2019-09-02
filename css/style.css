@@ -2034,6 +2034,12 @@ body section {
   }
 }
 
+@media (max-width: 767px) {
+  #cooperation {
+    background: #fbb74d;
+  }
+}
+
 #location {
   background-image: url(../image/leather_1/leather_1/leather_1.png);
 }

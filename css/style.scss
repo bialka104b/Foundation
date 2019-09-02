@@ -1203,6 +1203,9 @@ body {
       }
     }
   }
+  @media (max-width:767px) {
+    background: $orange;
+  }
 }
 #location {
   background-image: url(../image/leather_1/leather_1/leather_1.png);

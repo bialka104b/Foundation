@@ -137,9 +137,11 @@
     </div>
   </footer>
   <script type="text/javascript">
-    $(document).ready(function () {
-      $('.click-education').click(function () {
-        $('#list-education').slideToggle("fast");
+    $('.click-education').on('click', function (e) {
+      e.preventDefault();
+      $('#list-education').stop().slideToggle("fast");
+      $('.list-education-li').on('click', function () {
+        $('#list-education').stop().slideUp("fast").exit();//exit potrzebne aby skrypt sie zakończył i lista zwinęła sie po raz drugi
       });
     });
   </script>

@@ -73,7 +73,8 @@
               class='uil uil-graduation-hat'></i></div>
         </div>
       </div> -->
-      <h2 class="container"><i class='uil uil-graduation-hat'></i>Konkursy, warsztaty i szkolenia<i class='uil uil-graduation-hat'></i></h2>
+      <h2 class="container"><i class='uil uil-graduation-hat'></i>Konkursy, warsztaty i szkolenia<i
+          class='uil uil-graduation-hat'></i></h2>
 
       <!--NAWIGACJA ZAKŁADEK-->
       <div class="container card-header">
@@ -617,8 +618,12 @@
   </footer>
   <script type="text/javascript">
     $(document).ready(function () {
-      $('.click-education').click(function () {
-        $('#list-education').slideToggle("fast");
+      $('.click-education').on('click', function (e) {
+        e.preventDefault();
+        $('#list-education').stop().slideToggle("fast");
+        $('.list-education-li').on('click', function () {
+          $('#list-education').stop().slideUp("fast").exit();//exit potrzebne aby skrypt sie zakończył i lista zwinęła sie po raz drugi
+        });
         window.onresize = function () {
           if (window.innerWidth > 891) {
             $('#menu-container-1').css({ display: 'block' }); //ten kod odwróci działanie slide Toggle jeśli rozsuniesz okno przeglądarki.

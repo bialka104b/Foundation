@@ -1,4 +1,4 @@
-//AUTHOR: https://github.com/bialka104b bialka104b@interia.pl
+//AUTHOR: Create by https://github.com/bialka104b bialka104b@interia.pl
 $(document).ready(function() {
   $(window).bind("scroll", function() {
     var num = 120; //number of pixels before modifying styles
@@ -17,7 +17,6 @@ $(document).ready(function() {
       }
     };
   });
-  
   $("#aboutAs").on("click", function(e) {
     e.preventDefault();
     $("#list-menu1").slideToggle(500); // list AboutUS

@@ -511,7 +511,8 @@ body section {
 }
 
 #about-us {
-  background: radial-gradient(transparent, #fbb74d);
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#fbb74d));
+  background: linear-gradient(to bottom, white, #fbb74d);
 }
 
 #about-us .row-about-us {
@@ -2221,7 +2222,8 @@ body section {
 }
 
 #footer {
-  background: radial-gradient(transparent, #fbb74d);
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#fbb74d));
+  background: linear-gradient(to bottom, white, #fbb74d);
   padding: 70px 0 30px;
   text-transform: uppercase;
 }

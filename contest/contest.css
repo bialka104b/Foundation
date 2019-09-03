@@ -1,4 +1,3 @@
-/* AUTHOR: Create by https://github.com/bialka104b bialka104b@interia.pl */
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
@@ -448,6 +447,23 @@ main #gallery .gallery .row-header .row-column .row-column1 {
 
 main #gallery .gallery .row-header .row-column .row-column2 {
   height: 50%;
+}
+
+main #gallery .gallery .row-header .row-column .row-column2 .mobile-instrument {
+  display: none;
+}
+
+@media (max-width: 991px) and (min-width: 568px) {
+  main #gallery .gallery .row-header .row-column .row-column2 .mobile-instrument {
+    display: block;
+    padding: 0;
+    height: 100%;
+  }
+  main #gallery .gallery .row-header .row-column .row-column2.mobile {
+    height: 100%;
+    width: 50%;
+    float: left;
+  }
 }
 
 main #gallery .gallery .row-header .row-column .vertical-column .row-column1 .row.height70 {

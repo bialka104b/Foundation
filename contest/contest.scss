@@ -149,11 +149,6 @@ main {
 					width:62px;
 					height: 62px;
 					margin-top: -62px;
-					.icon-search {
-						i::before {
-
-						}
-					}
 				}	
 				.search {
 					position: relative;
@@ -438,6 +433,21 @@ main {
 					}
 					.row-column2 {
 						height:50%;
+						.mobile-instrument {
+							display:none;
+						}
+						@media (max-width:991px) and (min-width:568px) {
+							.mobile-instrument {
+								display:block;
+								padding: 0;
+								height:100%;
+							}
+							&.mobile {
+								height: 100%;
+								width: 50%;
+								float: left;
+							}
+						}
 					}
 					.vertical-column {
 						.row-column1 {
@@ -463,7 +473,6 @@ main {
 							}
 						}
 					}
-					
 				}
 				.col-lg-7 {
 					padding: 0;

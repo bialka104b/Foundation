@@ -21,4 +21,12 @@ $(document).ready(function() {
     e.preventDefault();
     $("#list-menu1").slideToggle(500); // list AboutUS
   });
+  $(window).bind("scroll", function() {
+    var num = 120; //number of pixels before modifying styles
+    if ($(window).scrollTop() < num) {
+      $("#scroll").css({ display: "none" });
+    } else {
+      $("#scroll").css({ display: "block" });
+    }
+  });
 });

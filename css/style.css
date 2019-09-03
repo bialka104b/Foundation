@@ -1,4 +1,3 @@
-/* AUTHOR: Create by https://github.com/bialka104b bialka104b@interia.pl */
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
@@ -243,6 +242,7 @@ body section {
 
 #header .navbar .icon-menu i::before {
   background-image: -webkit-gradient(linear, left top, right top, from(#f71803), to(#fbb74d));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

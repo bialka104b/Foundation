@@ -1,5 +1,4 @@
 //AUTHOR: Create by https://github.com/bialka104b bialka104b@interia.pl
-const ANALITICS_TOKEN = "..........";
 $(document).ready(function() {
   $(window).bind("scroll", function() {
     var num = 120; //number of pixels before modifying styles

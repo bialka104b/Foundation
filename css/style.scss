@@ -361,7 +361,7 @@ body {
         }
         .foundation-h1 {
           position: absolute;
-          top: 30%;
+          top: 26%;
           width: 100%;
           h1 {
             width: 100%;
@@ -1231,13 +1231,14 @@ body {
         a.picture {
           overflow: hidden;
           display: block;
+          border: 3px solid darkorange;
           img {
             object-fit: cover;
             width: 100%;
             height: 100%;
             max-height: 450px;
             object-position: top;
-            border: 3px solid darkorange;
+
             transition-duration: 3s;
             margin: 0 auto;
             display: block;

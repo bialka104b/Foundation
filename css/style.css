@@ -440,7 +440,7 @@ body section {
 
 #header .div-header .div-header-content #myCarousel .foundation-h1 {
   position: absolute;
-  top: 30%;
+  top: 26%;
   width: 100%;
 }
 
@@ -2072,6 +2072,7 @@ body section {
 #contact .contact .row-contact .col-contact a.picture {
   overflow: hidden;
   display: block;
+  border: 3px solid darkorange;
 }
 
 #contact .contact .row-contact .col-contact a.picture img {
@@ -2082,7 +2083,6 @@ body section {
   max-height: 450px;
   -o-object-position: top;
      object-position: top;
-  border: 3px solid darkorange;
   -webkit-transition-duration: 3s;
           transition-duration: 3s;
   margin: 0 auto;

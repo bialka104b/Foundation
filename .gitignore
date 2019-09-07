@@ -1,1 +1,4 @@
 .vscode
+.idea/
+articles/.sass-cache/
+css/.sass-cache/

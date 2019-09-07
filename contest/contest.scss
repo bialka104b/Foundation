@@ -49,7 +49,6 @@ main {
 				margin:0;
 				li.nav-item {
 					padding: 7.5px 15px;
-					
 					a.nav-link {
 						font-size:20px;
 						position: relative;
@@ -90,13 +89,7 @@ main {
 							height: 3px;
 						}
 					}
-					.click-education {
-						color:$red;
-						&::after {
-							transform: scale(1);
-							height: 3px;
-						}
-					}
+					
 					@media (max-width:767px) {
 						a.nav-link {
 							font-size:16px;

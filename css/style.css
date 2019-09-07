@@ -156,11 +156,11 @@ body section {
   transition: all 0.5s ease;
 }
 
-#header .navbar .navbar-nav ul li.active a {
+#header .navbar .navbar-nav ul li.active > a {
   color: #f71803;
 }
 
-#header .navbar .navbar-nav ul li.active a::after {
+#header .navbar .navbar-nav ul li.active > a::after {
   -webkit-transform: scale(1);
           transform: scale(1);
   height: 3px;

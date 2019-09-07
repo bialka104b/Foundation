@@ -126,7 +126,7 @@ body {
             }
           }
           &.active {
-            a {
+            > a {
               color: $red;
               &::after {
                 transform: scale(1);

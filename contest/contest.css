@@ -90,11 +90,11 @@ main #contest-workshops-training .card-header .card-header-tabs li.nav-item a.ac
   height: 3px;
 }
 
-main #contest-workshops-training .card-header .card-header-tabs li.nav-item .click-education {
+main #contest-workshops-training .card-header .card-header-tabs li.nav-item #e-education {
   color: #f71803;
 }
 
-main #contest-workshops-training .card-header .card-header-tabs li.nav-item .click-education::after {
+main #contest-workshops-training .card-header .card-header-tabs li.nav-item #e-education::after {
   -webkit-transform: scale(1);
           transform: scale(1);
   height: 3px;

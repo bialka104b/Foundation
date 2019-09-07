@@ -49,23 +49,53 @@
         <div class="icon-menu"><i class="uil uil-list-ul"></i></div>
         <div class="nav navbar-nav">
           <ul class="list-inline">
-            <li class=" active"><a href="#about-us">O nas</a></li>
-            <li><a href="#management">Zarząd</a></li>
-            <li><a href="#projects">Projekty</a></li>
-            <li>
-              <a class="click-education">Edukacja<i class='uil uil-angle-down'></i></a>
+            <li class="nav-item">
+              <a href="#about-us" id="about-us-tab" class="nav-link" data-toggle="tab" role="tab"
+                aria-controls="about-us" aria-selected="true">O
+                nas</a>
+            </li>
+            <li class="nav-item">
+              <a href="#management" id="management-tab" class="nav-link" data-toggle="tab" role="tab"
+                aria-controls="management" aria-selected="false">Zarząd</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" id="projects-tab" class="nav-link" data-toggle="tab" role="tab"
+                aria-controls="projects" aria-selected="false">Projekty</a>
+            </li>
+            <li class="nav-item">
+              <a id="education-tab" class="nav-link click-education">Edukacja<i class='uil uil-angle-down'></i></a>
               <ul id="list-education">
-                <li class="list-education-li"><a href="#education">Edukacja</a></li>
+                <li class="list-education-li nav-item"><a href="#education" class="nav-link" data-toggle="tab"
+                    role="tab" aria-controls="education" aria-selected="false">Edukacja</a></li>
                 <li class="list-education-li"><a href="http://www.uignasia.com">U Ignasia</a></li>
                 <li class="list-education-li"><a href="contest/contest.html">Konkursy, warsztaty, szkolenia</a></li>
               </ul>
             </li>
-            <li><a href="#cooperation">Współpraca</a></li>
-            <li><a href="#contact">Kontakt</a></li>
+            <li class="nav-item">
+              <a href="#cooperation" id="cooperation-tab" class="nav-link" data-toggle="tab" role="tab"
+                aria-controls="cooperation" aria-selected="false">Współpraca</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" id="contact-tab" class="nav-link" data-toggle="tab" role="tab" aria-controls="contact"
+                aria-selected="false">Kontakt</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
+    <script>
+      $(document).ready(function () {
+        $("a[href^='#']").click(function (e) {
+          e.preventDefault();
+
+          var position = $($(this).attr("href")).offset().top;
+
+          $("body, html").animate({
+            scrollTop: position
+          } /* speed */);
+        });
+      });
+    </script>
     <div class="container-fluid div-header">
       <div class="div-header-content">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -122,7 +152,8 @@
             <span class="sr-only">Next</span>
           </a>
           <div class="foundation-h1">
-            <h1 id="foundation-h1" title="Małopolska Fundacja Promocji Kultury i Sztuki"><em>Małopolska Fundacja</em> Promocji Kultury i Sztuki</h1>
+            <h1 id="foundation-h1" title="Małopolska Fundacja Promocji Kultury i Sztuki"><em>Małopolska Fundacja</em>
+              Promocji Kultury i Sztuki</h1>
           </div>
         </div>
       </div>
@@ -131,7 +162,7 @@
     <!--Import document script show-menu.js-->
   </header>
   <main>
-    <section id="about-us">
+    <section id="about-us" class="tab-pane show active" role="tabpanel" aria-labelledby="about-us-tab">
       <div class="container">
         <h2><i class='uil uil-home'></i></i>O nas<i class='uil uil-home'></i></h2>
         <div class="row row-about-us">
@@ -175,7 +206,7 @@
         </div>
       </div>
     </section>
-    <section id="management">
+    <section id="management" class="tab-pane" role="tabpanel" aria-labelledby="management-tab">
       <div class="container">
         <h2><i class='uil uil-favorite'></i>Zarząd<i class='uil uil-favorite'></i></h2>
         <div class="row row-management">
@@ -246,14 +277,16 @@
         </div>
       </div>
     </section>
-    <section id="projects">
+    <section id="projects" class="tab-pane" role="tabpanel" aria-labelledby="projects-tab">
       <div class="container projects">
         <h2><i class='uil uil-sun'></i></i>Projekty<i class='uil uil-sun'></i></h2>
+        <div class="row row-projects">Projekty są obecnie w trakcie przygotowań</div>
         <div class="row row-projects">
           <div class="col-12 col-lg-6 col-projects">
             <div class="div-img-description-projects">
               <div class="div-img-projects">
-                <a href="#img1" class="picture"><img src="image/1.jpg" alt="Organizujemy festiwale i koncerty" class="img-responsive"></a>
+                <a href="#img1" class="picture"><img src="image/1.jpg" alt="Organizujemy festiwale i koncerty"
+                    class="img-responsive"></a>
                 <a href="#_" class="lightbox" id="img1"><img src="image/1.jpg"></a>
               </div>
               <div class="div-description-projects">
@@ -266,7 +299,8 @@
           <div class="col-12 col-lg-6 col-projects">
             <div class="div-img-description-projects">
               <div class="div-img-projects">
-                <a href="#img2" class="picture"><img src="image/2.jpg" alt="Kursy nauki gry na instrumentach" class="img-responsive"></a>
+                <a href="#img2" class="picture"><img src="image/2.jpg" alt="Kursy nauki gry na instrumentach"
+                    class="img-responsive"></a>
                 <a href="#_" class="lightbox" id="img2"><img src="image/2.jpg"></a>
               </div>
               <div class="div-description-projects">
@@ -281,11 +315,13 @@
           <div class="col-12 col-lg-6 col-projects">
             <div class="div-img-description-projects">
               <div class="div-img-projects">
-                <a href="#img3" class="picture"><img src="image/3.jpg" alt="Zajęcia dla dzieci, młodzieży i dorosłych „U Ignasia”" class="img-responsive"></a>
+                <a href="#img3" class="picture"><img src="image/3.jpg"
+                    alt="Zajęcia dla dzieci, młodzieży i dorosłych „U Ignasia”" class="img-responsive"></a>
                 <a href="#_" class="lightbox" id="img3"><img src="image/3.jpg"></a>
               </div>
               <div class="div-description-projects">
-                <h5 title="Zajęcia dla dzieci, młodzieży i dorosłych „U Ignasia”">Zajęcia dla dzieci, młodzieży i dorosłych „U Ignasia”</h5>
+                <h5 title="Zajęcia dla dzieci, młodzieży i dorosłych „U Ignasia”">Zajęcia dla dzieci, młodzieży i
+                  dorosłych „U Ignasia”</h5>
                 <div class="more"><a href="articles/articles-template.html">Więcej<i
                       class='uil uil-angle-right'></i></a></div>
               </div>
@@ -309,11 +345,13 @@
           <div class="col-12 col-lg-6 col-projects">
             <div class="div-img-description-projects">
               <div class="div-img-projects">
-                <a href="#img5" class="picture"><img src="image/5.jpg" alt="Zajęcia umuzykalniające i rowój zdolności muzycznych" class="img-responsive"></a>
+                <a href="#img5" class="picture"><img src="image/5.jpg"
+                    alt="Zajęcia umuzykalniające i rowój zdolności muzycznych" class="img-responsive"></a>
                 <a href="#_" class="lightbox" id="img5"><img src="image/5.jpg"></a>
               </div>
               <div class="div-description-projects">
-                <h5 title="Zajęcia umuzykalniające i rowój zdolności muzycznych">Zajęcia umuzykalniające i rowój zdolności muzycznych</h5>
+                <h5 title="Zajęcia umuzykalniające i rowój zdolności muzycznych">Zajęcia umuzykalniające i rowój
+                  zdolności muzycznych</h5>
                 <div class="more"><a href="articles/articles-template.html">Więcej<i
                       class='uil uil-angle-right'></i></a></div>
               </div>
@@ -322,7 +360,8 @@
           <div class="col-12 col-lg-6 col-projects">
             <div class="div-img-description-projects">
               <div class="div-img-projects">
-                <a href="#img6" class="picture"><img src="image/6.jpg" alt="Kursy nauki gry na gitarze" class="img-responsive"></a>
+                <a href="#img6" class="picture"><img src="image/6.jpg" alt="Kursy nauki gry na gitarze"
+                    class="img-responsive"></a>
                 <a href="#_" class="lightbox" id="img6"><img src="image/6.jpg"></a>
               </div>
               <div class="div-description-projects">
@@ -335,13 +374,13 @@
         </div>
       </div>
     </section>
-    <section id="education">
+    <section id="education" class="tab-pane" role="tabpanel" aria-labelledby="education-tab">
       <div class="container education">
         <h2><i class='uil uil-favorite'></i>Edukacja<i class='uil uil-favorite'></i></h2>
         <div class="row row-education">
           <div class="col-12 col-md-5 col-education5">
             <div class="img-education">
-              <a href="#" class="img-education-a ilona">
+              <a class="img-education-a ilona">
                 <img src="image/Szkola_Art/IMG_4943.jpg" alt="Konkursy, warsztaty, szkolenia" class="img-responsive"
                   title="Konkursy, warsztaty, szkolenia">
               </a>
@@ -350,15 +389,14 @@
           <div class="col-12 col-md-7 col-education7">
             <h3 title="Konkursy, Warsztaty, Szkolenia">Konkursy, Warsztaty, Szkolenia</h3>
             <span class="line"></span>
-            <span>Event: 12 grudnia 2019 warsztaty "Pomaluj świat"</span>
+            <span>Nadchodzące wydarzenia</span>
             <div class="education-description">
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever. Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the
-                industry's standard dummy text ever. Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the
                 industry's standard dummy text ever.
-              </p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever.</p>
               <div class="more"><a href="contest/contest.html">Więcej<i class='uil uil-angle-right'></i></a></div>
             </div>
           </div>
@@ -381,7 +419,7 @@
           </div>
           <div class="col-12 col-md-5 col-education5">
             <div class="img-education">
-              <a href="#" class="img-education-a pawel">
+              <a href="http://www.uignasia.com" class="img-education-a pawel">
                 <img src="image/Szkola_Art/IMG_4258.jpg" alt="U Ignasia" class="img-responsive"
                   title="Warsztaty U Ignasia">
               </a>
@@ -390,7 +428,7 @@
         </div>
       </div>
     </section>
-    <section id="cooperation">
+    <section id="cooperation" class="tab-pane" role="tabpanel" aria-labelledby="cooperation-tab">
       <div class="container-fluid cooperation">
         <h2><i class='uil uil-users-alt'></i>Współpraca<i class='uil uil-users-alt'></i></h2>
         <div id="carousel1" class="container">
@@ -471,7 +509,7 @@
         </div>
       </div>
     </section>
-    <section id="contact">
+    <section id="contact" class="tab-pane" role="tabpanel" aria-labelledby="contact-tab">
       <div class="container contact">
         <h2><i class='uil uil-envelope-alt'></i>Kontakt<i class='uil uil-phone'></i></h2>
         <div class="row row-contact">
@@ -538,7 +576,8 @@
         <div class="col-12 col-sm-3 col-lg-4 col-footer col-social-media">
           <div class="row row-icon">
             <div class="col-12 col-icon">
-              <a href="https://www.facebook.com/Małopolska-Fundacja-Promocji-Kultury-i-Sztuki-102328694477945"><i class='uil uil-facebook'></i></a>
+              <a href="https://www.facebook.com/Małopolska-Fundacja-Promocji-Kultury-i-Sztuki-102328694477945"><i
+                  class='uil uil-facebook'></i></a>
             </div>
           </div>
         </div>
@@ -566,4 +605,5 @@
     });
   </script>
 </body>
+
 </html>

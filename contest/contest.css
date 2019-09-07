@@ -90,6 +90,16 @@ main #contest-workshops-training .card-header .card-header-tabs li.nav-item a.ac
   height: 3px;
 }
 
+main #contest-workshops-training .card-header .card-header-tabs li.nav-item .click-education {
+  color: #f71803;
+}
+
+main #contest-workshops-training .card-header .card-header-tabs li.nav-item .click-education::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  height: 3px;
+}
+
 @media (max-width: 767px) {
   main #contest-workshops-training .card-header .card-header-tabs li.nav-item a.nav-link {
     font-size: 16px;
@@ -409,6 +419,44 @@ main #contest-workshops-training .contest .row-contest .col-contest .div-img-des
   main #contest-workshops-training .contest .row-contest, main #contest-workshops-training .workshops .row-contest, main #contest-workshops-training .training .row-contest {
     margin: 0;
   }
+}
+
+main #contest-workshops-training #workshops .row-contest, main #contest-workshops-training #training .row-contest {
+  display: none;
+}
+
+main #contest-workshops-training #workshops .row-contest:first-of-type, main #contest-workshops-training #training .row-contest:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+main #contest-workshops-training #workshops .row-contest:first-of-type .col-contest, main #contest-workshops-training #training .row-contest:first-of-type .col-contest {
+  padding: 0;
+}
+
+main #contest-workshops-training #workshops .row-contest:first-of-type .col-contest .div-img-description-contest .div-img-contest .picture img, main #contest-workshops-training #training .row-contest:first-of-type .col-contest .div-img-description-contest .div-img-contest .picture img {
+  height: 500px;
+}
+
+main #contest-workshops-training #workshops .row-contest:first-of-type .col-contest .div-img-description-contest .div-img-contest .picture::after, main #contest-workshops-training #training .row-contest:first-of-type .col-contest .div-img-description-contest .div-img-contest .picture::after {
+  content: none;
+}
+
+main #contest-workshops-training #workshops .row-contest:first-of-type .col-contest .div-img-description-contest .div-description-contest, main #contest-workshops-training #training .row-contest:first-of-type .col-contest .div-img-description-contest .div-description-contest {
+  bottom: 200px;
+}
+
+main #contest-workshops-training #workshops .row-contest:first-of-type .col-contest .div-img-description-contest .div-description-contest h5, main #contest-workshops-training #training .row-contest:first-of-type .col-contest .div-img-description-contest .div-description-contest h5 {
+  font-size: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: -4px 2px 4px black;
 }
 
 main #gallery {

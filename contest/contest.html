@@ -25,9 +25,7 @@
   <link rel="stylesheet" href="../css/style.css" type="text/css" />
   <link rel="stylesheet" href="contest.css" type="text/css" />
   <!--GOOGLE ANALITYCS-->
-  <script async src="">
-      const ANALITICS_TOKEN = `https://www.googletagmanager.com/gtag/js?id=${ANALITICS_TOKEN}`;
-  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=${ANALITICS_TOKEN}"></script>
   <script>
     const ANALITICS_TOKEN = "..........";
     window.dataLayer = window.dataLayer || [];
@@ -50,19 +48,20 @@
         <div class="icon-menu"><i class="uil uil-list-ul"></i></div>
         <div class="nav navbar-nav">
           <ul class="list-inline">
-            <li class="active"><a href="../#about-us">O nas</a></li>
-            <li class=""><a href="../#management">Zarząd</a></li>
-            <li class=""><a href="../#projects">Projekty</a></li>
-            <li>
+            <li class="nav-item"><a href="../#about-us">O nas</a></li>
+            <li class="nav-item"><a href="../#management">Zarząd</a></li>
+            <li class="nav-item"><a href="../#projects">Projekty</a></li>
+            <li class="nav-item">
               <a class="click-education">Edukacja<i class='uil uil-angle-down'></i></a>
               <ul id="list-education">
                 <li><a href="../#education">Edukacja</a></li>
                 <li><a href="http://www.uignasia.com">U Ignasia</a></li>
-                <li><a href="#contest-workshops-training">Konkursy, warsztaty, szkolenia</a></li>
+                <li class="nav-item active"><a href="#contest-workshops-training">Konkursy, warsztaty, szkolenia</a>
+                </li>
               </ul>
             </li>
-            <li class=""><a href="../#cooperation">Współpraca</a></li>
-            <li class=""><a href="../#contact">Kontakt</a></li>
+            <li class="nav-item"><a href="../#cooperation">Współpraca</a></li>
+            <li class="nav-item"><a href="../#contact">Kontakt</a></li>
           </ul>
         </div>
 
@@ -156,7 +155,8 @@
                     <a href="#_" class="lightbox" id="img3"><img src="../image/Szkola_Art/IMG_4317.jpg"></a>
                   </div>
                   <div class="div-description-contest">
-                    <h5 title="Zajęcia dla dzieci, młodzieży i dorosłych „U Ignasia”">Zajęcia dla dzieci, młodzieży i dorosłych „U Ignasia”</h5>
+                    <h5 title="Zajęcia dla dzieci, młodzieży i dorosłych „U Ignasia”">Zajęcia dla dzieci, młodzieży i
+                      dorosłych „U Ignasia”</h5>
                     <div class="more"><a href="../articles/articles-template.html">Więcej<i
                           class='uil uil-angle-right'></i></a></div>
                   </div>
@@ -186,7 +186,8 @@
                     <a href="#_" class="lightbox" id="img5"><img src="../image/Szkola_Art/IMG_4715.jpg"></a>
                   </div>
                   <div class="div-description-contest">
-                    <h5 title="Zajęcia umuzykalniające i rowój zdolności muzycznych">Zajęcia umuzykalniające i rowój zdolności muzycznych</h5>
+                    <h5 title="Zajęcia umuzykalniające i rowój zdolności muzycznych">Zajęcia umuzykalniające i rowój
+                      zdolności muzycznych</h5>
                     <div class="more"><a href="../articles/articles-template.html">Więcej<i
                           class='uil uil-angle-right'></i></a></div>
                   </div>
@@ -210,6 +211,19 @@
           </div>
           <!--ZAWARTOŚĆ ZAKŁADKI WARSZTATY-->
           <div class="tab-pane workshops" id="workshops" role="tabpanel" aria-labelledby="workshops-tab">
+            <div class="row row-contest">
+              <div class="col-12 col-contest">
+                <div class="div-img-description-contest">
+                  <div class="div-img-contest">
+                    <a href="#img13" class="picture"><img src="../image/Szkola_Art/IMG_4974.jpg" alt=""
+                        class="img-responsive"></a>
+                  </div>
+                  <div class="div-description-contest">
+                    <h5>Warsztaty w przygotowaniu</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="row row-contest">
               <div class="col-12 col-lg-3 col-contest">
                 <div class="div-img-description-contest">
@@ -301,6 +315,19 @@
           </div>
           <!--ZAWARTOŚĆ ZAKŁADKI SZKOLENIA-->
           <div class="tab-pane training" id="training" role="tabpanel" aria-labelledby="training-tab">
+            <div class="row row-contest">
+              <div class="col-12 col-contest">
+                <div class="div-img-description-contest">
+                  <div class="div-img-contest">
+                    <a href="#img13" class="picture"><img src="../image/Szkola_Art/IMG_4705.jpg" alt=""
+                        class="img-responsive"></a>
+                  </div>
+                  <div class="div-description-contest">
+                    <h5>Szkolenia w przygotowaniu</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="row row-contest">
               <div class="col-12 col-lg-6 col-contest">
                 <div class="div-img-description-contest">
@@ -617,7 +644,8 @@
         <div class="col-12 col-sm-3 col-lg-4 col-footer col-social-media">
           <div class="row row-icon">
             <div class="col-12 col-icon">
-              <a href="https://www.facebook.com/Małopolska-Fundacja-Promocji-Kultury-i-Sztuki-102328694477945"><i class='uil uil-facebook'></i></a>
+              <a href="https://www.facebook.com/Małopolska-Fundacja-Promocji-Kultury-i-Sztuki-102328694477945"><i
+                  class='uil uil-facebook'></i></a>
             </div>
           </div>
         </div>

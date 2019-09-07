@@ -81,9 +81,16 @@ main {
 							left: 0;
 							transform: scale(0);
 							transition: all 0.5s ease;
-							}
+						}
 					}
 					a.active {
+						color:$red;
+						&::after {
+							transform: scale(1);
+							height: 3px;
+						}
+					}
+					.click-education {
 						color:$red;
 						&::after {
 							transform: scale(1);
@@ -198,6 +205,7 @@ main {
 		.contest, .workshops, .training {
 			.row-contest {
 				margin-bottom: 20px;
+				
 				.col-contest {
 					.div-img-description-contest {
 						position: relative;
@@ -407,6 +415,41 @@ main {
 				}
 			}
 		}
+		#workshops, #training  {
+			.row-contest {
+				display:none; ///te style są narazie po to by ukryć zawartośc zakładki
+				&:first-of-type {///te style są narazie po to by ukryć zawartośc zakładki
+					display: flex;///te style są narazie po to by ukryć zawartośc zakładki
+					font-size:20px;///te style są narazie po to by ukryć zawartośc zakładki
+					justify-content: center;///te style są narazie po to by ukryć zawartośc zakładki
+					margin: 0;///te style są narazie po to by ukryć zawartośc zakładki
+					.col-contest {
+						padding: 0;
+						.div-img-description-contest {
+							.div-img-contest {
+								.picture {
+									img {height:500px;}
+									&::after {
+										content:none;
+									}
+								}
+							}
+							.div-description-contest {
+								bottom: 200px;
+								h5 {
+									font-size:35px;
+									text-align: center;
+									text-transform: uppercase;
+  									text-shadow: -4px 2px 4px black;
+								}
+							}
+						}
+					}
+				
+				}///te style są narazie po to by ukryć zawartośc zakładk
+			}
+		}
+	
 	}
 	#gallery {
 		padding-top: 0;

@@ -166,6 +166,10 @@ body section {
   height: 3px;
 }
 
+#header .navbar .navbar-nav ul li.active > a i {
+  color: #f71803 !important;
+}
+
 #header .navbar .navbar-nav ul li ul#list-education {
   display: none;
   position: absolute;

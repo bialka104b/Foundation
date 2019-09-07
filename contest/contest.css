@@ -90,16 +90,6 @@ main #contest-workshops-training .card-header .card-header-tabs li.nav-item a.ac
   height: 3px;
 }
 
-main #contest-workshops-training .card-header .card-header-tabs li.nav-item #e-education {
-  color: #f71803;
-}
-
-main #contest-workshops-training .card-header .card-header-tabs li.nav-item #e-education::after {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  height: 3px;
-}
-
 @media (max-width: 767px) {
   main #contest-workshops-training .card-header .card-header-tabs li.nav-item a.nav-link {
     font-size: 16px;

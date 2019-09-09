@@ -2164,8 +2164,8 @@ body section {
 }
 
 #contact .contact .row-contact .col-contact #contact-container .form-horizontal #contact-form .form-group #btn-warning .btn-warning:hover::before {
-  -webkit-animation: blink 2s infinite;
-          animation: blink 2s infinite;
+  -webkit-animation: blink   2s normal forwards;
+          animation: blink   2s normal forwards;
   content: "Wyślij";
   background: -webkit-gradient(linear, left top, right top, from(#fbb74d), color-stop(50%, #f71803), color-stop(50%, #f71803), to(#fbb74d));
   background: linear-gradient(to right, #fbb74d, #f71803 50%, #f71803 50%, #fbb74d);
@@ -2180,16 +2180,12 @@ body section {
 }
 
 @keyframes blink {
-  0%,
-  0% {
-    background-position: 200% 0;
-  }
-  85%,
+  50%,
   95% {
     background-position: 100% 0;
   }
   100% {
-    background-position: 200% 0;
+    background-position: 0% 0;
   }
 }
 

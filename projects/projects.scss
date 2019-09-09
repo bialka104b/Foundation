@@ -7,6 +7,7 @@ $b: 2px;
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap");
+
 #header {
   height: auto;
 }
@@ -54,7 +55,13 @@ main {
                   }
                 }
                 &::after {
-                  background: rgba(0, 0, 0, 0.35);
+                  background: linear-gradient(
+                    to top,
+                    rgba(255, 255, 255, 0) 61%,
+                    rgba(255, 255, 255, 0.04) 62%,
+                    rgba(36, 36, 36, 0.54) 74%,
+                    rgba(0, 0, 0, 0.54) 76%
+                  );
                 }
               }
             }
@@ -69,7 +76,7 @@ main {
               h5 {
                 color: white;
                 font-family: "Poppins", sans-serif;
-                font-size: 20px;
+                font-size: 16px;
                 height: 145px;
                 text-align: center;
                 margin-top: 0;
@@ -110,6 +117,23 @@ main {
         padding-left: 0;
         padding-right: 0;
       }
+      @media (max-width: 767px) {
+        margin-top: 20px;
+      }
     }
+  }
+}
+@media (max-width: 767px) {
+  h2 i:first-of-type {
+    margin-right: 10px !important;
+  }
+  h2 i:last-of-type {
+    margin-left: 10px !important;
+  }
+}
+@media (max-width: 477px) {
+  #h2projects {
+    font-size: 23px !important;
+    margin-bottom: 20px;
   }
 }

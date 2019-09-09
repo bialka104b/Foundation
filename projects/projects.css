@@ -62,7 +62,8 @@ main #projects .projects .row-projects .col-projects .div-img-description-projec
 }
 
 main #projects .projects .row-projects .col-projects .div-img-description-projects .div-img-projects a.picture::after {
-  background: rgba(0, 0, 0, 0.35);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(61%, rgba(255, 255, 255, 0)), color-stop(62%, rgba(255, 255, 255, 0.04)), color-stop(74%, rgba(36, 36, 36, 0.54)), color-stop(76%, rgba(0, 0, 0, 0.54)));
+  background: linear-gradient(to top, rgba(255, 255, 255, 0) 61%, rgba(255, 255, 255, 0.04) 62%, rgba(36, 36, 36, 0.54) 74%, rgba(0, 0, 0, 0.54) 76%);
 }
 
 main #projects .projects .row-projects .col-projects .div-img-description-projects .div-description-projects {
@@ -77,7 +78,7 @@ main #projects .projects .row-projects .col-projects .div-img-description-projec
 main #projects .projects .row-projects .col-projects .div-img-description-projects .div-description-projects h5 {
   color: white;
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   height: 145px;
   text-align: center;
   margin-top: 0;
@@ -124,6 +125,28 @@ main #projects .projects .row-projects .col-projects .div-img-description-projec
   main #projects .projects {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  main #projects .projects {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  h2 i:first-of-type {
+    margin-right: 10px !important;
+  }
+  h2 i:last-of-type {
+    margin-left: 10px !important;
+  }
+}
+
+@media (max-width: 477px) {
+  #h2projects {
+    font-size: 23px !important;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=projects.css.map */

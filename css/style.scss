@@ -1308,11 +1308,8 @@ body {
                     font-size: large;
                     &:hover {
                       &::before {
-                        animation: blink
-                        
-                        
-                        2s normal forwards;
-                        
+                        animation: blink 2s;
+                        animation-iteration-count: 0.5;
                         content: "Wyślij";
                         background: linear-gradient(
                           to right,
@@ -1331,11 +1328,11 @@ body {
                         padding: 12px 22px;
                       }
                       @keyframes blink {
-                        // 10%,
-                        // 10% {
-                        //   background-position: 200% 0;
-                        // }
-                        50%,
+                        0%,
+                        0% {
+                          background-position: 200% 0;
+                        }
+                        85%,
                         95% {
                           background-position: 100% 0;
                         }

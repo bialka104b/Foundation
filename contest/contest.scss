@@ -237,7 +237,6 @@ main {
 									content: "";
 									position: absolute;
 									width: 100%;
-									// width: calc(#{$a} - #{$b});
 									height: 100%;
 									background: rgba(0, 0, 0, 0.5);
 									z-index: 1;
@@ -342,7 +341,8 @@ main {
 									&:hover {
 										transition: all 0.5s ease;
 										&::before {
-											animation: blink 2s infinite;
+											animation: blink 2s;
+                      animation-iteration-count: 0.5;
 											content: "Więcej";
 											background: linear-gradient(
 											to right,

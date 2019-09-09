@@ -499,7 +499,8 @@ body {
                 transition: all 0.5s ease;
                 position: static;
                 &::before {
-                  animation: blink 2s infinite;
+                  animation: blink 2s;
+                  animation-iteration-count: 0.5;
                   content: "Pobierz statut";
                   background: linear-gradient(
                     to right,
@@ -892,7 +893,8 @@ body {
               &:hover {
                 transition: all 0.5s ease;
                 &::before {
-                  animation: blink 2s infinite;
+                  animation: blink 2s;
+                  animation-iteration-count: 0.5;
                   content: "Więcej";
                   background: linear-gradient(
                     to right,
@@ -1010,7 +1012,8 @@ body {
               &:hover {
                 transition: all 0.5s ease;
                 &::before {
-                  animation: blink 2s infinite;
+                  animation: blink 2s;
+                  animation-iteration-count: 0.5;
                   content: "Więcej";
                   background: linear-gradient(
                     to right,
@@ -1337,7 +1340,7 @@ body {
                           background-position: 100% 0;
                         }
                         100% {
-                          background-position: 0% 0;
+                          background-position: 200% 0;
                         }
                       }
                     }

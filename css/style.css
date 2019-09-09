@@ -576,8 +576,10 @@ body section {
 }
 
 #about-us .row-about-us .col-about-us a.pdf .img-statute-download .download-statute span:hover::before {
-  -webkit-animation: blink 2s infinite;
-          animation: blink 2s infinite;
+  -webkit-animation: blink 2s;
+          animation: blink 2s;
+  -webkit-animation-iteration-count: 0.5;
+          animation-iteration-count: 0.5;
   content: "Pobierz statut";
   background: -webkit-gradient(linear, left top, right top, from(#fbb74d), color-stop(50%, #f71803), color-stop(50%, #f71803), to(#fbb74d));
   background: linear-gradient(to right, #fbb74d, #f71803 50%, #f71803 50%, #fbb74d);
@@ -1709,8 +1711,10 @@ body section {
 }
 
 #projects .projects .row-projects .div-img-description-projects .div-description-projects .more a:hover::before {
-  -webkit-animation: blink 2s infinite;
-          animation: blink 2s infinite;
+  -webkit-animation: blink 2s;
+          animation: blink 2s;
+  -webkit-animation-iteration-count: 0.5;
+          animation-iteration-count: 0.5;
   content: "Więcej";
   background: -webkit-gradient(linear, left top, right top, from(#fbb74d), color-stop(50%, #f71803), color-stop(50%, #f71803), to(#fbb74d));
   background: linear-gradient(to right, #fbb74d, #f71803 50%, #f71803 50%, #fbb74d);
@@ -1828,8 +1832,10 @@ body section {
 }
 
 #education .education .row-education .col-education7 .education-description .more a:hover::before {
-  -webkit-animation: blink 2s infinite;
-          animation: blink 2s infinite;
+  -webkit-animation: blink 2s;
+          animation: blink 2s;
+  -webkit-animation-iteration-count: 0.5;
+          animation-iteration-count: 0.5;
   content: "Więcej";
   background: -webkit-gradient(linear, left top, right top, from(#fbb74d), color-stop(50%, #f71803), color-stop(50%, #f71803), to(#fbb74d));
   background: linear-gradient(to right, #fbb74d, #f71803 50%, #f71803 50%, #fbb74d);
@@ -2191,7 +2197,7 @@ body section {
     background-position: 100% 0;
   }
   100% {
-    background-position: 0% 0;
+    background-position: 200% 0;
   }
 }
 

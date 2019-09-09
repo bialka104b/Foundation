@@ -74,10 +74,10 @@ main #projects .projects .row-projects .col-projects .div-img-description-projec
   color: white;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
-  height: 135px;
+  height: 145px;
   text-align: center;
   margin-top: 0;
-  line-height: 23px;
+  line-height: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
 }

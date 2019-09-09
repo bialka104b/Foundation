@@ -1159,6 +1159,9 @@ body {
                       display:block;
                     }
                   }
+                  @media (max-width:575px) {
+                    padding-bottom:20px;
+                  }
                 }
                 strong {
                   color: $red;

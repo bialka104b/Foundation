@@ -1989,6 +1989,12 @@ body section {
   }
 }
 
+@media (max-width: 575px) {
+  #cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider h3 a {
+    padding-bottom: 20px;
+  }
+}
+
 #cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider h3 strong {
   color: #f71803;
   font-weight: normal;

@@ -1940,30 +1940,19 @@ body section {
   text-align: center;
 }
 
-#cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider h3 {
-  font-size: 35px;
-  color: darkorange;
-  margin-top: 10px;
-}
-
-#cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider h3 strong {
-  color: #f71803;
-  font-weight: normal;
-}
-
-@media (max-width: 767px) {
-  #cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider h3 {
-    font-size: 25px !important;
-    text-align: center;
-  }
-}
-
 #cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider .row-cooperation .col-cooperation {
   width: 150px;
   height: 180px;
 }
 
-#cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider .row-cooperation .col-cooperation img {
+#cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider .row-cooperation .col-cooperation a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+#cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider .row-cooperation .col-cooperation a img {
   display: block;
   width: 100%;
   height: 100%;
@@ -1973,16 +1962,48 @@ body section {
      object-position: 50% 50%;
 }
 
-#cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider p {
-  font-size: 25px;
-  line-height: 30px;
+#cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider h3 {
+  font-size: 35px;
+  height: 100%;
   margin-top: 10px;
-  margin-bottom: 50px;
+  display: table;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider h3 a {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  color: darkorange;
+  text-decoration: none;
+}
+
+#cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider h3 a br {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  #cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider h3 a br {
+    display: block;
+  }
+}
+
+#cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider h3 strong {
+  color: #f71803;
+  font-weight: normal;
+}
+
+@media (max-width: 991px) {
+  #cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider h3 {
+    font-size: 29px;
+  }
 }
 
 @media (max-width: 767px) {
-  #cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider p {
+  #cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider h3 {
     font-size: 18px !important;
+    text-align: center;
   }
 }
 

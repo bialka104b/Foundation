@@ -89,7 +89,7 @@
     </nav>
     <script>
       $(document).ready(function () {
-        $("a[href^='#']").click(function (e) {
+        $("a.nav-link[href^='#']").click(function (e) {
           e.preventDefault();
 
           var position = $($(this).attr("href")).offset().top;
@@ -456,39 +456,65 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="img-slider">
-                  <h3 title="Stowarzyszenie Menuet">Stowarzyszenie Przyjaciół <strong>Ogólnokształcącej Szkoły Muzycznej I stopnia im. I. J. Paderewskiego w Krakowie</strong> "Menuet G - dur"</h3>
+                  <!-- <h3 title="Stowarzyszenie Menuet">Stowarzyszenie Przyjaciół <strong>Ogólnokształcącej Szkoły Muzycznej I stopnia im. I. J. Paderewskiego w Krakowie</strong> "Menuet G - dur"</h3> -->
                   <div class="row row-cooperation">
                     <div class="col-12 col-sm-5 col-lg-3 col-cooperation">
-                      <img src="image/menuetPNG.png" alt="Stowarzyszenie Menuet" class="img-responsive" />
+                      <a href="https://stowarzyszenie-menuet-g-dur.jimdo.com/"  target="_blank">
+                        <img src="image/menuetPNG.png" alt="Stowarzyszenie Menuet" class="img-responsive" />
+                      </a>
                     </div>
                     <div class="col-12 col-sm-7 col-lg-9">
-                      <p><a href="https://stowarzyszenie-menuet-g-dur.jimdo.com/" target="_blank">Dummy link</a></p>
+                      <h3 title="Stowarzyszenie Menuet">
+                        <a href="https://stowarzyszenie-menuet-g-dur.jimdo.com/" target="_blank">Stowarzyszenie Przyjaciół <strong>Ogólnokształcącej Szkoły Muzycznej I stopnia im. I. J. Paderewskiego w Krakowie</strong> "Menuet G - dur"</a>
+                      </h3>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="img-slider">
-                  <h3 title="Fundacja Kameny">Agencja Artystyczna <strong>Kameny</strong></h3>
+                  <!-- <h3 title="Fundacja Kameny">Agencja Artystyczna <strong>Kameny</strong></h3> -->
                   <div class="row row-cooperation">
                     <div class="col-12 col-sm-5 col-lg-3 col-cooperation">
-                      <img src="image/kameny.png" alt="Fundacja Kameny" class="img-responsive" />
+                      <a href="http://kameny.pl/"  target="_blank">
+                        <img src="image/kameny.png" alt="Fundacja Kameny" class="img-responsive" />
+                      </a>
                     </div>
                     <div class="col-12 col-sm-7 col-lg-9">
-                      <p><a href="http://kameny.pl/" target="_blank">Dummy link</a></p>
+                      <h3 title="Fundacja Kameny"><a href="http://kameny.pl/" target="_blank">Agencja Artystyczna <strong>Kameny</strong></a></h3>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="img-slider">
-                  <h3 title="Ogólnokształcąca Szkoła Muzyczna">Ogólnokształcąca Szkoła Muzyczna I stopnia im. <strong>I. J. Paderewskiego</strong> w Krakowie</h3>
+                  <!-- <h3 title="Ogólnokształcąca Szkoła Muzyczna">Ogólnokształcąca Szkoła Muzyczna I stopnia im. <strong>I. J. Paderewskiego</strong> w Krakowie</h3> -->
                   <div class="row row-cooperation">
                     <div class="col-12 col-sm-5 col-lg-3 col-cooperation">
-                      <img src="image/osm.png" alt="Ogólnokształcąca Szkoła Muzyczna" class="img-responsive" />
+                      <a href="http://www.szkolapaderewski.krakow.pl/"  target="_blank">
+                        <img src="image/osm.png" alt="Ogólnokształcąca Szkoła Muzyczna" class="img-responsive"/>
+                      </a>
                     </div>
                     <div class="col-12 col-sm-7 col-lg-9">
-                      <p><a href="http://www.szkolapaderewski.krakow.pl/" target="_blank">Dummy link</a></p>
+                      <h3 title="Ogólnokształcąca Szkoła Muzyczna">
+                        <a href="http://www.szkolapaderewski.krakow.pl/" target="_blank">Ogólnokształcąca Szkoła Muzyczna I stopnia im. <strong>I. J. Paderewskiego</strong> w Krakowie</a>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="img-slider">
+                  <div class="row row-cooperation">
+                    <div class="col-12 col-sm-5 col-lg-3 col-cooperation">
+                      <a href="https://allegro.pl/uzytkownik/AREMOT5?bmatch=baseline-cl-dict41-eyesa-bp-uni-1-2-0904" target="_blank">
+                        <img src="image/AremotPNG.png" alt="Aremot Ilona Tomera-Chmiel" class="img-responsive" />
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-7 col-lg-9">
+                      <h3 title="Aremot Ilona Tomera-Chmiel">
+                        <a href="https://allegro.pl/uzytkownik/AREMOT5?bmatch=baseline-cl-dict41-eyesa-bp-uni-1-2-0904" target="_blank">Aremot<strong> Ilona Tomera-Chmiel</strong></a>
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -498,6 +524,7 @@
               <li data-target="#myCarousel1" data-slide-to="0" class="slide slide1 active"></li>
               <li data-target="#myCarousel1" data-slide-to="1" class="slide slide2"></li>
               <li data-target="#myCarousel1" data-slide-to="2" class="slide slide3"></li>
+              <li data-target="#myCarousel1" data-slide-to="3" class="slide slide4"></li>
             </ol>
             <a class="carousel-control-prev vievcontrol" href="#myCarousel1" role="button" data-slide="prev">
               <span aria-hidden="true" class="carousel-control-prev-icon">

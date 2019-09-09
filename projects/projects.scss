@@ -8,108 +8,108 @@ $b: 2px;
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap");
 #header {
-	height: auto;
+  height: auto;
 }
 main {
-	padding-top:100px;
-	#projects {
-		.projects {
-			width: 90%!important;
-			margin-top: 70px;
-			.row-projects {
-				margin:0 0 15px 0 !important;
-				display:flex;
-				
-				.col-projects {
-					padding-left: 7.5px;
-					padding-right: 7.5px;
-					.div-img-description-projects {
-						
-						.div-img-projects {
-							a.picture {
-								overflow: hidden;
-								display: block;
-								img {
-									object-fit: cover;
-									width: 100%;
-									height: 200px;
-									transition-duration: 3s;
-									margin: 0 auto;
-									display: block;
-									transition: all 1s ease;
-									-webkit-transition: all 1s ease;
-									-moz-transition: all 1s ease;
-									-o-transition: all 1s ease;
-								}
-								&:hover {
-									img {
-										transition: all 0.6s;
-										transform: scale(1.1);
-										-o-transition: all 0.6s;
-										-moz-transition: all 0.6s;
-										-webkit-transition: all 0.6s;
-										-moz-transform: scale(1.1);
-										-o-transform: scale(1.1);
-										-webkit-transform: scale(1.1);
-									}
-								}
-								&::after {
-									background: rgba(0, 0, 0, 0.35);
-								}
-							}
-						}
-						.div-description-projects {
-							width: 100%;
-							height: 100%;
-							position: absolute;
-							bottom: 0;
-							padding: 7.5px;
-							z-index: 2;
-							
-							h5 {
-								color: white;
-								font-family: "Poppins", sans-serif;
-								font-size: 20px;
-								height: 145px;
-								text-align: center;
-								margin-top: 0;
-								line-height: 20px;
-								overflow: hidden;
-   							text-overflow: ellipsis;
-								span {
-									color:white;
-									font-size: 12px;
-								}
-							}
-							.more {
-								height: 30px;
-								a {
-									padding: 5px 12px;
-									&:hover {
-										&::before {
-											padding: 5px 12px;
-										}
-										&::after {
-											padding: 5px 12px;
-										}
-									}
-								}
-							}
-						}
-					}
-					@media (max-width:567px) {
-						padding-left:0;
-						padding-right:0;
-					}
-				}
-				@media (max-width:991px) {
-					margin:0!important;
-				}
-			}
-			@media (max-width:567px) {
-				padding-left:0;
-				padding-right:0;
-			}
-		}
-	}
+  padding-top: 100px;
+  #projects {
+    background-image: url(../image/leather_1/leather_1/leather_1.png);
+    .projects {
+      width: 90% !important;
+      margin-top: 70px;
+      .row-projects {
+        margin: 0 0 15px 0 !important;
+        display: flex;
+
+        .col-projects {
+          padding-left: 7.5px;
+          padding-right: 7.5px;
+          .div-img-description-projects {
+            .div-img-projects {
+              a.picture {
+                overflow: hidden;
+                display: block;
+                img {
+                  object-fit: cover;
+                  width: 100%;
+                  height: 200px;
+                  transition-duration: 3s;
+                  margin: 0 auto;
+                  display: block;
+                  transition: all 1s ease;
+                  -webkit-transition: all 1s ease;
+                  -moz-transition: all 1s ease;
+                  -o-transition: all 1s ease;
+                }
+                &:hover {
+                  img {
+                    transition: all 0.6s;
+                    transform: scale(1.1);
+                    -o-transition: all 0.6s;
+                    -moz-transition: all 0.6s;
+                    -webkit-transition: all 0.6s;
+                    -moz-transform: scale(1.1);
+                    -o-transform: scale(1.1);
+                    -webkit-transform: scale(1.1);
+                  }
+                }
+                &::after {
+                  background: rgba(0, 0, 0, 0.35);
+                }
+              }
+            }
+            .div-description-projects {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              bottom: 0;
+              padding: 7.5px;
+              z-index: 2;
+
+              h5 {
+                color: white;
+                font-family: "Poppins", sans-serif;
+                font-size: 20px;
+                height: 145px;
+                text-align: center;
+                margin-top: 0;
+                line-height: 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                span {
+                  color: white;
+                  font-size: 12px;
+                }
+              }
+              .more {
+                height: 30px;
+                a {
+                  padding: 5px 12px;
+                  &:hover {
+                    &::before {
+                      padding: 5px 12px;
+                    }
+                    &::after {
+                      padding: 5px 12px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          @media (max-width: 567px) {
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
+        @media (max-width: 991px) {
+          margin: 0 !important;
+        }
+      }
+      @media (max-width: 567px) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
 }

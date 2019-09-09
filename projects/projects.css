@@ -9,6 +9,10 @@ main {
   padding-top: 100px;
 }
 
+main #projects {
+  background-image: url(../image/leather_1/leather_1/leather_1.png);
+}
+
 main #projects .projects {
   width: 90% !important;
   margin-top: 70px;

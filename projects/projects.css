@@ -103,9 +103,23 @@ main #projects .projects .row-projects .col-projects .div-img-description-projec
   padding: 5px 12px;
 }
 
+@media (max-width: 567px) {
+  main #projects .projects .row-projects .col-projects {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 @media (max-width: 991px) {
   main #projects .projects .row-projects {
     margin: 0 !important;
+  }
+}
+
+@media (max-width: 567px) {
+  main #projects .projects {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 /*# sourceMappingURL=projects.css.map */

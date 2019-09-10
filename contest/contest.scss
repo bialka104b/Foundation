@@ -1,4 +1,4 @@
-// Create by bialka104b@interia.pl https://github.com/bialka104b
+// Created by bialka104b@interia.pl https://github.com/bialka104b
 $orange: #fbb74d;
 $orange-opacity: rgba(251, 183, 77, 0.8);
 $red: #f71803;
@@ -11,7 +11,7 @@ $b: 2px;
 	height: auto;
 }
 main {
-	padding-top:100px;
+	padding-top: 100px;
 	background-image: url(../image/leather_1/leather_1/leather_1.png);
 	#contest-workshops-training {
 		// h2 { W RAZIE GDYBY CHCIELI WYŚRODKOWANE IKONY
@@ -27,7 +27,7 @@ main {
 				
 		// 	}
 		// }
-		@media (max-width:1200px) {
+		@media (max-width: 1200px) {
 			h2 {
 				i:first-of-type {
 					margin-right: 7px;
@@ -39,26 +39,26 @@ main {
 		}
 		
 		.card-header {
-			background-color:white;
-			border:0px;
-			margin-bottom:20px;
+			background-color: white;
+			border: 0;
+			margin-bottom: 20px;
 			padding: 0;
 			.card-header-tabs {
-				border:0px;
-				width:auto;
-				margin:0;
+				border: 0;
+				width: auto;
+				margin: 0;
 				li.nav-item {
 					padding: 7.5px 15px;
 					a.nav-link {
-						font-size:20px;
+						font-size: 20px;
 						position: relative;
 						text-decoration: none;
-						color:black;
+						color: black;
 						text-transform: uppercase;
-						display:block;
-						border:0;
-						border-radius:0;
-						margin:0;
+						display: block;
+						border: 0;
+						border-radius: 0;
+						margin: 0;
 						transition: all 0.3s ease;
 						padding: 10px 0;
 						&:hover {
@@ -76,23 +76,23 @@ main {
 							position: absolute;
 							height: 3px;
 							width: 100%;
-							bottom: 0px;
+							bottom: 0;
 							left: 0;
 							transform: scale(0);
 							transition: all 0.5s ease;
 						}
 					}
 					a.active {
-						color:$red;
+						color: $red;
 						&::after {
 							transform: scale(1);
 							height: 3px;
 						}
 					}
 					
-					@media (max-width:767px) {
+					@media (max-width: 767px) {
 						a.nav-link {
-							font-size:16px;
+							font-size: 16px;
 							&::after {
 								bottom: 5px;
 							}
@@ -103,7 +103,7 @@ main {
 				li.nav-item:last-of-type {
 					margin-right: 47px;
 				}
-				// @media (max-width:767px) {
+				// @media (max-width: 767px) {
 					
 				// }
 			}
@@ -112,54 +112,54 @@ main {
 				float: right;
 				font-size: 20px;
 				font-weight: 900;
-				color:white;
-				width:62px;
+				color: white;
+				width: 62px;
 				height: 62px;
 				margin-top: -62px;
-				z-index:5;
+				z-index: 5;
 				.icon-search {
 					height: 100%;
 					i {
-						display:block;
+						display: block;
 						margin: 0;
 						height: 100%;
 						&::before {
 							margin: 0;
-							display:block;
+							display: block;
 							line-height: 62px;
 							background-image: -webkit-gradient(linear, left top, right top, from($red), to($orange));
-							color:white;
-							width:100%;
+							color: white;
+							width: 100%;
 							font-weight: 900;
 						}
 					}
 				}
-				@media (max-width:767px) {
-					width:47px;
+				@media (max-width: 767px) {
+					width: 47px;
 					height: 56.4px;
 					margin-top: -56.4px;
 					.icon-search {
 						i::before {
 							line-height: 56.4px;
-							height:100%;
+							height: 100%;
 						}
 					}
 				}
-				@media (min-width:768px) {
-					width:62px;
+				@media (min-width: 768px) {
+					width: 62px;
 					height: 62px;
 					margin-top: -62px;
 				}	
 				.search {
 					position: relative;
 					width: 400px;
-					right: 0px;
+					right: 0;
 					left: -338px;
 					z-index: 2;
 					font-size: 14px;
 					padding: 5px;
 					background: $orange;top: 12px;
-					display:none;
+					display: none;
 					#tringle {
 						width: 0;
 						border-left: 31px solid transparent;
@@ -173,16 +173,16 @@ main {
 					}
 					.div-input-search {
 						.input-search {
-							display:block;
+							display: block;
 							border: none;
-							width:100%;
+							width: 100%;
 							padding: 7.5px 15px;
 							font-weight: normal;
 							outline: none;
 						}
 					}
-					@media (max-width:767px) {
-						left:-353px;
+					@media (max-width: 767px) {
+						left: -353px;
 						#tringle {
 							border-left: 24.5px solid transparent;
 							border-right: 24.5px solid transparent;
@@ -202,9 +202,9 @@ main {
 				.col-contest {
 					.div-img-description-contest {
 						position: relative;
-						height:100%;
+						height: 100%;
 						.div-img-contest {
-							height:100%;
+							height: 100%;
 							width: 100%;
 							a.picture {
 								overflow: hidden;
@@ -249,6 +249,7 @@ main {
 										rgba(0, 0, 0, 0.54) 76%
 									);
 									background: -webkit-gradient(
+										linear,
 										left top,
 										left bottom,
 										color-stop(61%, rgba(255, 255, 255, 0)),
@@ -342,17 +343,16 @@ main {
 										transition: all 0.5s ease;
 										&::before {
 											animation: blink 2s;
-                      animation-iteration-count: 0.5;
+                      						animation-iteration-count: 0.5;
 											content: "Więcej";
-											background: linear-gradient(
-											to right,
-											$orange,
-											$red 50%,
-											$red 50%,
-											$orange
-											);
 											background-size: 200% 200%;
-											background-position: -100% 0;
+											background: linear-gradient(
+												to right,
+												$orange,
+												$red 50%,
+												$red 50%,
+												$orange
+											) -100% 0;
 											position: absolute;
 											width: 100%;
 											height: 100%;
@@ -362,7 +362,7 @@ main {
 										}
 										&::after {
 											content: '\e830';
-											font-family: unicons;
+											font-family: unicons, sans-serif;
 											position: absolute;
 											width: 100%;
 											height: 100%;
@@ -385,35 +385,35 @@ main {
 										}
 									}
 									i {
-										color:white;
-										margin-left:5px;
-										z-index:20;
+										color: white;
+										margin-left: 5px;
+										z-index: 20;
 										&::before {
-											margin:0;
+											margin: 0;
 										}
 									}
 								}
 							}
 						}
 					}
-					@media (max-width:991px) {
+					@media (max-width: 991px) {
 						padding: 8px 15px;
 					}
-					@media (max-width:991px) {
+					@media (max-width: 991px) {
 						padding: 8px 15px;
 					}
 				}
-				@media (max-width:581px) {
+				@media (max-width: 581px) {
 					margin: 0;
 				}
 			}
 		}
 		#workshops, #training  {
 			.row-contest {
-				display:none; ///te style są narazie po to by ukryć zawartośc zakładki
+				display: none; ///te style są narazie po to by ukryć zawartośc zakładki
 				&:first-of-type {///te style są narazie po to by ukryć zawartośc zakładki
 					display: flex;///te style są narazie po to by ukryć zawartośc zakładki
-					font-size:20px;///te style są narazie po to by ukryć zawartośc zakładki
+					font-size: 20px;///te style są narazie po to by ukryć zawartośc zakładki
 					justify-content: center;///te style są narazie po to by ukryć zawartośc zakładki
 					margin: 0;///te style są narazie po to by ukryć zawartośc zakładki
 					.col-contest {
@@ -421,16 +421,16 @@ main {
 						.div-img-description-contest {
 							.div-img-contest {
 								.picture {
-									img {height:500px;}
+									img {height: 500px;}
 									&::after {
-										content:none;
+										content: none;
 									}
 								}
 							}
 							.div-description-contest {
 								bottom: 200px;
 								h5 {
-									font-size:35px;
+									font-size: 35px;
 									text-align: center;
 									text-transform: uppercase;
   									text-shadow: -4px 2px 4px black;
@@ -447,36 +447,36 @@ main {
 	#gallery {
 		padding-top: 0;
 		.gallery {
-			height:85vh;
+			height: 85vh;
 			background: $orange;
-			border:1px solid $orange;
+			border: 1px solid $orange;
 			.row-header {
-				height:50%;
-				margin:0;
+				height: 50%;
+				margin: 0;
 				.row {
-					margin:0;
-					width:100%;
+					margin: 0;
+					width: 100%;
 				}
 				.col-12, .col-lg-12, .col-lg-4, .col-lg-6, .col-lg-3, .col-lg-2, .col-lg-1 {
 					padding: 0;
-					height:100%;
+					height: 100%;
 				}
 				.row-column {
-					height:100%;
-					margin:0;
+					height: 100%;
+					margin: 0;
 					.row-column1 {
-						height:100%;
+						height: 100%;
 					}
 					.row-column2 {
-						height:50%;
+						height: 50%;
 						.mobile-instrument {
-							display:none;
+							display: none;
 						}
-						@media (max-width:991px) and (min-width:568px) {
+						@media (max-width: 991px) and (min-width: 568px) {
 							.mobile-instrument {
-								display:block;
+								display: block;
 								padding: 0;
-								height:100%;
+								height: 100%;
 							}
 							&.mobile {
 								height: 100%;
@@ -488,24 +488,24 @@ main {
 					.vertical-column {
 						.row-column1 {
 							.row.height70 {
-								height:70%;
-								width:100%;
-								margin:0;
+								height: 70%;
+								width: 100%;
+								margin: 0;
 							}
 							.row.height30 {
-								height:30%;
-								width:100%;
-								margin:0;
+								height: 30%;
+								width: 100%;
+								margin: 0;
 							}
 							.row.height60 {
-								height:60%;
-								width:100%;
-								margin:0!important;
+								height: 60%;
+								width: 100%;
+								margin: 0!important;
 							}
 							.row.height40 {
-								height:40%;
-								width:100%;
-								margin:0;
+								height: 40%;
+								width: 100%;
+								margin: 0;
 							}
 						}
 					}
@@ -514,18 +514,18 @@ main {
 					padding: 0;
 					height: 100%;
 				}
-				@media (max-width:991px) {
+				@media (max-width: 991px) {
 					height: 100%;
 
 					&:first-of-type {
-						display:none;
+						display: none;
 					}
 					&:last-of-type {
 						.there-is-no {
-							display:none;
+							display: none;
 						}
 						.col-lg-7, .col-lg-4 {
-							height:50%;
+							height: 50%;
 						}
 					}
 				}
@@ -535,7 +535,7 @@ main {
 				display: block;
 				overflow: hidden;
 				border: 2px solid $orange;
-				height:100%;
+				height: 100%;
 			}
 			.lightbox {
 				display: none;
@@ -547,7 +547,7 @@ main {
 				top: 0;
 				left: 0;
 				background: rgba(0, 0, 0, 0.5);
-				padding-top:5%; 
+				padding-top: 5%;
 				img {
 					max-width: 50%;
 					max-height: 90%;
@@ -565,9 +565,9 @@ main {
 			img {
 				object-fit: cover;
 				object-position: 50% 50%;
-				width:100%;
-				height:100%;
-				display:block;
+				width: 100%;
+				height: 100%;
+				display: block;
 				transition: all 1s ease;
 				-webkit-transition: all 1s ease;
 				-moz-transition: all 1s ease;
@@ -584,8 +584,8 @@ main {
 				}
 			}
 		}
-		@media (max-width:567px) {
-			display:none;
+		@media (max-width: 567px) {
+			display: none;
 		}
 	}
 }

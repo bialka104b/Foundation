@@ -1,11 +1,12 @@
 //AUTHOR: Create by https://github.com/bialka104b bialka104b@interia.pl
 $(document).ready(function() {
   $(window).bind("scroll", function() {
-    var num = 120; //number of pixels before modifying styles
-    if ($(window).scrollTop() > num) {
+    if ($(window).scrollTop() > 120) {
       $(".navbar").addClass("fixed");
+      $("#scroll").css({ display: "block" });
     } else {
       $(".navbar").removeClass("fixed");
+      $("#scroll").css({ display: "none" });
     }
   });
   $(".icon-menu").on("click", function(e) {
@@ -20,13 +21,5 @@ $(document).ready(function() {
   $("#aboutAs").on("click", function(e) {
     e.preventDefault();
     $("#list-menu1").slideToggle(500); // list AboutUS
-  });
-  $(window).bind("scroll", function() {
-    var num = 120; //number of pixels before modifying styles
-    if ($(window).scrollTop() < num) {
-      $("#scroll").css({ display: "none" });
-    } else {
-      $("#scroll").css({ display: "block" });
-    }
   });
 });

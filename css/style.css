@@ -2544,6 +2544,10 @@ body section {
   padding: 0;
 }
 
+#scroll a.nav-link:hover {
+  color: darkorange;
+}
+
 #scroll i {
   color: white;
   display: block;

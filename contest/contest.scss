@@ -14,19 +14,7 @@ main {
 	padding-top: 100px;
 	background-image: url(../image/leather_1/leather_1/leather_1.png);
 	#contest-workshops-training {
-		// h2 { W RAZIE GDYBY CHCIELI WYŚRODKOWANE IKONY
-		// 	.col-1 {
-		// 		i {
-		// 			&::before {
-		// 				margin: 0;
-		// 				display: block;
-		// 				height: 100%;
-		// 				line-height: 97px;
-		// 			}
-		// 		}
-				
-		// 	}
-		// }
+		
 		@media (max-width: 1200px) {
 			h2 {
 				i:first-of-type {
@@ -37,7 +25,6 @@ main {
 				}
 			}
 		}
-		
 		.card-header {
 			background-color: white;
 			border: 0;
@@ -345,7 +332,6 @@ main {
 											animation: blink 2s;
 											animation-iteration-count: 0.5;
 											content: "Więcej";
-											background-size: 200% 200%;
 											background: linear-gradient(
 												to right,
 												$orange,
@@ -353,6 +339,7 @@ main {
 												$red 50%,
 												$orange
 											);
+											background-size: 200% 200%;
 											background-position: -100% 0;
 											position: absolute;
 											width: 100%;

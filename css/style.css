@@ -353,11 +353,11 @@ body section {
   top: 50%;
   width: 50%;
   margin: 0 25%;
-  padding: 30px 30px;
+  padding: 30px 20px;
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
-  font-size: 40px;
+  font-size: 30px;
   font-variant: small-caps;
 }
 
@@ -382,12 +382,19 @@ body section {
   width: 100%;
 }
 
+@media (max-width: 991px) {
+  #header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider .img-slider-text .img-slider-icon {
+    display: none;
+  }
+}
+
 #header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider .img-slider-text .img-slider-p {
   padding: 0;
 }
 
 #header .div-header .div-header-content #myCarousel .carousel-inner .carousel-item .img-slider .img-slider-text .img-slider-p p {
   color: white;
+  padding: 0 5px;
 }
 
 #header .div-header .div-header-content #myCarousel .carousel-control-prev,
@@ -1783,6 +1790,112 @@ body section {
   }
 }
 
+#projects .projects .row-projects .col-projects-more {
+  margin-top: 30px;
+}
+
+#projects .projects .row-projects .col-projects-more .more {
+  padding: 0;
+  background: #fbb74d;
+  position: relative;
+  width: 194px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+#projects .projects .row-projects .col-projects-more .more a {
+  color: white;
+  border-radius: 0;
+  position: absolute;
+  text-decoration: none;
+  padding: 10px 12px;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+#projects .projects .row-projects .col-projects-more .more a:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#projects .projects .row-projects .col-projects-more .more a:hover::before {
+  -webkit-animation: blink 2s;
+          animation: blink 2s;
+  -webkit-animation-iteration-count: 0.5;
+          animation-iteration-count: 0.5;
+  content: "Więcej projektów";
+  background: -webkit-gradient(linear, left top, right top, from(#fbb74d), color-stop(50%, #f71803), color-stop(50%, #f71803), to(#fbb74d));
+  background: linear-gradient(to right, #fbb74d, #f71803 50%, #f71803 50%, #fbb74d);
+  background-size: 200% 200%;
+  background-position: -100% 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 10px 12px;
+}
+
+#projects .projects .row-projects .col-projects-more .more a:hover::after {
+  content: "\e830";
+  font-family: unicons;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 100%;
+  text-align-last: end;
+  top: 0;
+  padding: 10px 12px;
+  margin-left: -194px;
+  color: white;
+}
+
+@keyframes blink {
+  0%,
+  0% {
+    background-position: 200% 0;
+  }
+  85%,
+  95% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+#projects .projects .row-projects .col-projects-more .more a i {
+  color: white;
+  margin-left: 5px;
+  z-index: 20;
+}
+
+#projects .projects .row-projects .col-projects-more .more a i::before {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  #projects .projects .row-projects .col-projects-more .more a {
+    padding: 5px 12px;
+  }
+  #projects .projects .row-projects .col-projects-more .more a:hover:before {
+    padding: 5px 12px;
+  }
+  #projects .projects .row-projects .col-projects-more .more a:hover:after {
+    padding: 5px 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  #projects .projects .row-projects .col-projects-more .more {
+    height: 30px;
+  }
+}
+
 @media (max-width: 991px) {
   #projects .projects .row-projects {
     margin: 0;
@@ -2426,8 +2539,9 @@ body section {
   background: #f71803;
 }
 
-#scroll a {
+#scroll a.nav-link {
   text-decoration: none;
+  padding: 0;
 }
 
 #scroll i {

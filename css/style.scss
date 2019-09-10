@@ -293,11 +293,11 @@ body {
                 top: 50%;
                 width: 50%;
                 margin: 0 25%;
-                padding: 30px 30px;
+                padding: 30px 20px;
                 text-align: center;
                 background: rgba(0, 0, 0, 0.5);
                 border-radius: 20px;
-                font-size: 40px;
+                font-size: 30px;
                 font-variant: small-caps;
                 .img-slider-icon {
                   padding: 0;
@@ -312,11 +312,15 @@ body {
                       width: 100%;
                     }
                   }
+                  @media (max-width:991px) {
+                    display:none;
+                  }
                 }
                 .img-slider-p {
                   padding: 0;
                   p {
                     color: white;
+                    padding: 0 5px;
                   }
                 }
               }
@@ -964,6 +968,100 @@ body {
           }
         }
       }
+      .col-projects-more {
+        margin-top:30px;
+        .more {
+          padding: 0;
+          background: $orange;
+          position: relative;
+          width: 194px;
+          height: 40px;
+          margin: 0 auto;
+          a {
+            color: white;
+            border-radius: 0;
+            position: absolute;
+            text-decoration: none;
+            padding: 10px 12px;
+            width: 100%;
+            height: 100%;
+            transition: all 0.5s ease;
+            text-transform: uppercase;
+            font-size: 14px;
+            &:hover {
+              transition: all 0.5s ease;
+              &::before {
+                animation: blink 2s;
+                animation-iteration-count: 0.5;
+                content: "Więcej projektów";
+                background: linear-gradient(
+                  to right,
+                  $orange,
+                  $red 50%,
+                  $red 50%,
+                  $orange
+                );
+                background-size: 200% 200%;
+                background-position: -100% 0;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                padding: 10px 12px;
+              }
+              &::after {
+                content: "\e830";
+                font-family: unicons;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 100%;
+                text-align-last: end;
+                top: 0;
+                padding: 10px 12px;
+                margin-left: -194px;
+                color: white;
+              }
+              @keyframes blink {
+                0%,
+                0% {
+                  background-position: 200% 0;
+                }
+                85%,
+                95% {
+                  background-position: 100% 0;
+                }
+                100% {
+                  background-position: 200% 0;
+                }
+              }
+            }
+            i {
+              color: white;
+              margin-left: 5px;
+              z-index: 20;
+              &::before {
+                margin: 0;
+              }
+            }
+            @media (max-width: 767px) {
+              padding: 5px 12px;
+              &:hover {
+                &:before {
+                  padding: 5px 12px;
+                }
+                &:after {
+                  padding: 5px 12px;
+                }
+              }
+            }
+          }
+          @media (max-width: 767px) {
+            height: 30px;
+          }
+        }
+      }
       @media (max-width: 991px) {
         margin: 0;
       }
@@ -1536,8 +1634,9 @@ body {
   &:hover {
     background: $red;
   }
-  a {
+  a.nav-link {
     text-decoration: none;
+    padding: 0;
   }
   i {
     color: white;

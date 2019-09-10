@@ -22,13 +22,13 @@ main {
 
 main #contest-workshops-training .card-header {
   background-color: white;
-  border: 0px;
+  border: 0;
   margin-bottom: 20px;
   padding: 0;
 }
 
 main #contest-workshops-training .card-header .card-header-tabs {
-  border: 0px;
+  border: 0;
   width: auto;
   margin: 0;
 }
@@ -72,7 +72,7 @@ main #contest-workshops-training .card-header .card-header-tabs li.nav-item a.na
   position: absolute;
   height: 3px;
   width: 100%;
-  bottom: 0px;
+  bottom: 0;
   left: 0;
   -webkit-transform: scale(0);
           transform: scale(0);
@@ -158,7 +158,7 @@ main #contest-workshops-training .card-header #icon-search .icon-search i::befor
 main #contest-workshops-training .card-header #icon-search .search {
   position: relative;
   width: 400px;
-  right: 0px;
+  right: 0;
   left: -338px;
   z-index: 2;
   font-size: 14px;
@@ -255,7 +255,6 @@ main #contest-workshops-training .contest .row-contest .col-contest .div-img-des
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
   top: 0;
-  background: -webkit-gradient(left top, left bottom, color-stop(61%, rgba(255, 255, 255, 0)), color-stop(62%, rgba(255, 255, 255, 0.04)), color-stop(74%, rgba(36, 36, 36, 0.54)), color-stop(76%, rgba(0, 0, 0, 0.54)));
   background: -webkit-gradient(linear, left top, left bottom, color-stop(61%, rgba(255, 255, 255, 0)), color-stop(62%, rgba(255, 255, 255, 0.04)), color-stop(74%, rgba(36, 36, 36, 0.54)), color-stop(76%, rgba(0, 0, 0, 0.54)));
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 61%, rgba(255, 255, 255, 0.04) 62%, rgba(36, 36, 36, 0.54) 74%, rgba(0, 0, 0, 0.54) 76%);
 }
@@ -336,9 +335,9 @@ main #contest-workshops-training .contest .row-contest .col-contest .div-img-des
   -webkit-animation-iteration-count: 0.5;
           animation-iteration-count: 0.5;
   content: "Więcej";
+  background-size: 200% 200%;
   background: -webkit-gradient(linear, left top, right top, from(#fbb74d), color-stop(50%, #f71803), color-stop(50%, #f71803), to(#fbb74d));
   background: linear-gradient(to right, #fbb74d, #f71803 50%, #f71803 50%, #fbb74d);
-  background-size: 200% 200%;
   background-position: -100% 0;
   position: absolute;
   width: 100%;
@@ -350,7 +349,7 @@ main #contest-workshops-training .contest .row-contest .col-contest .div-img-des
 
 main #contest-workshops-training .contest .row-contest .col-contest .div-img-description-contest .div-description-contest .more a:hover::after, main #contest-workshops-training .workshops .row-contest .col-contest .div-img-description-contest .div-description-contest .more a:hover::after, main #contest-workshops-training .training .row-contest .col-contest .div-img-description-contest .div-description-contest .more a:hover::after {
   content: '\e830';
-  font-family: unicons;
+  font-family: unicons, sans-serif;
   position: absolute;
   width: 100%;
   height: 100%;

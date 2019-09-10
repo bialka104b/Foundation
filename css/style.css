@@ -175,8 +175,7 @@ body section {
   position: absolute;
   top: 0;
   margin-left: -40px;
-  padding: 30px;
-  padding-top: 100px;
+  padding: 100px 30px 30px;
   background: white;
   z-index: -1;
   -webkit-transition: all 3s ease;
@@ -215,7 +214,6 @@ body section {
   }
   #header .navbar .navbar-nav .list-inline li {
     display: block;
-    padding: 0;
     padding: 10px 20px;
     font-size: 20px;
   }
@@ -527,6 +525,11 @@ body section {
   padding: 30px 0;
 }
 
+#about-us .row-about-us .col-about-us p {
+  text-indent: 40px;
+  text-align: justify;
+}
+
 #about-us .row-about-us .col-about-us p strong {
   color: darkorange;
 }
@@ -588,9 +591,9 @@ body section {
   -webkit-animation-iteration-count: 0.5;
           animation-iteration-count: 0.5;
   content: "Pobierz statut";
+  background-size: 200% 200%;
   background: -webkit-gradient(linear, left top, right top, from(#fbb74d), color-stop(50%, #f71803), color-stop(50%, #f71803), to(#fbb74d));
   background: linear-gradient(to right, #fbb74d, #f71803 50%, #f71803 50%, #fbb74d);
-  background-size: 200% 200%;
   background-position: -100% 0;
   position: absolute;
   width: 100%;
@@ -1349,8 +1352,7 @@ body section {
   width: 100px;
   height: 0;
   border-bottom: 3px solid #f71803;
-  margin: 0 auto;
-  margin-bottom: 15px;
+  margin: 0 auto 15px;
 }
 
 #management .row-management .col-management7 .cv,
@@ -1636,7 +1638,6 @@ body section {
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
   top: 0;
-  background: -webkit-gradient(left top, left bottom, color-stop(61%, rgba(255, 255, 255, 0)), color-stop(62%, rgba(255, 255, 255, 0.04)), color-stop(74%, rgba(36, 36, 36, 0.54)), color-stop(76%, rgba(0, 0, 0, 0.54)));
   background: -webkit-gradient(linear, left top, left bottom, color-stop(61%, rgba(255, 255, 255, 0)), color-stop(62%, rgba(255, 255, 255, 0.04)), color-stop(74%, rgba(36, 36, 36, 0.54)), color-stop(76%, rgba(0, 0, 0, 0.54)));
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 61%, rgba(255, 255, 255, 0.04) 62%, rgba(36, 36, 36, 0.54) 74%, rgba(0, 0, 0, 0.54) 76%);
 }
@@ -1723,9 +1724,9 @@ body section {
   -webkit-animation-iteration-count: 0.5;
           animation-iteration-count: 0.5;
   content: "Więcej";
+  background-size: 200% 200%;
   background: -webkit-gradient(linear, left top, right top, from(#fbb74d), color-stop(50%, #f71803), color-stop(50%, #f71803), to(#fbb74d));
   background: linear-gradient(to right, #fbb74d, #f71803 50%, #f71803 50%, #fbb74d);
-  background-size: 200% 200%;
   background-position: -100% 0;
   position: absolute;
   width: 100%;
@@ -1737,7 +1738,7 @@ body section {
 
 #projects .projects .row-projects .div-img-description-projects .div-description-projects .more a:hover::after {
   content: "\e830";
-  font-family: unicons;
+  font-family: unicons, sans-serif;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1828,9 +1829,9 @@ body section {
   -webkit-animation-iteration-count: 0.5;
           animation-iteration-count: 0.5;
   content: "Więcej projektów";
+  background-size: 200% 200%;
   background: -webkit-gradient(linear, left top, right top, from(#fbb74d), color-stop(50%, #f71803), color-stop(50%, #f71803), to(#fbb74d));
   background: linear-gradient(to right, #fbb74d, #f71803 50%, #f71803 50%, #fbb74d);
-  background-size: 200% 200%;
   background-position: -100% 0;
   position: absolute;
   width: 100%;
@@ -1842,7 +1843,7 @@ body section {
 
 #projects .projects .row-projects .col-projects-more .more a:hover::after {
   content: "\e830";
-  font-family: unicons;
+  font-family: unicons, sans-serif;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1950,9 +1951,9 @@ body section {
   -webkit-animation-iteration-count: 0.5;
           animation-iteration-count: 0.5;
   content: "Więcej";
+  background-size: 200% 200%;
   background: -webkit-gradient(linear, left top, right top, from(#fbb74d), color-stop(50%, #f71803), color-stop(50%, #f71803), to(#fbb74d));
   background: linear-gradient(to right, #fbb74d, #f71803 50%, #f71803 50%, #fbb74d);
-  background-size: 200% 200%;
   background-position: -100% 0;
   position: absolute;
   width: 100%;
@@ -1965,7 +1966,7 @@ body section {
 
 #education .education .row-education .col-education7 .education-description .more a:hover::after {
   content: "\e830";
-  font-family: unicons;
+  font-family: unicons, sans-serif;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2084,7 +2085,6 @@ body section {
 #cooperation .cooperation #carousel1 .carousel .carousel-inner .carousel-item .img-slider h3 {
   font-size: 35px;
   height: 100%;
-  margin-top: 10px;
   display: table;
   text-align: center;
   margin: 0 auto;
@@ -2252,8 +2252,7 @@ body section {
 }
 
 #contact .contact .row-contact .col-contact #contact-container .form-horizontal #contact-form .form-group {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
 }
 
 #contact .contact .row-contact .col-contact #contact-container .form-horizontal #contact-form .form-group #subject {
@@ -2288,9 +2287,9 @@ body section {
   -webkit-animation-iteration-count: 0.5;
           animation-iteration-count: 0.5;
   content: "Wyślij";
+  background-size: 200% 200%;
   background: -webkit-gradient(linear, left top, right top, from(#fbb74d), color-stop(50%, #f71803), color-stop(50%, #f71803), to(#fbb74d));
   background: linear-gradient(to right, #fbb74d, #f71803 50%, #f71803 50%, #fbb74d);
-  background-size: 200% 200%;
   background-position: -100% 0;
   position: absolute;
   width: 100%;
@@ -2526,6 +2525,8 @@ body section {
 
 #scroll {
   position: fixed;
+  cursor: pointer;
+  display: none;
   background: darkorange;
   width: 47px;
   height: 47px;

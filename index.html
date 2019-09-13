@@ -554,8 +554,8 @@
                 <div id="contact-form">
                   <div class="form-group">
                     <div class="div-form-group">
-                      <input type="text" id="email" name="email" class="form-control"
-                        placeholder="Wpisz adres e-mail" />
+                      <input type="email" id="email" name="email" class="form-control"
+                        placeholder="Wpisz adres e-mail" required />
                     </div>
                   </div>
                   <div class="form-group">
@@ -567,12 +567,12 @@
                   <div class="form-group">
                     <div class="div-form-group">
                       <input type="text" id="subject" name="subject" class="form-control"
-                        placeholder="Wpisz temat wiadomości" />
+                        placeholder="Wpisz temat wiadomości" required />
                     </div>
                   </div>
                   <div class="form-group">
                     <div class="div-form-group">
-                      <textarea id="text" name="text" class="form-control" placeholder="Wpisz wiadomość..."></textarea>
+                      <textarea id="text" name="text" class="form-control" placeholder="Wpisz wiadomość..." required></textarea>
                     </div>
                   </div>
                   <div class="form-group">
@@ -630,7 +630,12 @@
     function send_message() {
       $.ajax({
         url: 'mail.php',
-        data: {},
+        data: {
+          subject: $("#subject").val(),
+          email: $("#email").val(),
+          phone: $("#phone").val(),
+          message: $("#text").val()
+        },
         type: 'post',
         success: function(result, status, xhr) {
           console.log(result);

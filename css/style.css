@@ -1065,6 +1065,22 @@ body {
         height: 0;
         border-bottom: 3px solid #f71803;
         margin: 0 auto 15px; }
+      #management .row-management .col-management7 .cv, #management .row-management .col-management7 .cv .pawelChmiel,
+      #management .row-management .col-education7 .cv,
+      #management .row-management .col-education7 .cv .pawelChmiel,
+      #management .row-education .col-management7 .cv,
+      #management .row-education .col-management7 .cv .pawelChmiel,
+      #management .row-education .col-education7 .cv,
+      #management .row-education .col-education7 .cv .pawelChmiel,
+      #education .row-management .col-management7 .cv,
+      #education .row-management .col-management7 .cv .pawelChmiel,
+      #education .row-management .col-education7 .cv,
+      #education .row-management .col-education7 .cv .pawelChmiel,
+      #education .row-education .col-management7 .cv,
+      #education .row-education .col-management7 .cv .pawelChmiel,
+      #education .row-education .col-education7 .cv,
+      #education .row-education .col-education7 .cv .pawelChmiel {
+        text-align: justify; }
       #management .row-management .col-management7 .cv,
       #management .row-management .col-management7 .education-description,
       #management .row-management .col-education7 .cv,

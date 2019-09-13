@@ -627,6 +627,23 @@
   </footer>
   <div id="scroll"><a class="nav-link"><i class='uil uil-angle-up'></i></a></div>
   <script type="text/javascript">
+    function send_message() {
+      $.ajax({
+        url: 'mail.php',
+        data: {},
+        type: 'post',
+        success: function(result, status, xhr) {
+          console.log(result);
+          console.log(status);
+          console.log(xhr);
+        },
+        error: function(xhr, status, error) {
+          console.log(xhr);
+          console.log(status);
+          console.log(error)
+        }
+      })
+    }
     $(document).ready(function () {
       $('.click-education').on('click', function (e) {
         e.preventDefault();

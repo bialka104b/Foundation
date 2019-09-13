@@ -69,21 +69,8 @@
 
       </div>
     </nav>
-    <script>
-        $(document).ready(function () {
-          $("a.nav-link[href^='#']").click(function (e) {
-            e.preventDefault();
-  
-            var position = $($(this).attr("href")).offset().top;
-  
-            $("body, html").animate({
-              scrollTop: position
-            } /* speed */);
-          });
-        });
-    </script>
-    <script type="text/javascript" src="../script/show-menu.js"></script>
     <!--Import document script show-menu.js-->
+    <script type="text/javascript" src="../script/show-menu.js"></script>
   </header>
   <main>
     <section id="contest-workshops-training" class="tab-pane show active" role="tabpanel"
@@ -107,15 +94,15 @@
         <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
           <li class="nav-item">
             <a class="nav-link active" id="contest-tab" data-toggle="tab" href="#contest" role="tab"
-              aria-controls="contest" aria-selected="true" title="Konkursy">Konkursy</a>
+               aria-controls="contest" aria-selected="true" title="Konkursy">Konkursy</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id="workshops-tab" data-toggle="tab" href="#workshops" role="tab"
-              aria-controls="workshops" aria-selected="false" title="Warsztaty">Warsztaty</a>
+               aria-controls="workshops" aria-selected="false" title="Warsztaty">Warsztaty</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="training-tab" href="#training" data-toggle="tab" role="tab" aria-controls="training"
-              aria-selected="false" title="Szkolenia">Szkolenia</a>
+            <a class="nav-link" id="training-tab" data-toggle="tab" href="#training" role="tab"
+               aria-controls="training" aria-selected="false" title="Szkolenia">Szkolenia</a>
           </li>
         </ul>
         <div id="icon-search">
@@ -137,100 +124,36 @@
               <div class="col-12 col-lg-4 col-contest">
                 <div class="div-img-description-contest">
                   <div class="div-img-contest">
-                    <a href="#img1" class="picture"><img src="../image/Szkola_Art/IMG_4137.jpg" alt=""
-                        class="img-responsive"></a>
+                    <a href="#img1" class="picture">
+                      <img src="../image/contest/polish-flag-1843854_1920.jpg" alt="" class="img-responsive">
+                    </a>
                     <a href="#_" class="lightbox" id="img1">
-                      <img src="../image/Szkola_Art/IMG_4137.jpg" alt="Photo">
+                      <img src="../image/contest/polish-flag-1843854_1920.jpg" alt="Photo">
                     </a>
                   </div>
                   <div class="div-description-contest">
-                    <h5 title="Organizujemy festiwale i koncerty">Organizujemy festiwale i koncerty</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
+                    <h5 title="Organizujemy festiwale i koncerty">Nadchodzące:<br />Konkurs pieśni patriotycznych</h5>
+<!--                    <div class="more">-->
+<!--                      <a href="../articles/articles-template.html">Więcej<i class='uil uil-angle-right'></i></a>-->
+<!--                    </div>-->
                   </div>
                 </div>
               </div>
               <div class="col-12 col-lg-4 col-contest">
                 <div class="div-img-description-contest">
                   <div class="div-img-contest">
-                    <a href="#img2" class="picture"><img src="../image/Szkola_Art/IMG_4191.jpg" alt=""
-                        class="img-responsive"></a>
+                    <a href="#img2" class="picture">
+                      <img src="../image/contest/snowfall-201496_1920.jpg" alt="" class="img-responsive">
+                    </a>
                     <a href="#_" class="lightbox" id="img2">
-                      <img src="../image/Szkola_Art/IMG_4191.jpg" alt="Photo">
+                      <img src="../image/contest/snowfall-201496_1920.jpg" alt="Photo">
                     </a>
                   </div>
                   <div class="div-description-contest">
-                    <h5 title="Kursy nauki gry na instrumentach">Kursy nauki gry na instrumentach</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img3" class="picture"><img src="../image/Szkola_Art/IMG_4317.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="img3">
-                      <img src="../image/Szkola_Art/IMG_4317.jpg" alt="Photo">
-                    </a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5 title="Zajęcia dla dzieci, młodzieży i dorosłych „U Ignasia”">Zajęcia dla dzieci, młodzieży i
-                      dorosłych „U Ignasia”</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row row-contest">
-              <div class="col-12 col-lg-4 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img4" class="picture"><img src="../image/Szkola_Art/IMG_4547.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="img4">
-                      <img src="../image/Szkola_Art/IMG_4547.jpg" alt="Photo">
-                    </a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5>Zajęcia wokalne</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img5" class="picture"><img src="../image/Szkola_Art/IMG_4715.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="img5">
-                      <img src="../image/Szkola_Art/IMG_4715.jpg" alt="Photo">
-                    </a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5 title="Zajęcia umuzykalniające i rowój zdolności muzycznych">Zajęcia umuzykalniające i rowój
-                      zdolności muzycznych</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img6" class="picture"><img src="../image/Szkola_Art/IMG_5095.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="img6">
-                      <img src="../image/Szkola_Art/IMG_5095.jpg" alt="Photo">
-                    </a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5 title="Kursy nauki gry na gitarze">Kursy nauki gry na gitarze</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
+                    <h5 title="Kursy nauki gry na instrumentach">Nadchodzące:<br />Konkurs piosenki zimowej</h5>
+<!--                    <div class="more">-->
+<!--                      <a href="../articles/articles-template.html">Więcej<i class='uil uil-angle-right'></i></a>-->
+<!--                    </div>-->
                   </div>
                 </div>
               </div>

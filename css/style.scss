@@ -1,4 +1,4 @@
-// Created by bialka104b@interia.pl https://github.com/bialka104b
+@charset "UTF-8"; // Created by bialka104b@interia.pl https://github.com/bialka104b
 $orange: #fbb74d;
 $orange-opacity: rgba(251, 183, 77, 0.8);
 $red: #f71803;
@@ -1031,7 +1031,7 @@ body {
 								&::before {
 									animation: blink 2s;
 									animation-iteration-count: 0.5;
-									content: "Więcej";
+									content: "Wiecej";
 									background: linear-gradient(
 													to right,
 													$orange,
@@ -1271,7 +1271,7 @@ body {
 								&::before {
 									animation: blink 2s;
 									animation-iteration-count: 0.5;
-									content: "Więcej";
+									content: "Wiecej";
 									background: linear-gradient(
 													to right,
 													$orange,

@@ -1362,7 +1362,7 @@ body {
             #projects .projects .row-projects .div-img-description-projects .div-description-projects .more a:hover::before {
               animation: blink 2s;
               animation-iteration-count: 0.5;
-              content: "Wi─Öcej";
+              content: "Wiecej";
               background: linear-gradient(to right, #fbb74d, #f71803 50%, #f71803 50%, #fbb74d);
               background-size: 200% 200%;
               background-position: -100% 0;
@@ -1433,7 +1433,7 @@ body {
           #projects .projects .row-projects .col-projects-more .more a:hover::before {
             animation: blink 2s;
             animation-iteration-count: 0.5;
-            content: "Wi─Öcej projekt├│w";
+            content: "Więcej projektów";
             background: linear-gradient(to right, #fbb74d, #f71803 50%, #f71803 50%, #fbb74d);
             background-size: 200% 200%;
             background-position: -100% 0;
@@ -1514,7 +1514,7 @@ body {
       #education .education .row-education .col-education7 .education-description .more a:hover::before {
         animation: blink 2s;
         animation-iteration-count: 0.5;
-        content: "Wi─Öcej";
+        content: "Wiecej";
         background: linear-gradient(to right, #fbb74d, #f71803 50%, #f71803 50%, #fbb74d);
         background-size: 200% 200%;
         background-position: -100% 0;
@@ -1742,7 +1742,7 @@ body {
         #contact .contact .row-contact .col-contact #contact-container .form-horizontal #contact-form .form-group #btn-warning .btn-warning:hover::before {
           animation: blink 2s;
           animation-iteration-count: 0.5;
-          content: "Wy┼¢lij";
+          content: "Wyślij";
           background: linear-gradient(to right, #fbb74d, #f71803 50%, #f71803 50%, #fbb74d);
           background-size: 200% 200%;
           background-position: -100% 0;

@@ -234,7 +234,7 @@ main {
               main #contest-workshops-training .contest .row-contest .col-contest .div-img-description-contest .div-description-contest .more a:hover::before, main #contest-workshops-training .workshops .row-contest .col-contest .div-img-description-contest .div-description-contest .more a:hover::before, main #contest-workshops-training .training .row-contest .col-contest .div-img-description-contest .div-description-contest .more a:hover::before {
                 animation: blink 2s;
                 animation-iteration-count: 0.5;
-                content: "Wi─Öcej";
+                content: "Więcej";
                 background: linear-gradient(to right, #fbb74d, #f71803 50%, #f71803 50%, #fbb74d);
                 background-size: 200% 200%;
                 background-position: -100% 0;

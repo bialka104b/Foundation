@@ -1,60 +1,64 @@
-//AUTHOR: Created by https://github.com/bialka104b bialka104b@interia.pl
+@charset "UTF-8"; //AUTHOR: Created by https://github.com/bialka104b bialka104b@interia.pl
 $orange: #fbb74d;
 $orange-opacity: rgba(251, 183, 77, 0.8);
 $red: #f71803;
 $a: 100%;
 $b: 2px;
+
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap");
+
 #header {
-  height: auto;
+	height: auto;
 }
 
 main {
-  padding-top: 100px;
-  background-image: url(../image/leather_1/leather_1/leather_1.png);
+	padding-top: 100px;
+	background-image: url(../image/leather_1/leather_1/leather_1.png);
 
-  #articles {
-    .articles {
-      .row-articles {
-        .col-articles {
-          .div-img-articles {
-            margin-bottom: 20px;
+	#articles {
+		.articles {
+			.row-articles {
+				.col-articles {
+					.div-img-articles {
+						margin-bottom: 20px;
 
-            img {
-              display: block;
-              width: 100%;
-            }
-          }
+						img {
+							display: block;
+							width: 100%;
+						}
+					}
 
-          .div-description-articles {
-            padding: 40px 40px;
-            background: white;
+					.div-description-articles {
+						padding: 40px 40px;
+						background: white;
 
-            p {
-              color: #7b7b7b;
-              font-size: 16px;
-              line-height: 1.5;
-              word-spacing: 5px;
-            }
-          }
-        }
-      }
-    }
-  }
+						p {
+							color: #7b7b7b;
+							font-size: 16px;
+							line-height: 1.5;
+							word-spacing: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
 }
+
 @media (max-width: 767px) {
-  h2#h2articles i:first-of-type {
-    margin-right: 10px !important;
-  }
-  h2#h2articles i:last-of-type {
-    margin-left: 10px !important;
-  }
+	h2#h2articles i:first-of-type {
+		margin-right: 10px !important;
+	}
+	h2#h2articles i:last-of-type {
+		margin-left: 10px !important;
+	}
 }
+
 @media (max-width: 477px) {
-  #h2articles {
-    font-size: 23px !important;
-    margin-bottom: 20px;
-  }
+	#h2articles {
+		font-size: 23px !important;
+		margin-bottom: 20px;
+	}
 }

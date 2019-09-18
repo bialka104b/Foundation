@@ -1,4 +1,4 @@
-// Created by bialka104b@interia.pl https://github.com/bialka104b
+@charset "UTF-8"; // Created by bialka104b@interia.pl https://github.com/bialka104b
 $orange: #fbb74d;
 $orange-opacity: rgba(251, 183, 77, 0.8);
 $red: #f71803;
@@ -10,32 +10,39 @@ $b: 2px;
 #header {
 	height: auto;
 }
+
 main {
 	padding-top: 100px;
 	background-image: url(../image/leather_1/leather_1/leather_1.png);
+
 	#contest-workshops-training {
-		
+
 		@media (max-width: 1200px) {
 			h2 {
 				i:first-of-type {
 					margin-right: 7px;
 				}
+
 				i:last-of-type {
 					margin-left: 7px;
 				}
 			}
 		}
+
 		.card-header {
 			background-color: white;
 			border: 0;
 			margin-bottom: 20px;
 			padding: 0;
+
 			.card-header-tabs {
 				border: 0;
 				width: auto;
 				margin: 0;
+
 				li.nav-item {
 					padding: 7.5px 15px;
+
 					a.nav-link {
 						font-size: 20px;
 						position: relative;
@@ -48,15 +55,18 @@ main {
 						margin: 0;
 						transition: all 0.3s ease;
 						padding: 10px 0;
+
 						&:hover {
 							background: white;
 							transition: all 0.3s ease;
 							color: $red;
+
 							&::after {
 								transform: scale(1);
 								transition: all 0.5s ease;
 							}
 						}
+
 						&::after {
 							background-color: $red;
 							content: "";
@@ -69,31 +79,37 @@ main {
 							transition: all 0.5s ease;
 						}
 					}
+
 					a.active {
 						color: $red;
+
 						&::after {
 							transform: scale(1);
 							height: 3px;
 						}
 					}
-					
+
 					@media (max-width: 767px) {
 						a.nav-link {
 							font-size: 16px;
+
 							&::after {
 								bottom: 5px;
 							}
 						}
 					}
-					
+
 				}
+
 				li.nav-item:last-of-type {
 					margin-right: 47px;
 				}
+
 				// @media (max-width: 767px) {
-					
+
 				// }
 			}
+
 			#icon-search {
 				text-align: center;
 				float: right;
@@ -104,12 +120,15 @@ main {
 				height: 62px;
 				margin-top: -62px;
 				z-index: 5;
+
 				.icon-search {
 					height: 100%;
+
 					i {
 						display: block;
 						margin: 0;
 						height: 100%;
+
 						&::before {
 							margin: 0;
 							display: block;
@@ -121,6 +140,7 @@ main {
 						}
 					}
 				}
+
 				@media (max-width: 767px) {
 					width: 47px;
 					height: 56.4px;
@@ -136,7 +156,8 @@ main {
 					width: 62px;
 					height: 62px;
 					margin-top: -62px;
-				}	
+				}
+
 				.search {
 					position: relative;
 					width: 400px;
@@ -145,19 +166,22 @@ main {
 					z-index: 2;
 					font-size: 14px;
 					padding: 5px;
-					background: $orange;top: 12px;
+					background: $orange;
+					top: 12px;
 					display: none;
+
 					#tringle {
 						width: 0;
 						border-left: 31px solid transparent;
-  						border-right: 31px solid transparent;
-						
+						border-right: 31px solid transparent;
+
 						border-bottom: 12px solid $orange;
 						margin: -12px auto 0px;
 						position: absolute;
 						right: 0;
 						top: 0;
 					}
+
 					.div-input-search {
 						.input-search {
 							display: block;
@@ -168,6 +192,7 @@ main {
 							outline: none;
 						}
 					}
+
 					@media (max-width: 767px) {
 						left: -353px;
 						#tringle {
@@ -177,25 +202,30 @@ main {
 					}
 				}
 			}
-			
+
 		}
+
 		.card-body {
 			padding: 0;
 		}
+
 		.contest, .workshops, .training {
 			.row-contest {
 				margin-bottom: 20px;
-				
+
 				.col-contest {
 					.div-img-description-contest {
 						position: relative;
 						height: 100%;
+
 						.div-img-contest {
 							height: 100%;
 							width: 100%;
+
 							a.picture {
 								overflow: hidden;
 								display: block;
+
 								img {
 									object-fit: cover;
 									width: 100%;
@@ -208,6 +238,7 @@ main {
 									-moz-transition: all 1s ease;
 									-o-transition: all 1s ease;
 								}
+
 								&:hover {
 									img {
 										transition: all 0.6s;
@@ -220,6 +251,7 @@ main {
 										-webkit-transform: scale(1.1);
 									}
 								}
+
 								&::after {
 									content: "";
 									position: absolute;
@@ -229,54 +261,55 @@ main {
 									z-index: 1;
 									top: 0;
 									background: -moz-linear-gradient(
-										top,
-										rgba(255, 255, 255, 0) 61%,
-										rgba(255, 255, 255, 0.04) 62%,
-										rgba(36, 36, 36, 0.54) 74%,
-										rgba(0, 0, 0, 0.54) 76%
+													top,
+													rgba(255, 255, 255, 0) 61%,
+													rgba(255, 255, 255, 0.04) 62%,
+													rgba(36, 36, 36, 0.54) 74%,
+													rgba(0, 0, 0, 0.54) 76%
 									);
 									background: -webkit-gradient(
-										linear,
-										left top,
-										left bottom,
-										color-stop(61%, rgba(255, 255, 255, 0)),
-										color-stop(62%, rgba(255, 255, 255, 0.04)),
-										color-stop(74%, rgba(36, 36, 36, 0.54)),
-										color-stop(76%, rgba(0, 0, 0, 0.54))
+													linear,
+													left top,
+													left bottom,
+													color-stop(61%, rgba(255, 255, 255, 0)),
+													color-stop(62%, rgba(255, 255, 255, 0.04)),
+													color-stop(74%, rgba(36, 36, 36, 0.54)),
+													color-stop(76%, rgba(0, 0, 0, 0.54))
 									);
 									background: -webkit-linear-gradient(
-										top,
-										rgba(255, 255, 255, 0) 61%,
-										rgba(255, 255, 255, 0.04) 62%,
-										rgba(36, 36, 36, 0.54) 74%,
-										rgba(0, 0, 0, 0.54) 76%
+													top,
+													rgba(255, 255, 255, 0) 61%,
+													rgba(255, 255, 255, 0.04) 62%,
+													rgba(36, 36, 36, 0.54) 74%,
+													rgba(0, 0, 0, 0.54) 76%
 									);
 									background: -o-linear-gradient(
-										top,
-										rgba(255, 255, 255, 0) 61%,
-										rgba(255, 255, 255, 0.04) 62%,
-										rgba(36, 36, 36, 0.54) 74%,
-										rgba(0, 0, 0, 0.54) 76%
+													top,
+													rgba(255, 255, 255, 0) 61%,
+													rgba(255, 255, 255, 0.04) 62%,
+													rgba(36, 36, 36, 0.54) 74%,
+													rgba(0, 0, 0, 0.54) 76%
 									);
 									background: -ms-linear-gradient(
-										top,
-										rgba(255, 255, 255, 0) 61%,
-										rgba(255, 255, 255, 0.04) 62%,
-										rgba(36, 36, 36, 0.54) 74%,
-										rgba(0, 0, 0, 0.54) 76%
+													top,
+													rgba(255, 255, 255, 0) 61%,
+													rgba(255, 255, 255, 0.04) 62%,
+													rgba(36, 36, 36, 0.54) 74%,
+													rgba(0, 0, 0, 0.54) 76%
 									);
 									background: linear-gradient(
-										to bottom,
-										rgba(255, 255, 255, 0) 61%,
-										rgba(255, 255, 255, 0.04) 62%,
-										rgba(36, 36, 36, 0.54) 74%,
-										rgba(0, 0, 0, 0.54) 76%
+													to bottom,
+													rgba(255, 255, 255, 0) 61%,
+													rgba(255, 255, 255, 0.04) 62%,
+													rgba(36, 36, 36, 0.54) 74%,
+													rgba(0, 0, 0, 0.54) 76%
 									);
 									@media (max-width: 767px) {
 										width: 100%;
 									}
 								}
 							}
+
 							.lightbox {
 								display: none;
 								position: fixed;
@@ -287,34 +320,40 @@ main {
 								top: 0;
 								left: 0;
 								background: rgba(0, 0, 0, 0.5);
+
 								img {
 									max-width: 90%;
 									max-height: 80%;
 									margin-top: 10%;
 								}
+
 								&:target {
 									outline: none;
 									display: block;
 								}
 							}
 						}
+
 						.div-description-contest {
 							width: 100%;
 							position: absolute;
 							bottom: 0;
 							padding: 15px;
 							z-index: 2;
+
 							h5 {
 								color: white;
 								font-family: "Poppins", sans-serif;
 								font-size: 20px;
 							}
+
 							.more {
 								padding: 0;
 								background: $orange;
 								position: relative;
 								width: 100px;
 								height: 40px;
+
 								a {
 									color: white;
 									border-radius: 0;
@@ -326,18 +365,20 @@ main {
 									transition: all 0.5s ease;
 									text-transform: uppercase;
 									font-size: 14px;
+
 									&:hover {
 										transition: all 0.5s ease;
+
 										&::before {
 											animation: blink 2s;
 											animation-iteration-count: 0.5;
 											content: "Więcej";
 											background: linear-gradient(
-												to right,
-												$orange,
-												$red 50%,
-												$red 50%,
-												$orange
+															to right,
+															$orange,
+															$red 50%,
+															$red 50%,
+															$orange
 											);
 											background-size: 200% 200%;
 											background-position: -100% 0;
@@ -348,6 +389,7 @@ main {
 											top: 0;
 											padding: 10px 12px;
 										}
+
 										&::after {
 											content: '\e830';
 											font-family: unicons, sans-serif;
@@ -360,6 +402,7 @@ main {
 											padding: 10px 12px;
 											margin-left: -100px;
 										}
+
 										@keyframes blink {
 											0%, 0% {
 												background-position: 200% 0;
@@ -372,10 +415,12 @@ main {
 											}
 										}
 									}
+
 									i {
 										color: white;
 										margin-left: 5px;
 										z-index: 20;
+
 										&::before {
 											margin: 0;
 										}
@@ -384,6 +429,7 @@ main {
 							}
 						}
 					}
+
 					@media (max-width: 991px) {
 						padding: 8px 15px;
 					}
@@ -391,75 +437,95 @@ main {
 						padding: 8px 15px;
 					}
 				}
+
 				@media (max-width: 581px) {
 					margin: 0;
 				}
 			}
 		}
-		#workshops, #training  {
+
+		#workshops, #training {
 			.row-contest {
 				display: none; ///te style są narazie po to by ukryć zawartośc zakładki
-				&:first-of-type {///te style są narazie po to by ukryć zawartośc zakładki
-					display: flex;///te style są narazie po to by ukryć zawartośc zakładki
-					font-size: 20px;///te style są narazie po to by ukryć zawartośc zakładki
-					justify-content: center;///te style są narazie po to by ukryć zawartośc zakładki
-					margin: 0;///te style są narazie po to by ukryć zawartośc zakładki
+				&:first-of-type { ///te style są narazie po to by ukryć zawartośc zakładki
+					display: flex; ///te style są narazie po to by ukryć zawartośc zakładki
+					font-size: 20px; ///te style są narazie po to by ukryć zawartośc zakładki
+					justify-content: center; ///te style są narazie po to by ukryć zawartośc zakładki
+					margin: 0; ///te style są narazie po to by ukryć zawartośc zakładki
 					.col-contest {
 						padding: 0;
+
 						.div-img-description-contest {
 							.div-img-contest {
 								.picture {
-									img {height: 500px;}
+									img {
+										height: 500px;
+									}
+
 									&::after {
 										content: none;
 									}
 								}
 							}
+
 							.div-description-contest {
 								bottom: 200px;
+
 								h5 {
 									font-size: 35px;
 									text-align: center;
 									text-transform: uppercase;
-  									text-shadow: -4px 2px 4px black;
+									text-shadow: -4px 2px 4px black;
 								}
 							}
 						}
 					}
-				
-				}///te style są narazie po to by ukryć zawartośc zakładk
+
+				}
+
+				///te style są narazie po to by ukryć zawartośc zakładk
 			}
 		}
-	
+
 	}
+
 	#gallery {
 		padding-top: 0;
+
 		.gallery {
 			height: 85vh;
 			background: $orange;
 			border: 1px solid $orange;
+
 			.row-header {
 				height: 50%;
 				margin: 0;
+
 				.row {
 					margin: 0;
 					width: 100%;
 				}
+
 				.col-12, .col-lg-12, .col-lg-4, .col-lg-6, .col-lg-3, .col-lg-2, .col-lg-1 {
 					padding: 0;
 					height: 100%;
 				}
+
 				.row-column {
 					height: 100%;
 					margin: 0;
+
 					.row-column1 {
 						height: 100%;
 					}
+
 					.row-column2 {
 						height: 50%;
+
 						.mobile-instrument {
 							display: none;
 						}
+
 						@media (max-width: 991px) and (min-width: 568px) {
 							.mobile-instrument {
 								display: block;
@@ -473,6 +539,7 @@ main {
 							}
 						}
 					}
+
 					.vertical-column {
 						.row-column1 {
 							.row.height70 {
@@ -480,16 +547,19 @@ main {
 								width: 100%;
 								margin: 0;
 							}
+
 							.row.height30 {
 								height: 30%;
 								width: 100%;
 								margin: 0;
 							}
+
 							.row.height60 {
 								height: 60%;
 								width: 100%;
-								margin: 0!important;
+								margin: 0 !important;
 							}
+
 							.row.height40 {
 								height: 40%;
 								width: 100%;
@@ -498,10 +568,12 @@ main {
 						}
 					}
 				}
+
 				.col-lg-7 {
 					padding: 0;
 					height: 100%;
 				}
+
 				@media (max-width: 991px) {
 					height: 100%;
 
@@ -512,19 +584,22 @@ main {
 						.there-is-no {
 							display: none;
 						}
+
 						.col-lg-7, .col-lg-4 {
 							height: 50%;
 						}
 					}
 				}
-				
+
 			}
+
 			a.picture {
 				display: block;
 				overflow: hidden;
 				border: 2px solid $orange;
 				height: 100%;
 			}
+
 			.lightbox {
 				display: none;
 				position: fixed;
@@ -536,20 +611,24 @@ main {
 				left: 0;
 				background: rgba(0, 0, 0, 0.5);
 				padding-top: 5%;
+
 				img {
 					max-width: 50%;
 					max-height: 90%;
 					display: block;
 					margin: 0 auto;
+
 					&:hover {
 						transform: none;
 					}
 				}
+
 				&:target {
-				  outline: none;
-				  display: block;
+					outline: none;
+					display: block;
 				}
 			}
+
 			img {
 				object-fit: cover;
 				object-position: 50% 50%;
@@ -560,6 +639,7 @@ main {
 				-webkit-transition: all 1s ease;
 				-moz-transition: all 1s ease;
 				-o-transition: all 1s ease;
+
 				&:hover {
 					transition: all 0.6s ease;
 					transform: scale(1.1);
@@ -572,6 +652,7 @@ main {
 				}
 			}
 		}
+
 		@media (max-width: 567px) {
 			display: none;
 		}

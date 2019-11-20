@@ -452,10 +452,12 @@
 				});
 				window.onresize = function () {
 					if (window.innerWidth > 891) {
-						$('#menu-container-1').css({ display: 'block' }); //ten kod odwróci działanie slide Toggle jeśli rozsuniesz okno przeglądarki.
+						// ten kod odwróci działanie slide Toggle jeśli rozsuniesz okno przeglądarki.
+						$('#menu-container-1').css({ display: 'block' });
 					}
 					if (window.innerWidth <= 891) {
-						$('#menu-container-1').css({ display: 'none' }); //analogicznie ten kod odwróci działanie slide Toggle jeśli zsuniesz okno przeglądarki z powrotem. Potrzebne tylko na urządzeniach desktopowych przy rozszerzaniu i zwężaniu okna przeglądarki
+						// analogicznie ten kod odwróci działanie slide Toggle jeśli zsuniesz okno przeglądarki z powrotem. Potrzebne tylko na urządzeniach desktopowych przy rozszerzaniu i zwężaniu okna przeglądarki
+						$('#menu-container-1').css({ display: 'none' });
 					}
 				}
 			});
@@ -463,7 +465,8 @@
 				$('.search').slideToggle("fast");
 				window.onresize = function () {
 					if (window.innerWidth > 891) {
-						$('#menu-container-1').css({ display: 'block' }); //ten kod odwróci działanie slide Toggle jeśli rozsuniesz okno przeglądarki.
+						// ten kod odwróci działanie slide Toggle jeśli rozsuniesz okno przeglądarki.
+						$('#menu-container-1').css({ display: 'block' });
 					}
 					if (window.innerWidth <= 891) {
 						$('#menu-container-1').css({ display: 'none' }); //analogicznie ten kod odwróci działanie slide Toggle jeśli zsuniesz okno przeglądarki z powrotem. Potrzebne tylko na urządzeniach desktopowych przy rozszerzaniu i zwężaniu okna przeglądarki

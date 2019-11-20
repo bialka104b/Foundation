@@ -1,0 +1,6 @@
+.vscode
+.idea/
+.sass-cache/
+projects/projects.css.map
+contest/contest.css.map
+style/style.css.map

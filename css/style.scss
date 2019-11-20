@@ -800,6 +800,7 @@ body {
 
 			.cv,
 			.education-description {
+				text-align: justify;
 				overflow: auto;
 				max-height: 220px;
 				padding: 0 40px;
@@ -1245,7 +1246,7 @@ body {
 
 				.education-description {
 					p {
-						text-align: left;
+						text-align: justify;
 					}
 
 					.more {

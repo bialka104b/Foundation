@@ -1097,6 +1097,7 @@ body {
       #education .row-education .col-management7 .education-description,
       #education .row-education .col-education7 .cv,
       #education .row-education .col-education7 .education-description {
+        text-align: justify;
         overflow: auto;
         max-height: 220px;
         padding: 0 40px;
@@ -1505,7 +1506,7 @@ body {
 #education .education .row-education .col-education7 h3 {
   padding: 0 40px; }
 #education .education .row-education .col-education7 .education-description p {
-  text-align: left; }
+  text-align: justify; }
 #education .education .row-education .col-education7 .education-description .more {
   padding: 0;
   background: #fbb74d;

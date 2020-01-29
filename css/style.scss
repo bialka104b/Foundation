@@ -861,14 +861,6 @@ body {
 	.projects {
 		.row-projects {
 			margin-bottom: 30px;
-			display: none; ////Projekty  są narazie ukryte  WAŻNE....................................
-			&:first-of-type {
-				////Projekty  są narazie ukryte  to jest styl zastępczy do pierwszego row....................................
-				display: flex;
-				margin: 0;
-				justify-content: center;
-				font-size: 20px;
-			}
 
 			.col-projects {
 				@media (max-width: 991px) {

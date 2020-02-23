@@ -591,9 +591,9 @@ body section {
   -webkit-animation-iteration-count: 0.5;
           animation-iteration-count: 0.5;
   content: "Pobierz statut";
-  background-size: 200% 200%;
   background: -webkit-gradient(linear, left top, right top, from(#fbb74d), color-stop(50%, #f71803), color-stop(50%, #f71803), to(#fbb74d));
   background: linear-gradient(to right, #fbb74d, #f71803 50%, #f71803 50%, #fbb74d);
+  background-size: 200% 200%;
   background-position: -100% 0;
   position: absolute;
   width: 100%;
@@ -1724,9 +1724,9 @@ body section {
   -webkit-animation-iteration-count: 0.5;
           animation-iteration-count: 0.5;
   content: "Więcej";
-  background-size: 200% 200%;
   background: -webkit-gradient(linear, left top, right top, from(#fbb74d), color-stop(50%, #f71803), color-stop(50%, #f71803), to(#fbb74d));
   background: linear-gradient(to right, #fbb74d, #f71803 50%, #f71803 50%, #fbb74d);
+  background-size: 200% 200%;
   background-position: -100% 0;
   position: absolute;
   width: 100%;
@@ -1829,9 +1829,9 @@ body section {
   -webkit-animation-iteration-count: 0.5;
           animation-iteration-count: 0.5;
   content: "Więcej projektów";
-  background-size: 200% 200%;
   background: -webkit-gradient(linear, left top, right top, from(#fbb74d), color-stop(50%, #f71803), color-stop(50%, #f71803), to(#fbb74d));
   background: linear-gradient(to right, #fbb74d, #f71803 50%, #f71803 50%, #fbb74d);
+  background-size: 200% 200%;
   background-position: -100% 0;
   position: absolute;
   width: 100%;
@@ -1951,9 +1951,9 @@ body section {
   -webkit-animation-iteration-count: 0.5;
           animation-iteration-count: 0.5;
   content: "Więcej";
-  background-size: 200% 200%;
   background: -webkit-gradient(linear, left top, right top, from(#fbb74d), color-stop(50%, #f71803), color-stop(50%, #f71803), to(#fbb74d));
   background: linear-gradient(to right, #fbb74d, #f71803 50%, #f71803 50%, #fbb74d);
+  background-size: 200% 200%;
   background-position: -100% 0;
   position: absolute;
   width: 100%;
@@ -2287,9 +2287,9 @@ body section {
   -webkit-animation-iteration-count: 0.5;
           animation-iteration-count: 0.5;
   content: "Wyślij";
-  background-size: 200% 200%;
   background: -webkit-gradient(linear, left top, right top, from(#fbb74d), color-stop(50%, #f71803), color-stop(50%, #f71803), to(#fbb74d));
   background: linear-gradient(to right, #fbb74d, #f71803 50%, #f71803 50%, #fbb74d);
+  background-size: 200% 200%;
   background-position: -100% 0;
   position: absolute;
   width: 100%;

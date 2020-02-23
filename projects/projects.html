@@ -68,17 +68,17 @@
 			</div>
 		</nav>
 		<script>
-				$(document).ready(function () {
-					$("a.nav-link[href^='#']").click(function (e) {
-						e.preventDefault();
-	
-						var position = $($(this).attr("href")).offset().top;
-	
-						$("body, html").animate({
-							scrollTop: position
-						} /* speed */);
-					});
+			$(document).ready(function () {
+				$("a.nav-link[href^='#']").click(function (e) {
+					e.preventDefault();
+
+					var position = $($(this).attr("href")).offset().top;
+
+					$("body, html").animate({
+						scrollTop: position
+					} /* speed */);
 				});
+			});
 		</script>
 		<script type="text/javascript" src="../script/show-menu.js"></script>
 		<!--Import document script show-menu.js-->
@@ -425,18 +425,27 @@
 					<div class="row row-icon">
 						<div class="col-12 col-icon">
 							<a target="_blank"
-								 href="https://www.facebook.com/Małopolska-Fundacja-Promocji-Kultury-i-Sztuki-102328694477945">
+								href="https://www.facebook.com/Małopolska-Fundacja-Promocji-Kultury-i-Sztuki-102328694477945">
 								<i class='uil uil-facebook'></i></a>
+							<a target="_blank"
+								href="https://www.facebook.com/Małopolska-Fundacja-Promocji-Kultury-i-Sztuki-102328694477945">
+								<i class='uil uil-instagram'></i></a>
+							<a target="_blank"
+								href="https://www.facebook.com/Małopolska-Fundacja-Promocji-Kultury-i-Sztuki-102328694477945">
+								<i class='uil uil-linkedin'></i>
+							</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-12 col-lg-5 col-footer col-phone">
 					<p><i class="uil uil-phone"></i>Telefon: <a href="+48696065264">(+48) 696 065 264</a></p>
-					<p><i class="uil uil-envelope-alt"></i>E-mail: <a href="mailto:kontakt@mfpkis.pl">kontakt@mfpkis.pl</a></p>
+					<p><i class="uil uil-envelope-alt"></i>E-mail: <a
+							href="mailto:kontakt@mfpkis.pl">kontakt@mfpkis.pl</a></p>
 					<p><i class='uil uil-dollar-alt'></i>Nr konta: 81 2490 0005 0000 4520 3601 5922</p>
 				</div>
 				<div class="col-12 col-footer privacy-police">
-					<a href="../privacy-policy.pdf" target="_blank"><span class="copy">&copy</span>Polityka prywatności</a>
+					<a href="../privacy-policy.pdf" target="_blank"><span class="copy">&copy</span>Polityka
+						prywatności</a>
 				</div>
 			</div>
 		</div>

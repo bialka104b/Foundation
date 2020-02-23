@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <title>Małopolska Fundacja Promocji Kultury i Sztuki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <!--BOOKMARK COLOR ON MOBILE DEVICES-->
+  <meta name="theme-color" content="#FBB74D">
+  <!--BOOKMARK ICON -->
+  <link rel="shortcut icon" href="../image/logo.png">
+  <!--BOOTSTRAP-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <!--tu bootstrap dodawany z dokumentacji w celu uzycia klas bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!--LINK ICON-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v1.0.0/css/unicons.css">
+  <!--STYLE CSS-->
+  <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+  <link rel="stylesheet" href="articles-template.css" type="text/css"/>
+  <!--GOOGLE ANALITYCS-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=${ANALITICS_TOKEN}"></script>
+  <script>
+      const ANALITICS_TOKEN = '..........';
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+          dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+      gtag('config', ANALITICS_TOKEN);
+  </script>
+  <!--AUTHOR WEBSITE bialka104b@interia.pl https://github.com/bialka104b-->
+</head>
+
+<body>
+<header id="header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <img class="img-responsive" src="../image/logo-header.png" alt="logo"
+             title="Małopolska Fundacja Promocji Kultury i Sztuki">
+      </div>
+      <div class="icon-menu"><i class="uil uil-list-ul"></i></div>
+      <div class="nav navbar-nav">
+        <ul class="list-inline">
+          <li class="nav-item"><a href="../#about-us">O nas</a></li>
+          <li class="nav-item"><a href="../#management">Zarząd</a></li>
+          <li class="nav-item"><a href="../#projects">Projekty</a></li>
+          <li class="nav-item">
+            <a class="click-education">Edukacja<i class='uil uil-angle-down'></i></a>
+            <ul id="list-education">
+              <li><a href="../#education">Edukacja</a></li>
+              <li><a href="https://uignasia.com">U Ignasia</a></li>
+              <li><a href="../contest/contest.html">Konkursy, warsztaty, szkolenia</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="../#cooperation">Współpraca</a></li>
+          <li class="nav-item"><a href="../#contact">Kontakt</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <script>
+      $(document).ready(function () {
+          $('a.nav-link[href^=\'#\']').click(function (e) {
+              e.preventDefault();
+
+              var position = $($(this).attr('href')).offset().top;
+
+              $('body, html').animate({
+                  scrollTop: position
+              } /* speed */);
+          });
+      });
+  </script>
+  <script type="text/javascript" src="../script/show-menu.js"></script>
+  <!--Import document script show-menu.js-->
+</header>
+<main>
+  <section id="articles">
+    <div class="container articles">
+      <h2 title="Konkurs pieśni patriotycznych" id="h2articles">Szkolny Konkurs Kolęd i Piosenek Świątecznych</h2>
+      <div class="row row-articles">
+        <div class="col-12 col-articles">
+          <div class="div-img-articles">
+            <img src="../image/contest/snowfall-201496_1920.jpg"
+                 alt="Konkurs piosenki świątecznej"
+                 title="Konkurs pieśni patriotycznych"
+                 class="img-responsive"
+            />
+          </div>
+          <div class="div-description-articles">
+            <h3>Konkurs</h3>
+            <p>Konkurs skierowany jest do wszystkich chętnych uczniów Ogólnokształcącej Szkoły Muzycznej I st. w
+              Krakowie. W konkursie mogą uczestniczyć soliści oraz grupy wokalne i wokalno – instrumentalne. Uczestnicy
+              konkursu mogą śpiewać a cappella, z akompaniamentem instrumentalnym dowolnej osoby lub z podkładem
+              muzycznym przygotowanym przez uczestnika na CD lub USB. Kryteria oceny wykonywanych utworów:</p>
+            <ul>
+              <li>dobór repertuaru, zgodność tematyki utworów z charakterem konkursu,</li>
+              <li>muzykalność i warunki głosowe wykonawców,</li>
+              <li>oryginalność interpretacji,</li>
+              <li>staranność i dokładność wykonania (znajomość tekstu i melodii, postawa),</li>
+              <li>ogólny wyraz artystyczny,</li>
+              <li>choreografia,</li>
+            </ul>
+            <h3>Nagrody</h3>
+            <p>Laureatów konkursu wyłoni Szkolna Komisja Konkursowa w trzech kategoriach:</p>
+            <ul>
+              <li>solista,</li>
+              <li>zespół wokalny,</li>
+              <li>zespół instrumentalno-wokalny.</li>
+            </ul>
+            <p>Każdy wykonawca otrzyma pamiątkowy dyplom, natomiast zwycięzcom trzech pierwszych miejsc dodatkowo
+              przyznane zostaną nagrody rzeczowe, ufundowane przez Maopolską Fundację Promocji Kultury i Sztuki. <br/>
+              Termin i miejsce konkursu: <b>23.01.2020r. godzina 8.30, aula szkolna</b>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer id="footer">
+  <div class="container footer">
+    <div class="row row-footer">
+      <div class="col-12 col-sm-9 col-lg-5 col-footer col-adress">
+        <i class="uil uil-map-marker-alt"></i>
+        <div class="adress-text">
+          <p>Małopolska Fundacja Promocji Kultury i Sztuki</p>
+          <p>ul. Bieżanowska 309/5,<br/>30-856 Kraków</p>
+          <p>NIP: 6793189069<br/>KRS: 0000801311<br/>Regon: 38423560700000</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-3 col-lg-2 col-footer col-social-media">
+        <div class="row row-icon">
+          <div class="col-12 col-icon">
+            <a target="_blank" rel="noreferrer noopener"
+               href="https://www.facebook.com/Małopolska-Fundacja-Promocji-Kultury-i-Sztuki-102328694477945">
+              <i class='uil uil-facebook'></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5 col-footer col-phone">
+        <p><i class="uil uil-phone"></i>Telefon: <a href="+48696065264">(+48) 696 065 264</a></p>
+        <p><i class="uil uil-envelope-alt"></i>E-mail: <a href="mailto:kontakt@mfpkis.pl">kontakt@mfpkis.pl</a></p>
+        <p><i class='uil uil-dollar-alt'></i>Nr konta: 81 2490 0005 0000 4520 3601 5922</p>
+      </div>
+      <div class="col-12 col-footer privacy-police">
+        <a href="../privacy-policy.pdf" target="_blank"><span class="copy">&copy</span>Polityka prywatności</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<div id="scroll"><a href="#header" class="nav-link"><i class='uil uil-angle-up'></i></a></div>
+<script type="text/javascript">
+    $('.click-education').on('click', function (e) {
+        e.preventDefault();
+        $('#list-education').stop().slideToggle('fast');
+        $('.list-education-li').on('click', function () {
+            $('#list-education').stop().slideUp('fast').exit();//exit potrzebne aby skrypt sie zakończył i lista zwinęła sie po raz drugi
+        });
+    });
+</script>
+</body>
+
+</html>

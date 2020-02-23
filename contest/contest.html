@@ -5,7 +5,7 @@
   <title>Małopolska Fundacja Promocji Kultury i Sztuki</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
   <!--BOOKMARK COLOR ON MOBILE DEVICES-->
   <meta name="theme-color" content="#FBB74D">
   <!--BOOKMARK ICON -->
@@ -22,691 +22,420 @@
   <!--LINK ICON-->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v1.0.0/css/unicons.css">
   <!--STYLE CSS-->
-  <link rel="stylesheet" href="../css/style.css" type="text/css" />
-  <link rel="stylesheet" href="contest.css" type="text/css" />
+  <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+  <link rel="stylesheet" href="contest.css" type="text/css"/>
   <!--GOOGLE ANALITYCS-->
   <script async src="https://www.googletagmanager.com/gtag/js?id=${ANALITICS_TOKEN}"></script>
   <script>
-    const ANALITICS_TOKEN = "..........";
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', ANALITICS_TOKEN);
+      const ANALITICS_TOKEN = "..........";
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+          dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+      gtag('config', ANALITICS_TOKEN);
   </script>
   <!--AUTHOR WEBSITE bialka104b@interia.pl https://github.com/bialka104b-->
 </head>
 
 <body>
-  <header id="header">
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
+<header id="header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
 
-        <div class="navbar-header">
-          <img class="img-responsive" src="../image/logo-header.png" alt="logo"
-            title="Małopolska Fundacja Promocji Kultury i Sztuki">
-        </div>
-        <div class="icon-menu"><i class="uil uil-list-ul"></i></div>
-        <div class="nav navbar-nav">
-          <ul class="list-inline">
-            <li class="nav-item"><a href="../#about-us">O nas</a></li>
-            <li class="nav-item"><a href="../#management">Zarząd</a></li>
-            <li class="nav-item"><a href="../#projects">Projekty</a></li>
-            <li class="nav-item">
-              <a class="click-education" id="e-education">Edukacja<i class='uil uil-angle-down'></i></a>
-              <ul id="list-education">
-                <li><a href="../#education">Edukacja</a></li>
-                <li><a href="http://www.uignasia.com">U Ignasia</a></li>
-                <li class="nav-item active">
-                  <a href="#contest-workshops-training" class="nav-link" data-toggle="tab" role="tab"
-                    aria-controls="contest-workshops-training" aria-selected="true">Konkursy, warsztaty, szkolenia</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item"><a href="../#cooperation">Współpraca</a></li>
-            <li class="nav-item"><a href="../#contact">Kontakt</a></li>
-          </ul>
-        </div>
-
+      <div class="navbar-header">
+        <img class="img-responsive" src="../image/logo-header.png" alt="logo"
+             title="Małopolska Fundacja Promocji Kultury i Sztuki">
       </div>
-    </nav>
-    <script>
-        $(document).ready(function () {
-          $("a.nav-link[href^='#']").click(function (e) {
-            e.preventDefault();
-  
-            var position = $($(this).attr("href")).offset().top;
-  
-            $("body, html").animate({
-              scrollTop: position
-            } /* speed */);
-          });
-        });
-    </script>
-    <script type="text/javascript" src="../script/show-menu.js"></script>
-    <!--Import document script show-menu.js-->
-  </header>
-  <main>
-    <section id="contest-workshops-training" class="tab-pane show active" role="tabpanel"
-      aria-labelledby="contest-workshops-training-tab">
-      <!-- <div class="container"> W RAZIE GDYBY CHCIELI WYŚRODKOWANE IKONY
-        <div class="row">
-          <div class="col-1"><i style="font-size: 45px;color: darkorange;display: block;height:100%;margin: 0;"
-              class='uil uil-graduation-hat'></i></div>
-          <div class="col-10" style="color: darkorange;">
-            
-          </div>
-          <div class="col-1"><i style="font-size: 45px;color: darkorange;display: block;height:100%;margin: 0;"
-              class='uil uil-graduation-hat'></i></div>
-        </div>
-      </div> -->
-      <h2 class="container"><i class='uil uil-graduation-hat'></i>Konkursy, warsztaty i szkolenia<i
-          class='uil uil-graduation-hat'></i></h2>
-
-      <!--NAWIGACJA ZAKŁADEK-->
-      <div class="container card-header">
-        <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+      <div class="icon-menu"><i class="uil uil-list-ul"></i></div>
+      <div class="nav navbar-nav">
+        <ul class="list-inline">
+          <li class="nav-item"><a href="../#about-us">O nas</a></li>
+          <li class="nav-item"><a href="../#management">Zarząd</a></li>
+          <li class="nav-item"><a href="../#projects">Projekty</a></li>
           <li class="nav-item">
-            <a class="nav-link active" id="contest-tab" data-toggle="tab" href="#contest" role="tab"
-              aria-controls="contest" aria-selected="true" title="Konkursy">Konkursy</a>
+            <a class="click-education" id="e-education">Edukacja<i class='uil uil-angle-down'></i></a>
+            <ul id="list-education">
+              <li><a href="../#education">Edukacja</a></li>
+              <li><a href="https://uignasia.com">U Ignasia</a></li>
+              <li class="nav-item active">
+                <a href="#contest-workshops-training" class="nav-link" data-toggle="tab" role="tab"
+                   aria-controls="contest-workshops-training" aria-selected="true">Konkursy, warsztaty, szkolenia</a>
+              </li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" id="workshops-tab" data-toggle="tab" href="#workshops" role="tab"
-              aria-controls="workshops" aria-selected="false" title="Warsztaty">Warsztaty</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="training-tab" href="#training" data-toggle="tab" role="tab" aria-controls="training"
-              aria-selected="false" title="Szkolenia">Szkolenia</a>
-          </li>
+          <li class="nav-item"><a href="../#cooperation">Współpraca</a></li>
+          <li class="nav-item"><a href="../#contact">Kontakt</a></li>
         </ul>
-        <div id="icon-search">
-          <div class="icon-search"><i class='uil uil-search'></i></div>
-          <div class="search">
-            <div id="tringle"></div>
-            <div class="div-input-search">
-              <input type="text" id="subject" name="subject" placeholder="Wyszukaj" value="Wyszukaj temat"
-                class="input-search" />
-            </div>
-          </div>
-        </div>
       </div>
-      <div class="container card-body">
-        <div class="tab-content" id="myTabContent">
-          <!--ZAWARTOŚĆ ZAKŁADKI KONKURSY-->
-          <div class="tab-pane contest show active" id="contest" role="tabpanel" aria-labelledby="contest-tab">
-            <div class="row row-contest">
-              <div class="col-12 col-lg-4 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img1" class="picture"><img src="../image/Szkola_Art/IMG_4137.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="img1"><img src="../image/Szkola_Art/IMG_4137.jpg"></a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5 title="Organizujemy festiwale i koncerty">Organizujemy festiwale i koncerty</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img2" class="picture"><img src="../image/Szkola_Art/IMG_4191.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="img2"><img src="../image/Szkola_Art/IMG_4191.jpg"></a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5 title="Kursy nauki gry na instrumentach">Kursy nauki gry na instrumentach</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img3" class="picture"><img src="../image/Szkola_Art/IMG_4317.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="img3"><img src="../image/Szkola_Art/IMG_4317.jpg"></a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5 title="Zajęcia dla dzieci, młodzieży i dorosłych „U Ignasia”">Zajęcia dla dzieci, młodzieży i
-                      dorosłych „U Ignasia”</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row row-contest">
-              <div class="col-12 col-lg-4 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img4" class="picture"><img src="../image/Szkola_Art/IMG_4547.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="img4"><img src="../image/Szkola_Art/IMG_4547.jpg"></a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5>Zajęcia wokalne</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img5" class="picture"><img src="../image/Szkola_Art/IMG_4715.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="img5"><img src="../image/Szkola_Art/IMG_4715.jpg"></a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5 title="Zajęcia umuzykalniające i rowój zdolności muzycznych">Zajęcia umuzykalniające i rowój
-                      zdolności muzycznych</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img6" class="picture"><img src="../image/Szkola_Art/IMG_5095.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="img6"><img src="../image/Szkola_Art/IMG_5095.jpg"></a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5 title="Kursy nauki gry na gitarze">Kursy nauki gry na gitarze</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--ZAWARTOŚĆ ZAKŁADKI WARSZTATY-->
-          <div class="tab-pane workshops" id="workshops" role="tabpanel" aria-labelledby="workshops-tab">
-            <div class="row row-contest">
-              <div class="col-12 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img13" class="picture"><img src="../image/Szkola_Art/IMG_4974.jpg" alt=""
-                        class="img-responsive"></a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5>Warsztaty w przygotowaniu</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row row-contest">
-              <div class="col-12 col-lg-3 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img7" class="picture"><img src="../image/Szkola_Art/IMG_4822.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="img7"><img src="../image/Szkola_Art/IMG_4822.jpg"></a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5>Organizujemy festiwale i koncerty</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-3 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img8" class="picture"><img src="../image/Szkola_Art/IMG_4827.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="img8"><img src="../image/Szkola_Art/IMG_4827.jpg"></a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5>Kursy nauki gry na instrumentach</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img9" class="picture"><img src="../image/Szkola_Art/IMG_5226.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="img9"><img src="../image/Szkola_Art/IMG_5226.jpg"></a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5>Zajęcia dla dzieci, młodzieży i dorosłych „U Ignasia”</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row row-contest">
-              <div class="col-12 col-lg-6 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img10" class="picture"><img src="../image/Szkola_Art/IMG_4169.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="img10"><img src="../image/Szkola_Art/IMG_4169.jpg"></a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5>Zajęcia wokalne</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-3 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img11" class="picture"><img src="../image/Szkola_Art/IMG_5091.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="img11"><img src="../image/Szkola_Art/IMG_5091.jpg"></a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5>Zajęcia umuzykalniające i rowój zdolności muzycznych</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-3 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img12" class="picture">
-                      <img src="../image/Szkola_Art/IMG_5036.jpg" alt="" class="img-responsive" />
-                    </a>
-                    <a href="#_" class="lightbox" id="img12"><img src="../image/Szkola_Art/IMG_5036.jpg"></a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5>Kursy nauki gry na gitarze</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--ZAWARTOŚĆ ZAKŁADKI SZKOLENIA-->
-          <div class="tab-pane training" id="training" role="tabpanel" aria-labelledby="training-tab">
-            <div class="row row-contest">
-              <div class="col-12 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img13" class="picture"><img src="../image/Szkola_Art/IMG_4705.jpg" alt=""
-                        class="img-responsive"></a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5>Szkolenia w przygotowaniu</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row row-contest">
-              <div class="col-12 col-lg-6 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img13" class="picture"><img src="../image/Szkola_Art/IMG_5306.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="img13"><img src="../image/Szkola_Art/IMG_5306.jpg"></a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5>Kursy nauki gry na instrumentach</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img14" class="picture"><img src="../image/Szkola_Art/IMG_4858.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="img14"><img src="../image/Szkola_Art/IMG_4858.jpg"></a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5>Zajęcia dla dzieci, młodzieży i dorosłych „U Ignasia”</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row row-contest">
-              <div class="col-12 col-lg-6 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img15" class="picture"><img src="../image/Szkola_Art/IMG_4899.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="img15"><img src="../image/Szkola_Art/IMG_4899.jpg"></a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5>Kursy nauki gry na instrumentach</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img16" class="picture"><img src="../image/Szkola_Art/IMG_4940.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="img16"><img src="../image/Szkola_Art/IMG_4940.jpg"></a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5>Zajęcia dla dzieci, młodzieży i dorosłych „U Ignasia”</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row row-contest">
-              <div class="col-12 col-lg-6 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img17" class="picture"><img src="../image/Szkola_Art/IMG_4747.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="img17"><img src="../image/Szkola_Art/IMG_4747.jpg"></a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5>Kursy nauki gry na instrumentach</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6 col-contest">
-                <div class="div-img-description-contest">
-                  <div class="div-img-contest">
-                    <a href="#img18" class="picture"><img src="../image/Szkola_Art/IMG_4663.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="img18"><img src="../image/Szkola_Art/IMG_4663.jpg"></a>
-                  </div>
-                  <div class="div-description-contest">
-                    <h5>Zajęcia dla dzieci, młodzieży i dorosłych „U Ignasia”</h5>
-                    <div class="more"><a href="../articles/articles-template.html">Więcej<i
-                          class='uil uil-angle-right'></i></a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+    </div>
+  </nav>
+  <!--Import document script show-menu.js-->
+  <script type="text/javascript" src="../script/show-menu.js"></script>
+</header>
+<main>
+  <section id="contest-workshops-training" class="tab-pane show active" role="tabpanel"
+           aria-labelledby="contest-workshops-training-tab">
+    <!-- <div class="container"> W RAZIE GDYBY CHCIELI WYŚRODKOWANE IKONY
+      <div class="row">
+        <div class="col-1"><i style="font-size: 45px;color: darkorange;display: block;height:100%;margin: 0;"
+            class='uil uil-graduation-hat'></i></div>
+        <div class="col-10" style="color: darkorange;">
+
         </div>
+        <div class="col-1"><i style="font-size: 45px;color: darkorange;display: block;height:100%;margin: 0;"
+            class='uil uil-graduation-hat'></i></div>
       </div>
-    </section>
-    <section id="gallery">
-      <div class="gallery">
-        <div class="row row-header">
-          <div class="col-lg-4">
-            <div class="row row-column">
-              <div class="col-lg-12">
-                <div class="row row-column2">
-                  <div class="col-lg-6">
-                    <a href="#image1" class="picture"><img src="../image/Szkola_Art/IMG_5091.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="image1"><img src="../image/Szkola_Art/IMG_5091.jpg"></a>
-                  </div>
-                  <div class="col-lg-6">
-                    <a href="#image2" class="picture"><img src="../image/Szkola_Art/IMG_4547.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="image2"><img src="../image/Szkola_Art/IMG_4547.jpg"></a>
-                  </div>
+    </div> -->
+    <h2 class="container">Konkursy</h2>
+
+    <div class="container card-body">
+      <div class="tab-content" id="myTabContent">
+        <!--ZAWARTOŚĆ ZAKŁADKI KONKURSY-->
+        <div class="tab-pane contest show active" id="contest" role="tabpanel" aria-labelledby="contest-tab">
+          <div class="row row-contest">
+            <div class="col-12 col-lg-4 col-contest">
+              <div class="div-img-description-contest">
+                <div class="div-img-contest">
+                  <a href="#img2" class="picture">
+                    <img src="../image/contest/snowfall-201496_1920.jpg" alt="" class="img-responsive">
+                  </a>
+                  <a href="#_" class="lightbox" id="img2">
+                    <img src="../image/contest/snowfall-201496_1920.jpg" alt="Photo">
+                  </a>
                 </div>
-                <div class="row row-column2">
-                  <div class="col-lg-4">
-                    <a href="#image3" class="picture"><img src="../image/Szkola_Art/IMG_4822.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="image3"><img src="../image/Szkola_Art/IMG_4822.jpg"></a>
-                  </div>
-                  <div class="col-lg-4">
-                    <a href="#image4" class="picture"><img src="../image/Szkola_Art/IMG_4825.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="image4"><img src="../image/Szkola_Art/IMG_4825.jpg"></a>
-                  </div>
-                  <div class="col-lg-4">
-                    <a href="#image5" class="picture"><img src="../image/Szkola_Art/IMG_4827.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="image5"><img src="../image/Szkola_Art/IMG_4827.jpg"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="row row-column">
-              <div class="col-lg-12">
-                <div class="row row-column2">
-                  <div class="col-lg-6">
-                    <a href="#image6" class="picture"><img src="../image/Szkola_Art/IMG_5204.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="image6"><img src="../image/Szkola_Art/IMG_5204.jpg"></a>
-                  </div>
-                  <div class="col-lg-3">
-                    <a href="#image7" class="picture"><img src="../image/Szkola_Art/IMG_5042.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="image7"><img src="../image/Szkola_Art/IMG_5042.jpg"></a>
-                  </div>
-                  <div class="col-lg-3">
-                    <a href="#image8" class="picture"><img src="../image/Szkola_Art/IMG_5028.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="image8"><img src="../image/Szkola_Art/IMG_5028.jpg"></a>
-                  </div>
-                </div>
-                <div class="row row-column2">
-                  <div class="col-12">
-                    <a href="#image9" class="picture"><img src="../image/Szkola_Art/IMG_5226.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="image9"><img src="../image/Szkola_Art/IMG_5226.jpg"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="row row-column">
-              <div class="col-lg-6 vertical-column">
-                <div class="row row-column1">
-                  <div class="col-lg-12">
-                    <div class="row height70">
-                      <div class="col-lg-12">
-                        <a href="#image10" class="picture"><img src="../image/Szkola_Art/IMG_4940.jpg" alt=""
-                            class="img-responsive"></a>
-                        <a href="#_" class="lightbox" id="image10"><img src="../image/Szkola_Art/IMG_4940.jpg"></a>
-                      </div>
+                <div class="div-description-contest">
+                  <h5 title="Kursy nauki gry na instrumentach">Szkolny Konkurs Kolęd i Piosenek Świątecznych</h5>
+                    <div class="more">
+                      <a href="../articles/konkurs-piosenki-zimowej.html">Więcej<i class='uil uil-angle-right'></i></a>
                     </div>
-                    <div class="row height30">
-                      <div class="col-lg-12">
-                        <a href="#image11" class="picture"><img src="../image/Szkola_Art/IMG_4149.jpg" alt=""
-                            class="img-responsive"></a>
-                        <a href="#_" class="lightbox" id="image11"><img src="../image/Szkola_Art/IMG_4149.jpg"></a>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div class="col-lg-6 vertical-column">
-                <div class="row row-column1">
-                  <div class="col-lg-12">
-                    <div class="row height40">
-                      <div class="col-lg-12">
-                        <a href="#image12" class="picture"><img src="../image/Szkola_Art/IMG_5108.jpg" alt=""
-                            class="img-responsive"></a>
-                        <a href="#_" class="lightbox" id="image12"><img src="../image/Szkola_Art/IMG_5108.jpg"></a>
-                      </div>
-                    </div>
-                    <div class="row height60">
-                      <div class="col-lg-12">
-                        <a href="#image13" class="picture"><img src="../image/Szkola_Art/IMG_4590.jpg" alt=""
-                            class="img-responsive"></a>
-                        <a href="#_" class="lightbox" id="image13"><img src="../image/Szkola_Art/IMG_4590.jpg"></a>
-                      </div>
-                    </div>
+            </div>
+            <div class="col-12 col-lg-4 col-contest">
+              <div class="div-img-description-contest">
+                <div class="div-img-contest">
+                  <a href="#img1" class="picture">
+                    <img src="../image/contest/polish-flag-1843854_1920.jpg" alt="" class="img-responsive">
+                  </a>
+                  <a href="#_" class="lightbox" id="img1">
+                    <img src="../image/contest/polish-flag-1843854_1920.jpg" alt="Photo">
+                  </a>
+                </div>
+                <div class="div-description-contest">
+                  <h5 title="Organizujemy festiwale i koncerty">Konkurs pieśni patriotycznych</h5>
+                  <div class="more">
+                    <a href="../articles/konkurs-piesni-patriotycznych.html">Więcej<i class='uil uil-angle-right'></i></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row row-header">
-          <div class="col-12 col-lg-7">
-            <div class="row row-column">
-              <div class="col-lg-12">
-                <div class="row row-column2">
-                  <div class="col-2 col-lg-2">
-                    <a href="#image14" class="picture"><img src="../image/Szkola_Art/IMG_4494.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="image14"><img src="../image/Szkola_Art/IMG_4494.jpg"></a>
-                  </div>
-                  <div class="col-2 col-lg-2">
-                    <a href="#image15" class="picture"><img src="../image/Szkola_Art/IMG_4705.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="image15"><img src="../image/Szkola_Art/IMG_4705.jpg"></a>
-                  </div>
-                  <div class="col-2 col-lg-2">
-                    <a href="#image16" class="picture"><img src="../image/Szkola_Art/IMG_4395.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="image16"><img src="../image/Szkola_Art/IMG_4395.jpg"></a>
-                  </div>
-                  <div class="col-2 col-lg-2">
-                    <a href="#image17" class="picture"><img src="../image/Szkola_Art/IMG_4432.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="image17"><img src="../image/Szkola_Art/IMG_4432.jpg"></a>
-                  </div>
-                  <div class="col-2 col-lg-2">
-                    <a href="#image18" class="picture"><img src="../image/Szkola_Art/IMG_4516.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="image18"><img src="../image/Szkola_Art/IMG_4516.jpg"></a>
-                  </div>
-                  <div class="col-2 col-lg-2">
-                    <a href="#image19" class="picture"><img src="../image/Szkola_Art/IMG_4485.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="image19"><img src="../image/Szkola_Art/IMG_4485.jpg"></a>
-                  </div>
+        <!--ZAWARTOŚĆ ZAKŁADKI WARSZTATY-->
+        <div class="tab-pane workshops" id="workshops" role="tabpanel" aria-labelledby="workshops-tab">
+          <div class="row row-contest">
+            <div class="col-12 col-contest">
+              <div class="div-img-description-contest">
+                <div class="div-img-contest">
+                  <a href="#img13" class="picture"><img src="../image/Szkola_Art/IMG_4974.jpg" alt=""
+                                                        class="img-responsive"></a>
                 </div>
-                <div class="row row-column2">
-                  <div class="col-4 col-lg-6">
-                    <a href="#image20" class="picture"><img src="../image/Szkola_Art/IMG_4150.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="image20"><img src="../image/Szkola_Art/IMG_4150.jpg"></a>
-                  </div>
-                  <div class="col-4 col-lg-6">
-                    <a href="#image21" class="picture"><img src="../image/Szkola_Art/IMG_4602.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="image21"><img src="../image/Szkola_Art/IMG_4602.jpg"></a>
-                  </div>
-                  <div class="col-4 mobile-instrument">
-                    <a href="#image22" class="picture"><img src="../image/Szkola_Art/IMG_5195.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="image22"><img src="../image/Szkola_Art/IMG_5195.jpg"></a>
-                  </div>
+                <div class="div-description-contest">
+                  <h5>Warsztaty w przygotowaniu</h5>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-1 there-is-no">
-            <div class="row row-column">
-              <div class="col-12 col-lg-12">
-                <a href="#image22" class="picture"><img src="../image/Szkola_Art/IMG_5195.jpg" alt=""
-                    class="img-responsive"></a>
-                <a href="#_" class="lightbox" id="image22"><img src="../image/Szkola_Art/IMG_5195.jpg"></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4">
-            <div class="row row-column">
-              <div class="col-lg-12">
-                <div class="row row-column2 mobile">
-                  <div class="col-6 col-lg-6">
-                    <a href="#image23" class="picture"><img src="../image/Szkola_Art/IMG_4901.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="image23"><img src="../image/Szkola_Art/IMG_4901.jpg"></a>
-                  </div>
-                  <div class="col-6 col-lg-6">
-                    <a href="#image24" class="picture"><img src="../image/Szkola_Art/IMG_4806.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="image24"><img src="../image/Szkola_Art/IMG_4806.jpg"></a>
-                  </div>
+          <div class="row row-contest">
+            <div class="col-12 col-lg-3 col-contest">
+              <div class="div-img-description-contest">
+                <div class="div-img-contest">
+                  <a href="#img7" class="picture"><img src="../image/Szkola_Art/IMG_4822.jpg" alt=""
+                                                       class="img-responsive"></a>
+                  <a href="#_" class="lightbox" id="img7">
+                    <img src="../image/Szkola_Art/IMG_4822.jpg" alt="Photo">
+                  </a>
                 </div>
-                <div class="row row-column2 mobile">
-                  <div class="col-12 col-12">
-                    <a href="#image25" class="picture"><img src="../image/Szkola_Art/IMG_4899.jpg" alt=""
-                        class="img-responsive"></a>
-                    <a href="#_" class="lightbox" id="image25"><img src="../image/Szkola_Art/IMG_4899.jpg"></a>
-                  </div>
+                <div class="div-description-contest">
+                  <h5>Organizujemy festiwale i koncerty</h5>
+                  <div class="more"><a href="../articles/articles-template.html">Więcej<i
+                      class='uil uil-angle-right'></i></a></div>
                 </div>
               </div>
             </div>
+            <div class="col-12 col-lg-3 col-contest">
+              <div class="div-img-description-contest">
+                <div class="div-img-contest">
+                  <a href="#img8" class="picture"><img src="../image/Szkola_Art/IMG_4827.jpg" alt=""
+                                                       class="img-responsive"></a>
+                  <a href="#_" class="lightbox" id="img8">
+                    <img src="../image/Szkola_Art/IMG_4827.jpg" alt="Photo">
+                  </a>
+                </div>
+                <div class="div-description-contest">
+                  <h5>Kursy nauki gry na instrumentach</h5>
+                  <div class="more"><a href="../articles/articles-template.html">Więcej<i
+                      class='uil uil-angle-right'></i></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-contest">
+              <div class="div-img-description-contest">
+                <div class="div-img-contest">
+                  <a href="#img9" class="picture"><img src="../image/Szkola_Art/IMG_5226.jpg" alt=""
+                                                       class="img-responsive"></a>
+                  <a href="#_" class="lightbox" id="img9">
+                    <img src="../image/Szkola_Art/IMG_5226.jpg" alt="Photo">
+                  </a>
+                </div>
+                <div class="div-description-contest">
+                  <h5>Zajęcia dla dzieci, młodzieży i dorosłych „U Ignasia”</h5>
+                  <div class="more"><a href="../articles/articles-template.html">Więcej<i
+                      class='uil uil-angle-right'></i></a></div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer id="footer">
-    <div class="container footer">
-      <div class="row row-footer">
-        <div class="col-12 col-sm-9 col-lg-4 col-footer col-adress">
-          <i class="uil uil-map-marker-alt"></i>
-          <div class="adress-text">
-            <p>Fundacja Promocji Kultury i Sztuki</p>
-            <p>ul. Bieżanowska 309/5, </p>
-            <p>30-856 Kraków</p>
-            <p>KRS: 0000045146 | Regon: 472836141</p>
-          </div>
-        </div>
-        <div class="col-12 col-sm-3 col-lg-4 col-footer col-social-media">
-          <div class="row row-icon">
-            <div class="col-12 col-icon">
-              <a target="_blank" href="https://www.facebook.com/Małopolska-Fundacja-Promocji-Kultury-i-Sztuki-102328694477945"><i
-                  class='uil uil-facebook'></i></a>
+          <div class="row row-contest">
+            <div class="col-12 col-lg-6 col-contest">
+              <div class="div-img-description-contest">
+                <div class="div-img-contest">
+                  <a href="#img10" class="picture"><img src="../image/Szkola_Art/IMG_4169.jpg" alt=""
+                                                        class="img-responsive"></a>
+                  <a href="#_" class="lightbox" id="img10">
+                    <img src="../image/Szkola_Art/IMG_4169.jpg" alt="Photo">
+                  </a>
+                </div>
+                <div class="div-description-contest">
+                  <h5>Zajęcia wokalne</h5>
+                  <div class="more"><a href="../articles/articles-template.html">Więcej<i
+                      class='uil uil-angle-right'></i></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 col-contest">
+              <div class="div-img-description-contest">
+                <div class="div-img-contest">
+                  <a href="#img11" class="picture"><img src="../image/Szkola_Art/IMG_5091.jpg" alt=""
+                                                        class="img-responsive"></a>
+                  <a href="#_" class="lightbox" id="img11">
+                    <img src="../image/Szkola_Art/IMG_5091.jpg" alt="Photo">
+                  </a>
+                </div>
+                <div class="div-description-contest">
+                  <h5>Zajęcia umuzykalniające i rowój zdolności muzycznych</h5>
+                  <div class="more"><a href="../articles/articles-template.html">Więcej<i
+                      class='uil uil-angle-right'></i></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 col-contest">
+              <div class="div-img-description-contest">
+                <div class="div-img-contest">
+                  <a href="#img12" class="picture">
+                    <img src="../image/Szkola_Art/IMG_5036.jpg" alt="" class="img-responsive"/>
+                  </a>
+                  <a href="#_" class="lightbox" id="img12">
+                    <img src="../image/Szkola_Art/IMG_5036.jpg" alt="Photo">
+                  </a>
+                </div>
+                <div class="div-description-contest">
+                  <h5>Kursy nauki gry na gitarze</h5>
+                  <div class="more"><a href="../articles/articles-template.html">Więcej<i
+                      class='uil uil-angle-right'></i></a></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-4 col-footer col-phone">
-          <p><i class="uil uil-phone"></i>Telefon: <a href="+48696065264">(+48) 696 065 264</a></p>
-          <p><i class="uil uil-envelope-alt"></i>E-mail: <a href="mailto:kontakt@mfpkis.pl">kontakt@mfpkis.pl</a></p>
-          <p><i class='uil uil-dollar-alt'></i>Nr konta: 82 1020 5226 0000 6102 0417 7895</p>
-        </div>
-        <div class="col-12 col-footer privacy-police">
-            <a href="privacy-policy.pdf" target="_blank"><span class="copy">&copy</span>Polityka prywatności</a>
+        <!--ZAWARTOŚĆ ZAKŁADKI SZKOLENIA-->
+        <div class="tab-pane training" id="training" role="tabpanel" aria-labelledby="training-tab">
+          <div class="row row-contest">
+            <div class="col-12 col-contest">
+              <div class="div-img-description-contest">
+                <div class="div-img-contest">
+                  <a href="#img13" class="picture"><img src="../image/Szkola_Art/IMG_4705.jpg" alt=""
+                                                        class="img-responsive"></a>
+                </div>
+                <div class="div-description-contest">
+                  <h5>Szkolenia w przygotowaniu</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-contest">
+            <div class="col-12 col-lg-6 col-contest">
+              <div class="div-img-description-contest">
+                <div class="div-img-contest">
+                  <a href="#img13" class="picture"><img src="../image/Szkola_Art/IMG_5306.jpg" alt=""
+                                                        class="img-responsive"></a>
+                  <a href="#_" class="lightbox" id="img13">
+                    <img src="../image/Szkola_Art/IMG_5306.jpg" alt="Photo">
+                  </a>
+                </div>
+                <div class="div-description-contest">
+                  <h5>Kursy nauki gry na instrumentach</h5>
+                  <div class="more"><a href="../articles/articles-template.html">Więcej<i
+                      class='uil uil-angle-right'></i></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-contest">
+              <div class="div-img-description-contest">
+                <div class="div-img-contest">
+                  <a href="#img14" class="picture"><img src="../image/Szkola_Art/IMG_4858.jpg" alt=""
+                                                        class="img-responsive"></a>
+                  <a href="#_" class="lightbox" id="img14">
+                    <img src="../image/Szkola_Art/IMG_4858.jpg" alt="Photo">
+                  </a>
+                </div>
+                <div class="div-description-contest">
+                  <h5>Zajęcia dla dzieci, młodzieży i dorosłych „U Ignasia”</h5>
+                  <div class="more"><a href="../articles/articles-template.html">Więcej<i
+                      class='uil uil-angle-right'></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-contest">
+            <div class="col-12 col-lg-6 col-contest">
+              <div class="div-img-description-contest">
+                <div class="div-img-contest">
+                  <a href="#img15" class="picture"><img src="../image/Szkola_Art/IMG_4899.jpg" alt=""
+                                                        class="img-responsive"></a>
+                  <a href="#_" class="lightbox" id="img15">
+                    <img src="../image/Szkola_Art/IMG_4899.jpg" alt="Photo">
+                  </a>
+                </div>
+                <div class="div-description-contest">
+                  <h5>Kursy nauki gry na instrumentach</h5>
+                  <div class="more"><a href="../articles/articles-template.html">Więcej<i
+                      class='uil uil-angle-right'></i></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-contest">
+              <div class="div-img-description-contest">
+                <div class="div-img-contest">
+                  <a href="#img16" class="picture"><img src="../image/Szkola_Art/IMG_4940.jpg" alt=""
+                                                        class="img-responsive"></a>
+                  <a href="#_" class="lightbox" id="img16">
+                    <img src="../image/Szkola_Art/IMG_4940.jpg" alt="Photo">
+                  </a>
+                </div>
+                <div class="div-description-contest">
+                  <h5>Zajęcia dla dzieci, młodzieży i dorosłych „U Ignasia”</h5>
+                  <div class="more"><a href="../articles/articles-template.html">Więcej<i
+                      class='uil uil-angle-right'></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-contest">
+            <div class="col-12 col-lg-6 col-contest">
+              <div class="div-img-description-contest">
+                <div class="div-img-contest">
+                  <a href="#img17" class="picture"><img src="../image/Szkola_Art/IMG_4747.jpg" alt=""
+                                                        class="img-responsive"></a>
+                  <a href="#_" class="lightbox" id="img17">
+                    <img src="../image/Szkola_Art/IMG_4747.jpg" alt="Photo">
+                  </a>
+                </div>
+                <div class="div-description-contest">
+                  <h5>Kursy nauki gry na instrumentach</h5>
+                  <div class="more"><a href="../articles/articles-template.html">Więcej<i
+                      class='uil uil-angle-right'></i></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-contest">
+              <div class="div-img-description-contest">
+                <div class="div-img-contest">
+                  <a href="#img18" class="picture"><img src="../image/Szkola_Art/IMG_4663.jpg" alt=""
+                                                        class="img-responsive"></a>
+                  <a href="#_" class="lightbox" id="img18">
+                    <img src="../image/Szkola_Art/IMG_4663.jpg" alt="Photo">
+                  </a>
+                </div>
+                <div class="div-description-contest">
+                  <h5>Zajęcia dla dzieci, młodzieży i dorosłych „U Ignasia”</h5>
+                  <div class="more"><a href="../articles/articles-template.html">Więcej<i
+                      class='uil uil-angle-right'></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </footer>
-  <div id="scroll"><a href="#header" class="nav-link"><i class='uil uil-angle-up'></i></a></div>
-  <script type="text/javascript">
+  </section>
+</main>
+<footer id="footer">
+  <div class="container footer">
+    <div class="row row-footer">
+      <div class="col-12 col-sm-9 col-lg-5 col-footer col-adress">
+        <i class="uil uil-map-marker-alt"></i>
+        <div class="adress-text">
+          <p>Małopolska Fundacja Promocji Kultury i Sztuki</p>
+          <p>ul. Bieżanowska 309/5,<br/>30-856 Kraków</p>
+          <p>NIP: 6793189069<br/>KRS: 0000801311<br/>Regon: 38423560700000</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-3 col-lg-2 col-footer col-social-media">
+        <div class="row row-icon">
+          <div class="col-12 col-icon">
+            <a target="_blank"
+               href="https://www.facebook.com/Małopolska-Fundacja-Promocji-Kultury-i-Sztuki-102328694477945">
+              <i class='uil uil-facebook'></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5 col-footer col-phone">
+        <p><i class="uil uil-phone"></i>Telefon: <a href="+48696065264">(+48) 696 065 264</a></p>
+        <p><i class="uil uil-envelope-alt"></i>E-mail: <a href="mailto:kontakt@mfpkis.pl">kontakt@mfpkis.pl</a></p>
+        <p><i class='uil uil-dollar-alt'></i>Nr konta: 81 2490 0005 0000 4520 3601 5922</p>
+      </div>
+      <div class="col-12 col-footer privacy-police">
+        <a href="../privacy-policy.pdf" target="_blank"><span class="copy">&copy</span>Polityka prywatności</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<div id="scroll"><a href="#header" class="nav-link"><i class='uil uil-angle-up'></i></a></div>
+<script type="text/javascript">
     $(document).ready(function () {
-      $('.click-education').on('click', function (e) {
-        e.preventDefault();
-        $('#list-education').stop().slideToggle("fast");
-        $('.list-education-li').on('click', function () {
-          $('#list-education').stop().slideUp("fast").exit();//exit potrzebne aby skrypt sie zakończył i lista zwinęła sie po raz drugi
+        $('.click-education').on('click', function (e) {
+            e.preventDefault();
+            $('#list-education').stop().slideToggle("fast");
+            $('.list-education-li').on('click', function () {
+                $('#list-education').stop().slideUp("fast").exit();//exit potrzebne aby skrypt sie zakończył i lista zwinęła sie po raz drugi
+            });
+            window.onresize = function () {
+                if (window.innerWidth > 891) {
+                    $('#menu-container-1').css({display: 'block'}); //ten kod odwróci działanie slide Toggle jeśli rozsuniesz okno przeglądarki.
+                }
+                if (window.innerWidth <= 891) {
+                    $('#menu-container-1').css({display: 'none'}); //analogicznie ten kod odwróci działanie slide Toggle jeśli zsuniesz okno przeglądarki z powrotem. Potrzebne tylko na urządzeniach desktopowych przy rozszerzaniu i zwężaniu okna przeglądarki
+                }
+            }
         });
-        window.onresize = function () {
-          if (window.innerWidth > 891) {
-            $('#menu-container-1').css({ display: 'block' }); //ten kod odwróci działanie slide Toggle jeśli rozsuniesz okno przeglądarki.
-          }
-          if (window.innerWidth <= 891) {
-            $('#menu-container-1').css({ display: 'none' }); //analogicznie ten kod odwróci działanie slide Toggle jeśli zsuniesz okno przeglądarki z powrotem. Potrzebne tylko na urządzeniach desktopowych przy rozszerzaniu i zwężaniu okna przeglądarki
-          }
-        }
-      });
-      $('.icon-search').click(function () {
-        $('.search').slideToggle("fast");
-        window.onresize = function () {
-          if (window.innerWidth > 891) {
-            $('#menu-container-1').css({ display: 'block' }); //ten kod odwróci działanie slide Toggle jeśli rozsuniesz okno przeglądarki.
-          }
-          if (window.innerWidth <= 891) {
-            $('#menu-container-1').css({ display: 'none' }); //analogicznie ten kod odwróci działanie slide Toggle jeśli zsuniesz okno przeglądarki z powrotem. Potrzebne tylko na urządzeniach desktopowych przy rozszerzaniu i zwężaniu okna przeglądarki
-          }
-        }
-      });
+        $('.icon-search').click(function () {
+            $('.search').slideToggle("fast");
+            window.onresize = function () {
+                if (window.innerWidth > 891) {
+                    $('#menu-container-1').css({display: 'block'}); //ten kod odwróci działanie slide Toggle jeśli rozsuniesz okno przeglądarki.
+                }
+                if (window.innerWidth <= 891) {
+                    $('#menu-container-1').css({display: 'none'}); //analogicznie ten kod odwróci działanie slide Toggle jeśli zsuniesz okno przeglądarki z powrotem. Potrzebne tylko na urządzeniach desktopowych przy rozszerzaniu i zwężaniu okna przeglądarki
+                }
+            }
+        });
     });
-  </script>
+</script>
 </body>
 
 </html>

@@ -14,6 +14,7 @@ if (empty($subject) || empty($message) || !filter_var($email, FILTER_VALIDATE_EM
 } else {
     $recipient = "andret2344@gmail.com";
     $recipient = "kontakt@mfpkis.pl";
+    $recipient = "bialka104b@interia.pl";
 
     $email_content = "Nowa wiadomość!";
     $email_content .= "Email: $email\n\n" . "Message:\n\n$message";
